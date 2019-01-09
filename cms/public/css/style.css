@@ -18,6 +18,9 @@ left: 0;
 .nav-link{
 color: white;
 }
+.nav-link:hover {
+color: #157878;
+}
 nav .nav-link {
 display: block;
 }
