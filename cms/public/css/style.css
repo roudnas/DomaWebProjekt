@@ -26,13 +26,12 @@ nav .nav-link {
 display: block;
 }
 .navbar-brand {
-padding: 1rem;
 }
 .brandimg {
   background-image: url("../images/DomaSoftware.svg");
   background-repeat: no-repeat;
   height: 10vh;
-  width: 20vw;
+  width: 100%;
 }
 .menu {
   width: 15vw;
@@ -52,11 +51,12 @@ padding: 0.8rem;
 .popis {
   margin-bottom: 5vh;
 }
+
 @media screen and (max-width: 1824px) {
  .brandimg {
    background-image: url("../images/DomaSoftware.svg");
    background-repeat: no-repeat;
-   height: 7vh;
-   width: 14vw;
+   height: 10vh;
+   width: 100%;
  }
 }
