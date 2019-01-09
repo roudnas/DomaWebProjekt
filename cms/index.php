@@ -94,7 +94,7 @@ if (!isset($_SESSION['userId'])) {
         <input type="text" name="password" class="form-control" value="" placeholder="Heslo">
       </div>
       <div class="form-group">
-        <label for="inputKomentar">Komentář</label>
+        <label for="inputKomentar">Poznámka</label>
         <textarea name="comment" class="form-control" rows="3" cols="80"  value="" placeholder="Komentář.."></textarea>
       </div>
       <button class="btn btn-primary" type="submit" name="admin-submit">Přidat moderátora!</button>
