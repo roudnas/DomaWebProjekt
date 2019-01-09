@@ -23,13 +23,13 @@ if (!isset($_SESSION['userId'])) {
   </head>
   <body data-spy="scroll" data-target=".nav" data-offset="0">
     <article class="menu">
-      <nav class="nav nav-pills flex-column">
+      <nav class="nav nav-pills flex-column flex-sm-column">
     <a class="navbar-brand my-3" href="#sekce1"><img src="public/images/DomaSoftware.svg" alt="" width="200px" height="140px"></a>
     <hr class="my-3">
-    <a class="nav-link active" href="#sekce1">Správa obsahu</a>
-    <a class="nav-link" href="#sekce2">Moderátoři</a>
-    <a class="nav-link" href="#sekce3">Statistiky</a>
-    <a class="nav-link" href="#sekce4">Autoři</a>
+    <a class="text-sm-center nav-link active" href="#sekce1">Správa obsahu</a>
+    <a class="text-sm-center nav-link" href="#sekce2">Moderátoři</a>
+    <a class="text-sm-center nav-link" href="#sekce3">Statistiky</a>
+    <a class="text-sm-center nav-link" href="#sekce4">Autoři</a>
   </nav>
     </article>
 
