@@ -1,3 +1,2 @@
 # DomaWebProjekt
-Made By @roudnas and @martinmalir!
-Ahoj
+Made By @roudnas and @MartmatiX!
