@@ -43,10 +43,10 @@ if (!isset($_SESSION['userId'])) {
       <nav class="sidenav nav nav-tabs flex-column flex-sm-column" id="sidenav">
         <hr class="my-3" style="background-color: rgba(255,255,255,0.5);">
     <a class="sidenav-link text-sm-center nav-link" href="index.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/document.png">Správa obsahu</a>
-    <a class="sidenav-link text-sm-center nav-link active" href="moderatori.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/user-group-man-man.png">Moderátoři</a>
+    <a class="sidenav-link text-sm-center nav-link" href="moderatori.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/user-group-man-man.png">Moderátoři</a>
     <a class="sidenav-link text-sm-center nav-link" href="statistiky.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/combo-chart.png">Statistiky</a>
     <a class="sidenav-link text-sm-center nav-link" href="autori.php"><img class="my-2 mx-2" src="public/images/us.svg" height="24px" width="24px">Autoři</a>
-    <a class="sidenav-link text-sm-center nav-link" href="ucet.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/contacts.png">Účet</a>
+    <a class="sidenav-link text-sm-center nav-link active" href="ucet.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/contacts.png">Účet</a>
     <form action="imports/logout.php" method="post">
       <button type="submit" class="form-control btn btn-dark my-3" name="logout-submit" style="margin:0 auto;" >Log-out</button>
     </form>
@@ -54,36 +54,11 @@ if (!isset($_SESSION['userId'])) {
   </nav>
     </article>
 
-    <article class="sekce" id="sekce2">
-      <h1 class="heading"><kbd>Moderátoři</kbd></h1>
-      <p class="popis my-3 border py-3 px-3 rounded">Výpis všech moderátorů vaší stránky. Tito moderátoři se mohou připojit do systému pro správu obsahu.</p>
-
-      <div class="">
-        <table class="table table-striped table-dark">
-          <tr>
-            <?php
-            require 'imports/vypisAdminu.php';
-             ?>
-          </tr>
-        </table>
-      </div>
-
-      <form class="add-admin" action="imports/zapisAdminu.php" method="post">
-        <div class="form-group">
-          <label for="inputJmeno">Jméno</label>
-          <input type="text" name="username" class="form-control" value="" placeholder="Jméno">
-        </div>
-        <div class="form-group">
-          <label for="inputHeslo">Heslo</label>
-          <input type="text" name="password" class="form-control" value="" placeholder="Heslo">
-        </div>
-        <div class="form-group">
-          <label for="inputKomentar">Poznámka</label>
-          <textarea name="comment" class="form-control" rows="3" cols="80"  value="" placeholder="Komentář.."></textarea>
-        </div>
-        <button class="btn btn-primary" type="submit" name="admin-submit">Přidat moderátora!</button>
-      </form>
+    <article class="sekce" id="sekce4">
+    <h1 class="heading"><kbd>Účet</kbd></h1>
+    <p class="popis my-3 border py-3 px-3 rounded">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </article>
 
+
   </body>
-</html>
+  </html>
