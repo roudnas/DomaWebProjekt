@@ -1,31 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
-
+body {
+background-color: #4F575E;
+}
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: 'Work Sans', sans-serif;
 }
-nav {
-background-color: rgba(0,0,0,0.7);
+.navbar {
+z-index: 9999;
+}
+.sidenav {
+background-color: #4F575E;
 width: 15vw;
-height: 100vh;
+height: 100%;
 overflow-x: hidden;
 position: fixed;
 top: 0;
 left: 0;
+margin-top: 65px;
 }
-.nav-link{
+.sidenav-link{
 color: white;
 }
-.nav-link:hover {
+.sidenav-link:hover {
 color: rgba(255,255,255,0.5);
 }
 
-nav .nav-link {
+.sidenav .sidenav-link {
 display: block;
-}
-.navbar-brand {
 }
 .brandimg {
   background-image: url("../images/DomaSoftware.svg");
@@ -41,7 +45,7 @@ display: block;
 padding: 2rem;
 margin-left: 15vw;
 height: 100vh;
-background-color: rgba(0,0,0,0.3);
+background-color: #C6C5C5;
 }
 .tabulka, tr, td {
 margin: 0 auto;

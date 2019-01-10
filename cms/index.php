@@ -22,14 +22,33 @@ if (!isset($_SESSION['userId'])) {
     <script src="public/js/main.js" charset="utf-8"></script>
   </head>
   <body data-spy="scroll" data-target=".nav" data-offset="0">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="navigator">
+			<div class="container-fluid">
+
+				<a class="navbar-brand" href="#Home"><img src="public/images/DomaSoftware.svg" alt="" width="140px" height="35px"></a>
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#MyTogglerNav" aria-controls="#MyTogglerNav"
+				 aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
+
+				<section class="collapse navbar-collapse" id="MyTogglerNav">
+					<div class="navbar-nav ml-auto">
+						<a class="nav-item nav-link" href="#Home">Domů</a>
+						<a class="nav-item nav-link" href="#a2">Technologie</a>
+						<a class="nav-item nav-link" href="#a3">O mně</a>
+						<a class="nav-item nav-link" href="#a4">Reference</a>
+						<a class="nav-item nav-link" href="#a5">Kontakt</a>
+					</div>
+				</section>
+
+			</div>
+		</nav>
+
     <article class="menu">
-      <nav class="nav nav-pills flex-column flex-sm-column">
-    <a class="navbar-brand my-3" href="#sekce1"><div class="brandimg"></div></a>
+      <nav class="sidenav nav nav-pills flex-column flex-sm-column" id="sidenav">
+    <a class="sidenav-link text-sm-center nav-link active" href="#sekce1"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/document.png">Správa obsahu</a>
+    <a class="sidenav-link text-sm-center nav-link" href="#sekce2"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/contacts.png">Moderátoři</a>
+    <a class="sidenav-link text-sm-center nav-link" href="#sekce3"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/combo-chart.png">Statistiky</a>
+    <a class="sidenav-link text-sm-center nav-link" href="#sekce4"><img class="my-2 mx-2" src="public/images/us.svg" height="24px" width="24px">Autoři</a>
     <hr class="my-3" style="background-color: rgba(255,255,255,0.15);">
-    <a class="text-sm-center nav-link active" href="#sekce1">Správa obsahu</a>
-    <a class="text-sm-center nav-link" href="#sekce2">Moderátoři</a>
-    <a class="text-sm-center nav-link" href="#sekce3">Statistiky</a>
-    <a class="text-sm-center nav-link" href="#sekce4">Autoři</a>
   </nav>
     </article>
 
@@ -62,10 +81,8 @@ if (!isset($_SESSION['userId'])) {
       <button type="submit" class="btn btn-primary" name="image-submit">Upload</button>
     </div>
 </form>
-
 </div>
   <button type="submit" class="btn btn-primary" name="content-submit">Přidat článek</button>
-
 </form>
   </article>
 
@@ -82,7 +99,6 @@ if (!isset($_SESSION['userId'])) {
         </tr>
       </table>
     </div>
-
 
     <form class="add-admin" action="imports/zapisAdminu.php" method="post">
       <div class="form-group">
