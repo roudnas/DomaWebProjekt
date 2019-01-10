@@ -31,11 +31,7 @@ if (!isset($_SESSION['userId'])) {
 
 				<section class="collapse navbar-collapse" id="MyTogglerNav">
 					<div class="navbar-nav ml-auto">
-						<a class="nav-item nav-link" href="#Home">Domů</a>
-						<a class="nav-item nav-link" href="#a2">Technologie</a>
-						<a class="nav-item nav-link" href="#a3">O mně</a>
-						<a class="nav-item nav-link" href="#a4">Reference</a>
-						<a class="nav-item nav-link" href="#a5">Kontakt</a>
+						<a class="nav-item nav-link" href="#a5">Podpora</a>
 					</div>
 				</section>
 
@@ -43,89 +39,48 @@ if (!isset($_SESSION['userId'])) {
 		</nav>
 
     <article class="menu">
-      <nav class="sidenav nav nav-pills flex-column flex-sm-column" id="sidenav">
-    <a class="sidenav-link text-sm-center nav-link active" href="#sekce1"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/document.png">Správa obsahu</a>
-    <a class="sidenav-link text-sm-center nav-link" href="#sekce2"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/contacts.png">Moderátoři</a>
-    <a class="sidenav-link text-sm-center nav-link" href="#sekce3"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/combo-chart.png">Statistiky</a>
-    <a class="sidenav-link text-sm-center nav-link" href="#sekce4"><img class="my-2 mx-2" src="public/images/us.svg" height="24px" width="24px">Autoři</a>
-    <hr class="my-3" style="background-color: rgba(255,255,255,0.15);">
+      <nav class="sidenav nav nav-tabs flex-column flex-sm-column" id="sidenav">
+        <hr class="my-3" style="background-color: rgba(255,255,255,0.5);">
+    <a class="sidenav-link text-sm-center nav-link active" href="index.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/document.png">Správa obsahu</a>
+    <a class="sidenav-link text-sm-center nav-link" href="moderatori.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/contacts.png">Moderátoři</a>
+    <a class="sidenav-link text-sm-center nav-link" href="statistiky.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/combo-chart.png">Statistiky</a>
+    <a class="sidenav-link text-sm-center nav-link" href="autori.php"><img class="my-2 mx-2" src="public/images/us.svg" height="24px" width="24px">Autoři</a>
+    <hr class="my-3" style="background-color: rgba(255,255,255,0.5);">
   </nav>
     </article>
 
+      <article class="sekce" id="sekce1">
+        <h1 class="heading"><kbd>Správa obsahu</kbd></h1>
+        <p class="popis my-3 border py-3 px-3 rounded">Zde můžete spravovat články na vaší stránce!</p>
 
-  <article class="sekce" id="sekce1">
-    <h1 class="heading"><kbd>Správa obsahu</kbd></h1>
-    <p class="popis my-3 border py-3 px-3 rounded">Zde můžete spravovat články na vaší stránce!</p>
-
-    <form action="imports/contentadd.php" method="post">
-  <div class="form-group">
-    <label for="inputNadpis">Nadpis</label>
-    <input name="nadpis" type="text" class="form-control" id="inputNadpis" aria-describedby="Nadpis" placeholder="Nadpis vašeho článku">
-  </div>
-  <div class="form-group">
-    <label for="inputAutor">Autor</label>
-    <input name="autor" type="text" class="form-control" id="inputAutor" placeholder="Autor článku">
-  </div>
-  <div class="form-group">
-    <label for="textArea">Text článku</label>
-    <textarea name="textarea" id="textArea" rows="8" cols="80" class="form-control" placeholder="Dnes jsme šli do lesa.."></textarea>
-  </div>
-<form action="upload.php" method="post">
-  <div class="form-group">
-      <label for="fileInput">Obrázky</label>
-      <div class="input-group mb-3">
-      <div class="custom-file">
-        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-      </div>
-      <button type="submit" class="btn btn-primary" name="image-submit">Upload</button>
-    </div>
-</form>
-</div>
-  <button type="submit" class="btn btn-primary" name="content-submit">Přidat článek</button>
-</form>
-  </article>
-
-  <article class="sekce" id="sekce2">
-    <h1 class="heading"><kbd>Moderátoři</kbd></h1>
-    <p class="popis my-3 border py-3 px-3 rounded">Výpis všech moderátorů vaší stránky. Tito moderátoři se mohou připojit do systému pro správu obsahu.</p>
-
-    <div class="">
-      <table class="table table-striped table-dark">
-        <tr>
-          <?php
-          require 'imports/vypisAdminu.php';
-           ?>
-        </tr>
-      </table>
-    </div>
-
-    <form class="add-admin" action="imports/zapisAdminu.php" method="post">
+        <form action="imports/contentadd.php" method="post">
       <div class="form-group">
-        <label for="inputJmeno">Jméno</label>
-        <input type="text" name="username" class="form-control" value="" placeholder="Jméno">
+        <label for="inputNadpis">Nadpis</label>
+        <input name="nadpis" type="text" class="form-control" id="inputNadpis" aria-describedby="Nadpis" placeholder="Nadpis vašeho článku">
       </div>
       <div class="form-group">
-        <label for="inputHeslo">Heslo</label>
-        <input type="text" name="password" class="form-control" value="" placeholder="Heslo">
+        <label for="inputAutor">Autor</label>
+        <input name="autor" type="text" class="form-control" id="inputAutor" placeholder="Autor článku">
       </div>
       <div class="form-group">
-        <label for="inputKomentar">Poznámka</label>
-        <textarea name="comment" class="form-control" rows="3" cols="80"  value="" placeholder="Komentář.."></textarea>
+        <label for="textArea">Text článku</label>
+        <textarea name="textarea" id="textArea" rows="8" cols="80" class="form-control" placeholder="Dnes jsme šli do lesa.."></textarea>
       </div>
-      <button class="btn btn-primary" type="submit" name="admin-submit">Přidat moderátora!</button>
-    </form>
-  </article>
-
-  <article class="sekce" id="sekce3">
-    <h1 class="heading"><kbd>Statistiky</kbd></h1>
-    <p class="popis my-3 border py-3 px-3 rounded">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </article>
-
-  <article class="sekce" id="sekce4">
-    <h1 class="heading"><kbd>Autoři</kbd></h1>
-    <p class="popis my-3 border py-3 px-3 rounded">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </article>
+      <form action="upload.php" method="post">
+      <div class="form-group">
+          <label for="fileInput">Obrázky</label>
+          <div class="input-group mb-3">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+          </div>
+          <button type="submit" class="btn btn-primary" name="image-submit">Upload</button>
+        </div>
+      </form>
+      </div>
+      <button type="submit" class="btn btn-primary" name="content-submit">Přidat článek</button>
+      </form>
+      </article>
 
   </body>
 </html>
