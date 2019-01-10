@@ -46,6 +46,9 @@ if (!isset($_SESSION['userId'])) {
     <a class="sidenav-link text-sm-center nav-link" href="moderatori.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/contacts.png">Moderátoři</a>
     <a class="sidenav-link text-sm-center nav-link active" href="statistiky.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/combo-chart.png">Statistiky</a>
     <a class="sidenav-link text-sm-center nav-link" href="autori.php"><img class="my-2 mx-2" src="public/images/us.svg" height="24px" width="24px">Autoři</a>
+    <form action="imports/logout.php" method="post">
+      <button type="submit" class="form-control btn btn-dark my-3" name="logout-submit" style="margin:0 auto;" >Log-out</button>
+    </form>
     <hr class="my-3" style="background-color: rgba(255,255,255,0.5);">
   </nav>
     </article>
