@@ -16,7 +16,27 @@
   </head>
   <body>
 
-    
+<header class="menu">
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" id="navigator">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#Home"><img src="public/images/DomaSoftware.svg" alt="" width="130px" height="80px"></a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#MyTogglerNav" aria-controls="#MyTogglerNav"
+       aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
+
+      <section class="collapse navbar-collapse" id="MyTogglerNav">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="#">Domů</a>
+          <a class="nav-item nav-link" href="#">O nás</a>
+          <a class="nav-item nav-link" href="#">Co nabízíme</a>
+          <a class="nav-item nav-link" href="#">DevBlog</a>
+          <a class="nav-item nav-link" href="#">Kontakt</a>
+        </div>
+      </section>
+
+    </div>
+  </nav>
+</header>
 
   </body>
 </html>
