@@ -41,7 +41,7 @@ if (!isset($_SESSION['userId'])) {
 
     <article class="menu">
       <nav class="sidenav nav nav-tabs flex-column flex-sm-column" id="sidenav">
-<hr class="my-3" style="background-color: rgba(255,255,255,0.5);">
+
     <a class="sidenav-link text-sm-center nav-link" href="index.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/document.png">Správa obsahu</a>
     <a class="sidenav-link text-sm-center nav-link" href="moderatori.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/user-group-man-man.png">Moderátoři</a>
     <a class="sidenav-link text-sm-center nav-link active" href="statistiky.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/combo-chart.png">Statistiky</a>
@@ -50,7 +50,7 @@ if (!isset($_SESSION['userId'])) {
     <form action="imports/logout.php" method="post">
       <button type="submit" class="form-control btn btn-dark my-3" name="logout-submit" style="margin:0 auto;" >Log-out</button>
     </form>
-    <hr class="my-3" style="background-color: rgba(255,255,255,0.5);">
+     
   </nav>
     </article>
 
