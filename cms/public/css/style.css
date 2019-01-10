@@ -50,7 +50,7 @@ border: 1px solid rgba(255,255,255,0.1);
 .sekce {
 padding: 2rem;
 margin-left: 15vw;
-height: 100vh;
+height: auto;
 background-color: #617B94;
 border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
