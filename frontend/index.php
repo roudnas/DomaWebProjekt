@@ -26,11 +26,11 @@
 
       <section class="collapse navbar-collapse" id="MyTogglerNav">
         <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link" href="#">Domů</a>
-          <a class="nav-item nav-link" href="#">O nás</a>
-          <a class="nav-item nav-link" href="#">Co nabízíme</a>
-          <a class="nav-item nav-link" href="#">DevBlog</a>
-          <a class="nav-item nav-link" href="#">Kontakt</a>
+          <a class="nav-item nav-link" href="index.php">Domů</a>
+          <a class="nav-item nav-link" href="oNas.php">O nás</a>
+          <a class="nav-item nav-link" href="coNabizime.php">Co nabízíme</a>
+          <a class="nav-item nav-link" href="devBlog.php">DevBlog</a>
+          <a class="nav-item nav-link" href="kontakt.php">Kontakt</a>
         </div>
       </section>
 
@@ -42,55 +42,12 @@
   <header class="text-center container">
     <div class="row justify-content-center">
       <div class="col-11 col-sm-10 col-md-8">
-        <h3>O nás</h3>
+        <h3>Domů</h3>
         <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>
   </header>
 </article>
-
-<p id="line"></p>
-
-<article class="py-3">
-  <header class="text-center container">
-    <div class="row justify-content-center">
-      <div class="col-11 col-sm-10 col-md-8">
-        <h3>Co nabízíme</h3>
-        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </div>
-  </header>
-</article>
-
-<p id="line"></p>
-
-<article class="py-3">
-  <header class="text-center container">
-    <div class="row justify-content-center">
-      <div class="col-11 col-sm-10 col-md-8">
-        <h3>DevBlog</h3>
-        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </div>
-  </header>
-</article>
-
-
-<p id="line"></p>
-
-<article class="py-3">
-  <div class="container col-sm">
-    <div class="text-center container">
-      <h3>Kontakty</h3>
-    </div>
-
-    <div class="container col-sm">
-
-    </div>
-
-  </div>
-</article>
-
 
   </body>
 </html>
