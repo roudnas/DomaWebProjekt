@@ -38,18 +38,34 @@
       </nav>
     </header>
 
-    <article class="py-3">
-      <div class="container col-sm">
-        <div class="text-center container">
-          <h3>Kontakty</h3>
-        </div>
+    <section class="col-12">
+			<form method="post" action="contactform.php">
+				<div class="form-group">
+					<label for="emailinput">Váš email</label>
+					<input name="mail" type="email" class="form-control" id="mail" placeholder="vas@email.cz" required>
+				</div>
+				<div class="form-group">
+					<label for="emailinput">Předmět</label>
+					<input name="subject" type="text" class="form-control" id="subject" placeholder="Dotaz" required>
+				</div>
+				<div class="form-group">
+					<label for="emailinput">Jméno</label>
+					<input name="name" type="text" class="form-control" id="name" placeholder="Jan" required>
+				</div>
+				<div class="form-group">
+					<label for="emailinput">Přijmení</label>
+					<input name="surname" type="text" class="form-control" id="surname" placeholder="Okatý" required>
+				</div>
+				<div class="form-group">
+					<label for="textarea">Text</label>
+					<textarea name="zprava" id="zprava" class="form-control" id="textarea" rows="10" placeholder="Dobrý den, zaujala mě vaše nabídka, chci vědět více..."
+					 required></textarea>
+				</div>
+				<div class="g-recaptcha" data-sitekey="6Le6S4EUAAAAAMvKqGRrDuXAjeb7f41sJ-KC3FvD" style="margin:0 auto;"></div>
+				<button type="submit" class="btn btn-primary">Submit</button>
 
-        <div class="container col-sm">
-
-        </div>
-
-      </div>
-    </article>
+			</form>
+		</section>
 
   </body>
 </html>
