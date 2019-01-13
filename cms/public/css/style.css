@@ -3,7 +3,7 @@
     display: none;
 }
 body {
-background-color: #4F575E;
+background-color: #d6d8d9;
 
 }
 * {
@@ -15,7 +15,17 @@ font-family: 'Work Sans', sans-serif;
 .navbar {
 z-index: 9999;
 }
+.menu {
+z-index: 2;
+background-color: #4F575E;
+width: 15vw;
+height: 100vh;
+position: absolute;
+top: 0;
+left: 0;
+}
 .sidenav {
+z-index: 2;
 background-color: #4F575E;
 width: 15vw;
 height: 100vh;
@@ -46,11 +56,13 @@ border: 1px solid rgba(255,255,255,0.1);
   height: 100%;
 }
 .sekce {
+z-index: 1;
 padding: 2rem;
 margin-left: 15vw;
-height: 100vh;
-background-color: #617B94;
+height: auto;
+background-color: #a5aaaf;
 border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+box-shadow: inset 0 0 30px 5px lightgray;
 }
 .allSections {
 }
