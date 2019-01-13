@@ -21,11 +21,11 @@ if (!isset($_SESSION['userId'])) {
      crossorigin="anonymous"></script>
     <script src="public/js/main.js" charset="utf-8"></script>
   </head>
-  <body data-spy="scroll" data-target=".nav" data-offset="0">
+  <body>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="navigator">
 			<div class="container-fluid">
 
-				<a class="navbar-brand" href="#Home"><img src="public/images/DomaSoftware.svg" alt="" width="140px" height="35px"></a>
+				<a class="navbar-brand" href="index.php"><img src="public/images/DomaSoftware.svg" alt="" width="140px" height="35px"></a>
 				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#MyTogglerNav" aria-controls="#MyTogglerNav"
 				 aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
 
