@@ -2,7 +2,7 @@
 
 if (isset($_POST['login-submit'])) {
 
-  require 'dblocalconn.php';
+  require 'dbconn.php';
 
   $usrname = $_POST['username'];
   $usrpw = $_POST['pw'];

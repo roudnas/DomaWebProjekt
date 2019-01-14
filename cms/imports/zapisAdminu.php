@@ -1,6 +1,6 @@
 <?php
 
-  require 'dblocalconn.php';
+  require 'dbconn.php';
 
   if (isset($_POST['admin-submit'])) {
     mysqli_query($conn, $sql);

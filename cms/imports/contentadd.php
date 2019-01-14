@@ -1,6 +1,6 @@
 <?php
 if (isset($_POST['content-submit'])) {
-  require 'dblocalconn.php';
+  require 'dbconn.php';
   $header = $_POST['nadpis'];
   $autor = $_POST['autor'];
   $obsah = $_POST['textarea'];
