@@ -1,3 +1,10 @@
 #line {
 border-bottom: 3px solid #157878;
 }
+#navigatorIndex {
+  background-color: #292e48;
+  font-size: 15px;
+}
+#headyIndex {
+max-height: 70vh;
+}
