@@ -6,12 +6,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
      crossorigin="anonymous">
     <link rel="icon" href="public/images/newLogoJustR.png">
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
      crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
      crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
      crossorigin="anonymous"></script>
+     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+
+     </script>
     <title></title>
   </head>
   <body>
@@ -20,7 +26,7 @@
   <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="navigator">
     <div class="container-fluid">
 
-      <a class="navbar-brand" href="#Home"><img src="public/images/DomaSoftware.svg" alt="" width="130px" height="80px"></a>
+      <a class="navbar-brand" href="#Home"><img src="public/images/DomaSoftware.svg" alt="" width="140px" height="35px"></a>
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#MyTogglerNav" aria-controls="#MyTogglerNav"
        aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
 
@@ -38,16 +44,14 @@
   </nav>
 </header>
 
-<article class="py-3">
-  <header class="text-center container">
-    <div class="row justify-content-center">
-      <div class="col-11 col-sm-10 col-md-8">
-        <h3>Domů</h3>
-        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </div>
-  </header>
+<article class="heady">
+  <div id="particles-js"></div>
+
+
+<script src="public/js/particles.js"></script>
+  <link rel="stylesheet" href="public/css/particles.css">
 </article>
+
 
   </body>
 </html>
