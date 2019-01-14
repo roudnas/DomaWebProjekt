@@ -10,7 +10,7 @@ canvas {
 #particles-js {
   position: absolute;
   width: 100%;
-  height: 92%;
+  height: 100%;
   background-color: #292e48;
   background-image: url("../images/DomaSoftware157878.svg");
   background-repeat: no-repeat;
@@ -47,4 +47,8 @@ canvas {
 }
 .count-particles {
   border-radius: 0 0 3px 3px;
+}
+@media only screen and (max-width: 992px) {
+  #particles-js { background-size: 40%; }
+
 }
