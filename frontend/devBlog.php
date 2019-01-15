@@ -19,7 +19,7 @@
   <body>
 
     <header class="menu">
-      <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="navigator">
+      <nav class="navbar navbar-expand-md navbar-dark" id="navigator">
         <div class="container-fluid">
 
           <a class="navbar-brand" href="#Home"><img src="public/images/DomaSoftware157878.svg" alt="" width="140px" height="40px"></a>
