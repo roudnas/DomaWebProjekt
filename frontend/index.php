@@ -23,7 +23,7 @@
   <body style="overflow:hidden;">
 
 <header class="menu">
-  <nav class="navbar navbar-expand-md navbar-dark" id="navigatorIndex">
+  <nav class="navbar navbar-expand-lg navbar-dark" id="navigatorIndex">
     <div class="container-fluid">
 
       <a class="navbar-brand" href="#Home"><img src="public/images/DomaSoftware.svg" alt="" width="140px" height="50px" style="visibility:hidden;"></a>
