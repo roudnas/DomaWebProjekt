@@ -41,7 +41,7 @@ if (!isset($_SESSION['userId'])) {
 
     <article class="menu">
       <nav class="sidenav nav nav-tabs flex-column flex-sm-column" id="sidenav">
-         
+
     <a class="sidenav-link text-sm-center nav-link" href="index.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/document.png">Správa obsahu</a>
     <a class="sidenav-link text-sm-center nav-link active" href="moderatori.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/user-group-man-man.png">Moderátoři</a>
     <a class="sidenav-link text-sm-center nav-link" href="statistiky.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/combo-chart.png">Statistiky</a>
@@ -62,13 +62,13 @@ if (!isset($_SESSION['userId'])) {
         <table class="table table-striped table-dark">
           <tr>
             <?php
-            require 'imports/vypisAdminu.php';
+            require 'imports/vypisadminu.php';
              ?>
           </tr>
         </table>
       </div>
 
-      <form class="add-admin" action="imports/zapisAdminu.php" method="post">
+      <form class="add-admin" action="imports/zapisadminu.php" method="post">
         <div class="form-group">
           <label for="inputJmeno">Jméno</label>
           <input type="text" name="username" class="form-control" value="" placeholder="Jméno">

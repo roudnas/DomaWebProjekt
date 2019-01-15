@@ -26,15 +26,15 @@
           <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#MyTogglerNav" aria-controls="#MyTogglerNav"
            aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
 
-          <section class="collapse navbar-collapse" id="MyTogglerNav">
-            <div class="navbar-nav ml-auto">
-              <a class="nav-item nav-link" href="index.php">Domů</a>
-              <a class="nav-item nav-link" href="oNas.php">O nás</a>
-              <a class="nav-item nav-link" href="coNabizime.php">Co nabízíme</a>
-              <a class="nav-item nav-link" href="devBlog.php">DevBlog</a>
-              <a class="nav-item nav-link" href="kontakt.php">Kontakt</a>
-            </div>
-          </section>
+           <section class="collapse navbar-collapse" id="MyTogglerNav">
+             <div class="navbar-nav ml-auto">
+               <a class="nav-item nav-link" href="index.php">Domů</a>
+               <a class="nav-item nav-link" href="onas.php">O nás</a>
+               <a class="nav-item nav-link" href="conabizime.php">Co nabízíme</a>
+               <a class="nav-item nav-link" href="devblog.php">DevBlog</a>
+               <a class="nav-item nav-link" href="kontakt.php">Kontakt</a>
+             </div>
+           </section>
 
         </div>
       </nav>
