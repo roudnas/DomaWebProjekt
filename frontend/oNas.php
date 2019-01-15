@@ -20,7 +20,7 @@
       <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="navigator">
         <div class="container-fluid">
 
-          <a class="navbar-brand" href="#Home"><img src="public/images/DomaSoftware157878.svg" alt="" width="140px" height="35px"></a>
+          <a class="navbar-brand" href="#Home"><img src="public/images/DomaSoftware157878.svg" alt="" width="140px" height="40px"></a>
           <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#MyTogglerNav" aria-controls="#MyTogglerNav"
            aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
 
@@ -40,10 +40,15 @@
 
   </header>
 
-  <article class="py-3">
+  <article class="py-3 my-3">
     <header class="text-center container">
       <div class="row justify-content-center">
-        <div class="col-11 col-sm-10 col-md-8">
+        <div class="col-10 col-sm-10 col-md-6 col-lg-6">
+          <h3>O nás</h3>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div class="col-10 col-md-6 col-sm-10 col-lg-6 ">
           <h3>O nás</h3>
           <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>

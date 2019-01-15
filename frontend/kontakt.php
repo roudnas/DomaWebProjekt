@@ -38,11 +38,11 @@
       </nav>
     </header>
 
-    <section class="col-12">
+    <section class="my-3 col-12">
 			<form method="post" action="contactform.php">
 				<div class="form-group">
 					<label for="emailinput">Váš email</label>
-					<input name="mail" type="email" class="form-control" id="mail" placeholder="vas@email.cz" required>
+					<input name="mail" type="email" class="form-control" id="mail" placeholder="user@example.com" required>
 				</div>
 				<div class="form-group">
 					<label for="emailinput">Předmět</label>
@@ -50,11 +50,11 @@
 				</div>
 				<div class="form-group">
 					<label for="emailinput">Jméno</label>
-					<input name="name" type="text" class="form-control" id="name" placeholder="Jan" required>
+					<input name="name" type="text" class="form-control" id="name" placeholder="Name" required>
 				</div>
 				<div class="form-group">
 					<label for="emailinput">Přijmení</label>
-					<input name="surname" type="text" class="form-control" id="surname" placeholder="Okatý" required>
+					<input name="surname" type="text" class="form-control" id="surname" placeholder="Surname" required>
 				</div>
 				<div class="form-group">
 					<label for="textarea">Text</label>
