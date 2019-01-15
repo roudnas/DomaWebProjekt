@@ -16,3 +16,64 @@ border-bottom: 3px solid #157878;
 #headyIndex {
 max-height: 70vh;
 }
+.pageSekce {
+min-height: 100vh;
+border-bottom: 1px solid #bbbbbb;
+}
+.onasSekce {
+background-color: #25B1D1;
+}
+.onasPerson {
+  margin-top: 15%;
+}
+.onasCards {
+  height: 250px;
+  width: 250px;
+}
+.card-img {
+border: 1px solid #bbbbbb;
+height: 230px;
+
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+
+}
+#card1 {
+background-image: url("../images/scr1.png");
+}
+#card2 {
+background-image: url("../images/scr2.png");
+}
+#card3 {
+background-image: url("../images/scr3.png");
+}
+#card4 {
+background-image: url("../images/scr1.png");
+}
+#card1:hover{
+  transform: translateY(-3px);
+  opacity: 0.9;
+background-image: url("../images/scr1Hover.png");
+  transition: all 0.3s ease-out;
+}
+#card2:hover{
+  transform: translateY(-3px);
+  opacity: 0.9;
+background-image: url("../images/scr2Hover.png");
+  transition: all 0.3s ease-out;
+}
+
+#card3:hover{
+  transform: translateY(-3px);
+  opacity: 0.9;
+background-image: url("../images/scr3Hover.png");
+  transition: all 0.3s ease-out;
+}
+
+#card4:hover{
+  transform: translateY(-3px);
+  opacity: 0.9;
+background-image: url("../images/scr1Hover.png");
+  transition: all 0.3s ease-out;
+}

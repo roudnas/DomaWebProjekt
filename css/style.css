@@ -115,7 +115,7 @@ font-size: 2em;
 font-weight: 200;
 }
 #obsah1 {
-font-size: 1.2em; 
+font-size: 1.2em;
 }
 #line {
 border-bottom: 3px solid #157878;
@@ -123,5 +123,3 @@ border-bottom: 3px solid #157878;
 .carousel-item:hover {
 opacity: 0.95;
 }
-
-
