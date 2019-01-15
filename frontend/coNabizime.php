@@ -19,7 +19,7 @@
   <body>
 
     <header class="menu">
-      <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="navigator">
+      <nav class="navbar navbar-expand-md navbar-dark" id="navigator">
         <div class="container-fluid">
 
           <a class="navbar-brand" href="#Home"><img src="public/images/DomaSoftware157878.svg" alt="" width="140px" height="40px"></a>
@@ -29,9 +29,9 @@
           <section class="collapse navbar-collapse" id="MyTogglerNav">
             <div class="navbar-nav ml-auto">
               <a class="nav-item nav-link" href="index.php">Domů</a>
-              <a class="nav-item nav-link" href="onas.php">O nás</a>
-              <a class="nav-item nav-link" href="conabizime.php">Co nabízíme</a>
-              <a class="nav-item nav-link" href="devblog.php">DevBlog</a>
+              <a class="nav-item nav-link" href="oNas.php">O nás</a>
+              <a class="nav-item nav-link" href="coNabizime.php">Co nabízíme</a>
+              <a class="nav-item nav-link" href="devBlog.php">DevBlog</a>
               <a class="nav-item nav-link" href="kontakt.php">Kontakt</a>
             </div>
           </section>
