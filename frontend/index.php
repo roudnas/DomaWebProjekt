@@ -20,13 +20,13 @@
      </script>
     <title></title>
   </head>
-  <body style="overflow:hidden;">
+  <body style="overflow:hidden;" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <header class="menu">
   <nav class="navbar navbar-expand-lg navbar-dark" id="navigatorIndex">
     <div class="container-fluid">
 
-      <a class="navbar-brand" href="#Home"><img src="public/images/DomaSoftware.svg" alt="" width="140px" height="50px" style="visibility:hidden;"></a>
+      <a class="navbar-brand" href="#Home"><img src="public\images\DomaSoftware.svg" alt="" width="140px" height="60px" style="visibility:hidden;"></a>
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#MyTogglerNav" aria-controls="#MyTogglerNav"
        aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
 

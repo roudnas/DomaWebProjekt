@@ -45,7 +45,7 @@
 				 aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
 
 				<section class="collapse navbar-collapse" id="MyTogglerNav">
-					<div class="navbar-nav ml-auto">
+					<div class="navbar-nav">
 						<a class="nav-item nav-link" href="#Home">Domů</a>
 						<a class="nav-item nav-link" href="#a2">Technologie</a>
 						<a class="nav-item nav-link" href="#a3">O mně</a>
