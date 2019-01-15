@@ -21,10 +21,16 @@ min-height: 100vh;
 border-bottom: 1px solid #bbbbbb;
 }
 .onasSekce {
-background-color: #25B1D1;
+background-image: url("../images/bckgrnd.png");
 }
 .onasPerson {
   margin-top: 15%;
+}
+.svgPerson:hover {
+  opacity: 0.9;
+  border: 1px solid black;
+  border-radius: 100px;
+  transition: all 0.3s ease-out;
 }
 .onasCards {
   height: 250px;
