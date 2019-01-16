@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
      crossorigin="anonymous">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="public/images/newLogoJustR.png">
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
      crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
      crossorigin="anonymous"></script>
-    <title></title>
+
+    <title>Doma Software</title>
   </head>
+
   <body>
 
     <div class="bodyDiv row justify-content-center">
@@ -73,22 +77,22 @@
 
         <div class="row justify-content-center mt-3">
 
-          <div class="onasCards card m-2 p-2 col-10 col-md-6 col-lg-3 col-xl-3">
+          <div data-aos="zoom-in" class="onasCards card m-2 p-2 col-10 col-md-6 col-lg-3 col-xl-3">
           <a href="https://roudnas.tk"> <div class="card-img" id="card1"></div> </a>
           </div>
 
 
-          <div class="onasCards card m-2 p-2 col-10 col-md-6 col-lg-3 col-xl-3">
+          <div data-aos="zoom-in" class="onasCards card m-2 p-2 col-10 col-md-6 col-lg-3 col-xl-3">
           <a href="https://roudnas.tk/frontend"><div class="card-img" id="card2"></div></a>
           </div>
 
 
-          <div class="onasCards card m-2 p-2 col-10 col-md-6 col-lg-3 col-xl-3">
+          <div data-aos="zoom-in" class="onasCards card m-2 p-2 col-10 col-md-6 col-lg-3 col-xl-3">
           <a href="https://roudnas.tk/cms"><div class="card-img" id="card3"></div></a>
           </div>
 
 
-          <div class="onasCards card m-2 p-2 col-10 col-md-6 col-lg-3 col-xl-3">
+          <div data-aos="zoom-in" class="onasCards card m-2 p-2 col-10 col-md-6 col-lg-3 col-xl-3">
           <a href="https://roudnas.tk"><div class="card-img" id="card4"></div></a>
           </div>
 
@@ -99,5 +103,9 @@
       </div>
     </div>
 
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
