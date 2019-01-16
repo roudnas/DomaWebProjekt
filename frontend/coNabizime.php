@@ -57,7 +57,7 @@
               <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
               <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
               <br>
-              <img class="mx-auto d-block" src="https://img.icons8.com/wired/128/000000/google-code.png">
+              <img class="mx-auto d-block" src="https://img.icons8.com/color/180/000000/media-queries.png">
             </div>
           </div>
         </section>
@@ -71,7 +71,7 @@
               <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
               <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
               <br>
-              <img class="mx-auto d-block" src="https://img.icons8.com/color/128/000000/talk-male.png">
+              <img class="mx-auto d-block" src="https://img.icons8.com/color/180/000000/talk-male.png">
             </div>
           </div>
         </section>
@@ -85,7 +85,7 @@
               <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
               <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
               <br>
-              <img class="mx-auto d-block" src="https://img.icons8.com/color/128/000000/adobe-photoshop.png">
+              <img class="mx-auto d-block" src="https://img.icons8.com/color/180/000000/adobe-photoshop.png">
             </div>
           </div>
         </section>
@@ -107,7 +107,7 @@
                 <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
                 <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
                 <br>
-                <img class="mx-auto d-block" src="https://img.icons8.com/wired/128/000000/left-navigation-toolbar.png">
+                <img class="mx-auto d-block" src="https://img.icons8.com/color/180/000000/web.png">
               </div>
             </div>
           </section>
@@ -121,7 +121,7 @@
                 <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
                 <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
                 <br>
-                <img class="mx-auto d-block" src="https://img.icons8.com/ios/128/000000/web-design.png">
+                <img class="mx-auto d-block" src="https://img.icons8.com/color/180/000000/overview-pages-3.png">
               </div>
             </div>
           </section>
