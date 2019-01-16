@@ -1,20 +1,13 @@
  <!DOCTYPE html>
  <html lang="cs" dir="ltr">
-   <head>
-     <meta charset="utf-8">
-     <title></title>
-   </head>
    <body>
-
      <div class="adminTable">
        <tr>
          <th>ID</th>
          <th>Jméno</th>
          <th>Poznámka</th>
        </tr>
-
      </div>
-
    </body>
  </html>
 

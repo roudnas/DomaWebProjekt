@@ -3,6 +3,15 @@
 
 * {
 font-family: 'Open Sans', sans-serif;
+overflow-x: hidden;
+}
+.mainobal {
+width: 1200px;
+background-color: #EDEDED;
+box-shadow: 0px 0px 50px 2px gray;
+}
+.bodyDiv {
+background-color: #DBDBDB;
 }
 #line {
 border-bottom: 3px solid #157878;
@@ -22,9 +31,8 @@ border-bottom: 1px solid #bbbbbb;
 }
 .onasSekce {
 background-image: url("../images/bckgrnd.png");
-}
-.onasPerson {
-  margin-top: 15%;
+background-repeat: cover;
+background-size: contain;
 }
 .svgPerson:hover {
   opacity: 0.9;
@@ -39,11 +47,9 @@ background-image: url("../images/bckgrnd.png");
 .card-img {
 border: 1px solid #bbbbbb;
 height: 230px;
-
-background-size: contain;
+background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-
 }
 #card1 {
 background-image: url("../images/scr1.png");

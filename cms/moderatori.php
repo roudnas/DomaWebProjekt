@@ -62,7 +62,7 @@ if (!isset($_SESSION['userId'])) {
         <table class="table table-striped table-dark">
           <tr>
             <?php
-            require 'imports/vypisadminu.php';
+            require 'imports/vypisAdminu.php';
              ?>
           </tr>
         </table>
