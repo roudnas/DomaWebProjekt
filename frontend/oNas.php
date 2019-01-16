@@ -77,22 +77,22 @@
 
         <div class="row justify-content-center mt-3">
 
-          <div data-aos="zoom-in" class="onasCards card m-2 p-2 col-10 col-md-6 col-lg-3 col-xl-3">
+          <div data-aos="zoom-in" data-aos-duration="1000" class="onasCards card m-2 p-2 col-10 col-md-6 col-lg-3 col-xl-3">
           <a href="https://roudnas.tk"> <div class="card-img" id="card1"></div> </a>
           </div>
 
 
-          <div data-aos="zoom-in" class="onasCards card m-2 p-2 col-10 col-md-6 col-lg-3 col-xl-3">
+          <div data-aos="zoom-in" data-aos-duration="700" class="onasCards card m-2 p-2 col-10 col-md-6 col-lg-3 col-xl-3">
           <a href="https://roudnas.tk/frontend"><div class="card-img" id="card2"></div></a>
           </div>
 
 
-          <div data-aos="zoom-in" class="onasCards card m-2 p-2 col-10 col-md-6 col-lg-3 col-xl-3">
+          <div data-aos="zoom-in" data-aos-duration="500" class="onasCards card m-2 p-2 col-10 col-md-6 col-lg-3 col-xl-3">
           <a href="https://roudnas.tk/cms"><div class="card-img" id="card3"></div></a>
           </div>
 
 
-          <div data-aos="zoom-in" class="onasCards card m-2 p-2 col-10 col-md-6 col-lg-3 col-xl-3">
+          <div data-aos="zoom-in" data-aos-duration="1200" class="onasCards card m-2 p-2 col-10 col-md-6 col-lg-3 col-xl-3">
           <a href="https://roudnas.tk"><div class="card-img" id="card4"></div></a>
           </div>
 
