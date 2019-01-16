@@ -7,16 +7,21 @@
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
      crossorigin="anonymous">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="public/images/newLogoJustR.png">
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
      crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
      crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
      crossorigin="anonymous"></script>
-    <title></title>
+
+    <title>Doma Software</title>
   </head>
   <body>
+    <div class="bodyDiv row justify-content-center">
+      <div class="mainobal">
 
     <header class="menu">
       <nav class="navbar navbar-expand-md navbar-dark" id="navigator">
@@ -43,7 +48,7 @@
     <section class="layout-multicolumn container py-3 mt-3">
       <div class="row justify-content-center">
 
-        <section class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
+        <section data-aos="zoom-in-up" data-aos-duration="1000" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
           <div class="card" style="width: 16rem; height:30rem;">
             <div class="card-body">
               <h5 class="text-center" style="overflow-y:hidden;">Weby na míru</h5>
@@ -57,7 +62,7 @@
           </div>
         </section>
 
-        <section class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
+        <section data-aos="zoom-in-up" data-aos-duration="1000" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
           <div class="card" style="width: 16rem; height:30rem;">
             <div class="card-body">
               <h5 class="text-center" style="overflow-y:hidden;">Konzultace</h5>
@@ -71,7 +76,7 @@
           </div>
         </section>
 
-        <section class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
+        <section data-aos="zoom-in-up" data-aos-duration="1000" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
           <div class="card" style="width: 16rem; height:30rem;">
             <div class="card-body">
               <h5 class="text-center" style="overflow-y:hidden;">Práce s balíkem Adobe</h5>
@@ -93,7 +98,7 @@
       <section class="layout-multicolumn container py-3 mt-3">
         <div class="row justify-content-center">
 
-          <section class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
+          <section data-aos="zoom-in-up" data-aos-duration="700" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
             <div class="card" style="width: 16rem; height:30rem;">
               <div class="card-body">
                 <h5 class="text-center" style="overflow-y:hidden;">UI design na míru</h5>
@@ -107,7 +112,7 @@
             </div>
           </section>
 
-          <section class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
+          <section data-aos="zoom-in-up" data-aos-duration="700" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
             <div class="card" style="width: 16rem; height:30rem;">
               <div class="card-body">
                 <h5 class="text-center" style="overflow-y:hidden;">Content Management</h5>
@@ -123,6 +128,12 @@
 
         </div>
         </section>
+      </div>
+    </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
   </body>
 </html>

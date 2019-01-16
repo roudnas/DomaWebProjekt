@@ -50,7 +50,7 @@
       <article class="pageSekce py-3 mt-3">
         <section class="py-3 text-center container">
           <div class="row justify-content-center">
-            <div class="onasPerson col-12 col-sm-12 col-md-6 col-lg-6">
+            <div data-aos="flip-left" data-aos-duration="1000" class="onasPerson col-12 col-sm-12 col-md-6 col-lg-6">
               <a href="https://roudnas.tk"><svg class="svgPerson" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                 width="250" height="250"
                 viewBox="0 0 224 224"
@@ -59,7 +59,7 @@
               <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
 
-            <div class="onasPerson col-12 col-md-6 col-sm-12 col-lg-6">
+            <div data-aos="flip-left" data-aos-duration="1000" class="onasPerson col-12 col-md-6 col-sm-12 col-lg-6">
               <a href="https://roudnas.tk/frontend"><svg class="svgPerson" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                   width="250" height="250"
                   viewBox="0 0 224 224"
