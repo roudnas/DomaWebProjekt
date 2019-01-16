@@ -26,12 +26,11 @@ border-bottom: 3px solid #157878;
 max-height: 70vh;
 }
 .pageSekce {
-min-height: 100vh;
-border-bottom: 1px solid #bbbbbb;
+height: 100vh;
+
 }
 .onasSekce {
 background-image: url("../images/bckgrnd.png");
-background-repeat: cover;
 background-size: contain;
 }
 .svgPerson:hover {
@@ -49,7 +48,7 @@ background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 }
-#card1 {
+#card1, #card4 {
 background-image: url("../images/scr1.png");
 }
 #card2 {
@@ -58,10 +57,7 @@ background-image: url("../images/scr2.png");
 #card3 {
 background-image: url("../images/scr3.png");
 }
-#card4 {
-background-image: url("../images/scr1.png");
-}
-#card1:hover{
+#card1:hover, #card4:hover{
   transform: translateY(-3px);
   opacity: 0.9;
 background-image: url("../images/scr1Hover.png");
@@ -78,12 +74,5 @@ background-image: url("../images/scr2Hover.png");
   transform: translateY(-3px);
   opacity: 0.9;
 background-image: url("../images/scr3Hover.png");
-  transition: all 0.3s ease-out;
-}
-
-#card4:hover{
-  transform: translateY(-3px);
-  opacity: 0.9;
-background-image: url("../images/scr1Hover.png");
   transition: all 0.3s ease-out;
 }

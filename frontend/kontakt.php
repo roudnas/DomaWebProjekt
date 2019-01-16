@@ -12,7 +12,7 @@
      crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
      crossorigin="anonymous"></script>
-    <title></title>
+    <title>Doma Software</title>
   </head>
   <body>
     <div class="bodyDiv row justify-content-center">
@@ -40,7 +40,7 @@
           </nav>
         </header>
 
-        <section class="pageSekce my-3 col-12">
+        <section class="pageSekce col-10 py-5" style="margin:0 auto;">
           <form method="post" action="contactform.php">
             <div class="form-group">
               <label for="emailinput">Váš email</label>
@@ -60,18 +60,15 @@
             </div>
             <div class="form-group">
               <label for="textarea">Text</label>
-              <textarea name="zprava" id="zprava" class="form-control" id="textarea" rows="10" placeholder="Dobrý den, zaujala mě vaše nabídka, chci vědět více..."
-               required></textarea>
+              <textarea name="zprava" id="zprava" class="form-control" id="textarea" rows="10" placeholder="Dobrý den, zaujala mě vaše nabídka, chci vědět více..." required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
-
           </form>
         </section>
 
 
 
       </div>
-
     </div>
 
   </body>
