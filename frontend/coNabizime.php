@@ -21,12 +21,11 @@
   </head>
   <body>
     <div class="bodyDiv row justify-content-center">
-      <div class="mainobal">
+      <div class="mainobal" style="">
 
     <header class="menu">
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top mx-auto" id="navigator">
+      <nav class="navbar navbar-default navbar-expand-md navbar-dark" id="navigator">
         <div class="navObal container">
-
           <a class="navbar-brand" href="index.php"><img src="public/images/DomaSoftware157878.svg" alt="" width="140px" height="40px"></a>
           <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#MyTogglerNav" aria-controls="#MyTogglerNav"
            aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
@@ -40,8 +39,8 @@
               <a class="nav-item nav-link" href="kontakt.php">Kontakt</a>
             </div>
           </section>
-
         </div>
+
       </nav>
     </header>
 
@@ -57,7 +56,7 @@
               <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
               <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
               <br>
-              <img src="https://img.icons8.com/color/180/000000/media-queries.png">
+              <img src="https://img.icons8.com/color/150/000000/media-queries.png">
             </div>
           </div>
         </section>
@@ -71,7 +70,7 @@
               <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
               <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
               <br>
-              <img src="https://img.icons8.com/color/180/000000/talk-male.png">
+              <img src="https://img.icons8.com/color/150/000000/talk-male.png">
             </div>
           </div>
         </section>
@@ -85,7 +84,7 @@
               <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
               <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
               <br>
-              <img src="https://img.icons8.com/color/180/000000/adobe-photoshop.png">
+              <img src="https://img.icons8.com/color/150/000000/adobe-photoshop.png">
             </div>
           </div>
         </section>
@@ -107,7 +106,7 @@
                 <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
                 <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
                 <br>
-                <img src="https://img.icons8.com/color/180/000000/web.png">
+                <img src="https://img.icons8.com/color/150/000000/web.png">
               </div>
             </div>
           </section>
@@ -121,7 +120,7 @@
                 <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
                 <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
                 <br>
-                <img src="https://img.icons8.com/color/180/000000/overview-pages-3.png">
+                <img src="https://img.icons8.com/color/150/000000/overview-pages-3.png">
               </div>
             </div>
           </section>
@@ -185,6 +184,12 @@
 
         </section>
 
+        <footer>
+          <div class="row justify-content-center py-3">
+            <p class="text-center text-muted">&copy; Dominik Roudný and Martin Malíř<br> 2018/19 </p>
+          </div>
+
+        </footer>
       </div>
     </div>
 

@@ -19,7 +19,7 @@
       <div class="mainobal">
 
         <header class="menu">
-          <nav class="navbar navbar-expand-md navbar-dark fixed-top mx-auto" id="navigator">
+          <nav class="navbar navbar-expand-md navbar-dark" id="navigator">
             <div class="navObal container">
 
               <a class="navbar-brand" href="index.php"><img src="public/images/DomaSoftware157878.svg" alt="" width="140px" height="40px"></a>
@@ -51,6 +51,12 @@
           </header>
         </article>
 
+        <footer>
+          <div class="row justify-content-center py-3">
+            <p class="text-center text-muted">&copy; Dominik Roudný and Martin Malíř<br> 2018/19 </p>
+          </div>
+
+        </footer>
       </div>
     </div>
 

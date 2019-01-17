@@ -7,7 +7,6 @@ overflow-x: hidden;
 }
 .mainobal {
 width: 1200px;
-margin-top: 70px;
 margin-bottom: 5px;
 background-color: #EDEDED;
 box-shadow: 0px 0px 50px 2px gray;
@@ -15,27 +14,8 @@ box-shadow: 0px 0px 50px 2px gray;
 .bodyDiv {
 background-color: #DBDBDB;
 }
-#navigator {
-width: 1200px;
-}
-.navObal {
-width: 1200px;
-}
-#line {
-border-bottom: 3px solid #157878;
-}
-#navigatorIndex, #navigator {
-  background-color: #292e48;
-  font-size: 18px;
-  font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
-}
-#headyIndex {
-max-height: 70vh;
-}
 .pageSekce {
 min-height: 100vh;
-
 }
 .onasSekce {
 background-image: url("../images/bckgrnd.png");
@@ -55,6 +35,21 @@ height: 230px;
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
+}
+footer {
+background-color: #292e48;
+}
+#line {
+border-bottom: 3px solid #157878;
+}
+#navigatorIndex, #navigator {
+  background-color: #292e48;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+#headyIndex {
+max-height: 70vh;
 }
 #card1, #card4 {
 background-image: url("../images/scr1.png");
