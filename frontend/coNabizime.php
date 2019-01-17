@@ -44,47 +44,38 @@
       </nav>
     </header>
 
+    <div class="container my-3" style="background-color:#292e48; color:#fff;">
+      <h3 class="text-center py-3">Co že to děláme?</h3>
+      <p class="text-center py-1">Navrhneme a zrealizujeme vám kompletní webové stránky, ať už jednodušší jednostránkové prezentační weby, nebo složitější multistránkové weby s naším vlastním článkovacím systémem!</p>
+    </div>
+
     <section class="layout-multicolumn container py-3 mt-3">
       <div class="row justify-content-center" style="overflow-y:hidden;">
 
-        <section data-aos="zoom-in-up" data-aos-duration="1000" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
+        <section data-aos="zoom-in-up" data-aos-duration="700" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
           <div class="card" style="width: 16rem; height:30rem;">
             <div class="card-body row justify-content-center">
               <h5 class="text-center" style="overflow-y:hidden;">Weby na míru</h5>
-              <br>
-              <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
-              <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
-              <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
-              <br>
+
+              <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">HTML5 + CSS3</p>
+              <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">Javascript + jQuery</p>
+              <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">PHP7</p>
+
               <img src="https://img.icons8.com/color/150/000000/media-queries.png">
             </div>
           </div>
         </section>
 
-        <section data-aos="zoom-in-up" data-aos-duration="1000" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
+        <section data-aos="zoom-in-up" data-aos-duration="700" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
           <div class="card" style="width: 16rem; height:30rem;">
             <div class="card-body row justify-content-center">
-              <h5 class="text-center" style="overflow-y:hidden;">Konzultace</h5>
+              <h5 class="text-center" style="overflow-y:hidden;">Content Management</h5>
               <br>
-              <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
-              <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
-              <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
+              <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">Článkovací systém</p>
+              <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">PHP7 Back-end</p>
+              <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">Mnoho užitečných funkcí</p>
               <br>
-              <img src="https://img.icons8.com/color/150/000000/talk-male.png">
-            </div>
-          </div>
-        </section>
-
-        <section data-aos="zoom-in-up" data-aos-duration="1000" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
-          <div class="card" style="width: 16rem; height:30rem;">
-            <div class="card-body row justify-content-center">
-              <h5 class="text-center" style="overflow-y:hidden;">Práce s balíkem Adobe</h5>
-              <br>
-              <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
-              <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
-              <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
-              <br>
-              <img src="https://img.icons8.com/color/150/000000/adobe-photoshop.png">
+              <img src="https://img.icons8.com/color/150/000000/overview-pages-3.png">
             </div>
           </div>
         </section>
@@ -97,30 +88,30 @@
       <section class="layout-multicolumn container py-3 mt-3">
         <div class="row justify-content-center" style="overflow-y:hidden;">
 
-          <section data-aos="zoom-in-up" data-aos-duration="700" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
+          <section data-aos="zoom-in-up" data-aos-duration="1000" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
             <div class="card" style="width: 16rem; height:30rem;">
               <div class="card-body row justify-content-center">
                 <h5 class="text-center" style="overflow-y:hidden;">UI design</h5>
                 <br>
-                <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
-                <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
-                <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
+                <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">Flat design</p>
+                <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">Responzivita</p>
+                <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">Logotvorba</p>
                 <br>
                 <img src="https://img.icons8.com/color/150/000000/web.png">
               </div>
             </div>
           </section>
 
-          <section data-aos="zoom-in-up" data-aos-duration="700" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
+          <section data-aos="zoom-in-up" data-aos-duration="1000" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
             <div class="card" style="width: 16rem; height:30rem;">
               <div class="card-body row justify-content-center">
-                <h5 class="text-center" style="overflow-y:hidden;">Content Management</h5>
+                <h5 class="text-center" style="overflow-y:hidden;">Práce s balíkem Adobe</h5>
                 <br>
-                <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
-                <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
-                <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
+                <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">Adobe Illustrator CC</p>
+                <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">Adobe Photoshop CC</p>
+                <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">Adobe Xd CC</p>
                 <br>
-                <img src="https://img.icons8.com/color/150/000000/overview-pages-3.png">
+                <img src="https://img.icons8.com/color/150/000000/adobe-photoshop.png">
               </div>
             </div>
           </section>
