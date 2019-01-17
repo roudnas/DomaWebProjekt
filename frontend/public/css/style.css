@@ -18,8 +18,11 @@ background-color: #DBDBDB;
 min-height: 100vh;
 }
 .onasSekce {
+/*
 background-image: url("../images/bckgrnd.png");
 background-size: contain;
+*/
+background-color: #25B1D1;
 }
 .svgPerson:hover {
   opacity: 0.9;
@@ -35,6 +38,12 @@ height: 230px;
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
+}
+.customCards, .conabImg {
+background-color: #fff;
+border: 1px solid rgba(0,0,0,.125);
+border-radius: 3px;
+color: black;
 }
 footer {
 background-color: #292e48;

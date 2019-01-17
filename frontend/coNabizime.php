@@ -134,52 +134,57 @@
           <p class="text-center py-3">Vyberte si službu, o kterou máte zájem.</p>
 
           <div data-aos="zoom-in-up" data-aos-duration="700" class="row justify-content-center py-5">
-            <img class="px-5" src="https://img.icons8.com/color/180/000000/media-queries.png">
-            <article class="px-5">
-              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
-              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
-              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
-            </article>
+            <img class="conabImg d-block" src="public/images/convo.svg" width="250px" height="250px">
+            <div class="customCards px-5 py-3">
+              <p class="text-center text-muted">Konzultace</p>
+              <p><img src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+              <p><img src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+              <p><img src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+            </div>
           </div>
 
 
           <div data-aos="zoom-in-up" data-aos-duration="700" class="row justify-content-center py-5">
-            <img class="px-5" src="https://img.icons8.com/color/180/000000/talk-male.png">
-            <article class="px-5">
-              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
-              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
-              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
-            </article>
+            <img class="conabImg d-block" src="public/images/design.svg" width="250px" height="250px">
+            <div class="customCards px-5 py-3">
+              <p class="text-center text-muted">Grafický návrh</p>
+              <p><img src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+              <p><img src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+              <p><img src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+            </div>
           </div>
 
 
           <div data-aos="zoom-in-up" data-aos-duration="700" class="row justify-content-center py-5">
-            <img class="px-5" src="https://img.icons8.com/color/180/000000/adobe-photoshop.png">
-            <article class="px-5">
-              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
-              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
-              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
-            </article>
+            <img class="conabImg d-block" src="public/images/code.svg" width="250px" height="250px">
+            <div class="customCards px-5 py-3">
+              <p class="text-center text-muted">Rozvržení projektu</p>
+              <p><img src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+              <p><img src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+              <p><img src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+            </div>
           </div>
 
 
           <div data-aos="zoom-in-up" data-aos-duration="700" class="row justify-content-center py-5">
-            <img class="px-5" src="https://img.icons8.com/color/180/000000/web.png">
-            <article class="px-5">
-              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
-              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
-              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
-            </article>
+            <img class="conabImg d-block" src="public/images/programmer.svg" width="250px" height="250px">
+            <div class="customCards px-5 py-3">
+              <p class="text-center text-muted">Realizace</p>
+              <p><img src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+              <p><img src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+              <p><img src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+            </div>
           </div>
 
 
           <div data-aos="zoom-in-up" data-aos-duration="700" class="row justify-content-center py-5">
-            <img class="px-5" src="https://img.icons8.com/color/180/000000/overview-pages-3.png">
-            <article class="px-5">
-              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
-              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
-              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
-            </article>
+            <img class="conabImg d-block" src="public/images/bugs.svg" width="250px" height="250px">
+            <div class="customCards px-5 py-3">
+              <p class="text-center text-muted">Dolaďování projektu</p>
+              <p><img src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+              <p><img src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+              <p><img src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+            </div>
           </div>
 
         </section>
