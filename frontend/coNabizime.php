@@ -128,6 +128,12 @@
 
         </div>
         </section>
+
+
+        <section class="pageSekce onasSekce" style="color:#fff;">
+          <h3 class="text-center py-5">Jak to probíhá?</h3>
+        </section>
+
       </div>
     </div>
 
