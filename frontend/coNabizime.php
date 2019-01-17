@@ -130,8 +130,59 @@
         </section>
 
 
-        <section class="pageSekce onasSekce" style="color:#fff;">
+        <section class="pageSekce onasSekce" style="color:#fff;overflow:hidden;">
           <h3 class="text-center py-5">Jak to probíhá?</h3>
+          <p class="text-center py-3">Vyberte si službu, o kterou máte zájem.</p>
+
+          <div data-aos="zoom-in-up" data-aos-duration="700" class="row justify-content-center py-5">
+            <img class="px-5" src="https://img.icons8.com/color/180/000000/media-queries.png">
+            <article class="px-5">
+              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+            </article>
+          </div>
+
+
+          <div data-aos="zoom-in-up" data-aos-duration="700" class="row justify-content-center py-5">
+            <img class="px-5" src="https://img.icons8.com/color/180/000000/talk-male.png">
+            <article class="px-5">
+              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+            </article>
+          </div>
+
+
+          <div data-aos="zoom-in-up" data-aos-duration="700" class="row justify-content-center py-5">
+            <img class="px-5" src="https://img.icons8.com/color/180/000000/adobe-photoshop.png">
+            <article class="px-5">
+              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+            </article>
+          </div>
+
+
+          <div data-aos="zoom-in-up" data-aos-duration="700" class="row justify-content-center py-5">
+            <img class="px-5" src="https://img.icons8.com/color/180/000000/web.png">
+            <article class="px-5">
+              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+            </article>
+          </div>
+
+
+          <div data-aos="zoom-in-up" data-aos-duration="700" class="row justify-content-center py-5">
+            <img class="px-5" src="https://img.icons8.com/color/180/000000/overview-pages-3.png">
+            <article class="px-5">
+              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+              <p><img src="https://img.icons8.com/ios/30/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
+            </article>
+          </div>
+
         </section>
 
       </div>
