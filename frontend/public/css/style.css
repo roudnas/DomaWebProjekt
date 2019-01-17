@@ -18,11 +18,10 @@ background-color: #DBDBDB;
 min-height: 100vh;
 }
 .onasSekce {
-/*
+
 background-image: url("../images/bckgrnd.png");
 background-size: contain;
-*/
-background-color: #25B1D1;
+
 }
 .svgPerson:hover {
   opacity: 0.9;
