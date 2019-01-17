@@ -5,14 +5,21 @@
 font-family: 'Open Sans', sans-serif;
 overflow-x: hidden;
 }
-
 .mainobal {
 width: 1200px;
+margin-top: 70px;
+margin-bottom: 5px;
 background-color: #EDEDED;
 box-shadow: 0px 0px 50px 2px gray;
 }
 .bodyDiv {
 background-color: #DBDBDB;
+}
+.navbar {
+width: 1200px;
+}
+.navObal {
+width: 1200px;
 }
 #line {
 border-bottom: 3px solid #157878;

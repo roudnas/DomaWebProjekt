@@ -24,8 +24,8 @@
       <div class="mainobal">
 
     <header class="menu">
-      <nav class="navbar navbar-expand-md navbar-dark" id="navigator">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top mx-auto" id="navigator">
+        <div class="navObal container">
 
           <a class="navbar-brand" href="index.php"><img src="public/images/DomaSoftware157878.svg" alt="" width="140px" height="40px"></a>
           <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#MyTogglerNav" aria-controls="#MyTogglerNav"
