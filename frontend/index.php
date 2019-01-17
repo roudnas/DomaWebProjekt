@@ -27,7 +27,7 @@
           <nav class="navbar navbar-expand-md navbar-dark" id="navigatorIndex">
             <div class="container-fluid">
 
-              <a class="navbar-brand" href="#Home"><img src="public\images\DomaSoftware.svg" alt="" width="140px" height="60px" style="visibility:hidden;"></a>
+              <a class="navbar-brand" href="index.php"><img src="public\images\DomaSoftware.svg" alt="" width="140px" height="60px" style="visibility:hidden;"></a>
               <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#MyTogglerNav" aria-controls="#MyTogglerNav"
                aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
 
