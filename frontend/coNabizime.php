@@ -46,46 +46,46 @@
     </header>
 
     <section class="layout-multicolumn container py-3 mt-3">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" style="overflow-y:hidden;">
 
         <section data-aos="zoom-in-up" data-aos-duration="1000" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
           <div class="card" style="width: 16rem; height:30rem;">
-            <div class="card-body">
+            <div class="card-body row justify-content-center">
               <h5 class="text-center" style="overflow-y:hidden;">Weby na míru</h5>
               <br>
               <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
               <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
               <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
               <br>
-              <img class="mx-auto d-block" src="https://img.icons8.com/color/180/000000/media-queries.png">
+              <img src="https://img.icons8.com/color/180/000000/media-queries.png">
             </div>
           </div>
         </section>
 
         <section data-aos="zoom-in-up" data-aos-duration="1000" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
           <div class="card" style="width: 16rem; height:30rem;">
-            <div class="card-body">
+            <div class="card-body row justify-content-center">
               <h5 class="text-center" style="overflow-y:hidden;">Konzultace</h5>
               <br>
               <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
               <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
               <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
               <br>
-              <img class="mx-auto d-block" src="https://img.icons8.com/color/180/000000/talk-male.png">
+              <img src="https://img.icons8.com/color/180/000000/talk-male.png">
             </div>
           </div>
         </section>
 
         <section data-aos="zoom-in-up" data-aos-duration="1000" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
           <div class="card" style="width: 16rem; height:30rem;">
-            <div class="card-body">
+            <div class="card-body row justify-content-center">
               <h5 class="text-center" style="overflow-y:hidden;">Práce s balíkem Adobe</h5>
               <br>
               <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
               <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
               <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
               <br>
-              <img class="mx-auto d-block" src="https://img.icons8.com/color/180/000000/adobe-photoshop.png">
+              <img src="https://img.icons8.com/color/180/000000/adobe-photoshop.png">
             </div>
           </div>
         </section>
@@ -96,32 +96,32 @@
 
 
       <section class="layout-multicolumn container py-3 mt-3">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" style="overflow-y:hidden;">
 
           <section data-aos="zoom-in-up" data-aos-duration="700" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
             <div class="card" style="width: 16rem; height:30rem;">
-              <div class="card-body">
-                <h5 class="text-center" style="overflow-y:hidden;">UI design na míru</h5>
+              <div class="card-body row justify-content-center">
+                <h5 class="text-center" style="overflow-y:hidden;">UI design</h5>
                 <br>
                 <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
                 <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
                 <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
                 <br>
-                <img class="mx-auto d-block" src="https://img.icons8.com/color/180/000000/web.png">
+                <img src="https://img.icons8.com/color/180/000000/web.png">
               </div>
             </div>
           </section>
 
           <section data-aos="zoom-in-up" data-aos-duration="700" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
             <div class="card" style="width: 16rem; height:30rem;">
-              <div class="card-body">
+              <div class="card-body row justify-content-center">
                 <h5 class="text-center" style="overflow-y:hidden;">Content Management</h5>
                 <br>
                 <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
                 <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
                 <p class="card-text"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">ipsum dolor sit amen</p>
                 <br>
-                <img class="mx-auto d-block" src="https://img.icons8.com/color/180/000000/overview-pages-3.png">
+                <img src="https://img.icons8.com/color/180/000000/overview-pages-3.png">
               </div>
             </div>
           </section>
