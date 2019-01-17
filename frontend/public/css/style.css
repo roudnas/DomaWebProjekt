@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
-
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700');
 
 * {
-font-family: 'Open Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
 overflow-x: hidden;
 }
 .mainobal {
@@ -19,9 +19,8 @@ min-height: 100vh;
 }
 .onasSekce {
 
-background-image: url("../images/bckgrnd.png");
+background-image: url("../images/bckgrndT2.png");
 background-size: contain;
-
 }
 .svgPerson:hover {
   opacity: 0.9;

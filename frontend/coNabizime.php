@@ -130,13 +130,17 @@
 
 
         <section class="pageSekce onasSekce" style="color:#fff;overflow:hidden;">
-          <h3 class="text-center py-5">Jak to probíhá?</h3>
-          <p class="text-center py-3">Takhle vypadá kompletní realizace vašeho projektu!</p>
+
+          <div class="container my-3" style="background-color:#292e48;">
+            <h3 class="text-center py-3">Jak to probíhá?</h3>
+            <p class="text-center py-1">Takhle vypadá kompletní realizace vašeho projektu!</p>
+          </div>
+
 
           <div data-aos="zoom-in-up" data-aos-duration="700" class="row justify-content-center py-5">
             <img class="conabImg d-block" src="public/images/convo.svg" width="250px" height="250px">
             <div class="customCards px-5 py-3">
-              <p class="text-center text-muted">Konzultace</p>
+              <p class="text-center text-muted" style="color: #292e48 !important; font-weight:700;">Konzultace</p>
               <p><img class="px-3" src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
               <p><img class="px-3" src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
               <p><img class="px-3" src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
@@ -147,7 +151,7 @@
           <div data-aos="zoom-in-up" data-aos-duration="700" class="row justify-content-center py-5">
             <img class="conabImg d-block" src="public/images/design.svg" width="250px" height="250px">
             <div class="customCards px-5 py-3">
-              <p class="text-center text-muted">Grafický návrh</p>
+              <p class="text-center text-muted" style="color: #292e48 !important; font-weight:700;">Grafický návrh</p>
               <p><img class="px-3" src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
               <p><img class="px-3" src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
               <p><img class="px-3" src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
@@ -158,7 +162,7 @@
           <div data-aos="zoom-in-up" data-aos-duration="700" class="row justify-content-center py-5">
             <img class="conabImg d-block" src="public/images/code.svg" width="250px" height="250px">
             <div class="customCards px-5 py-3">
-              <p class="text-center text-muted">Rozvržení projektu</p>
+              <p class="text-center" style="color: #292e48 !important; font-weight:700;">Rozvržení projektu</p>
               <p><img class="px-3" src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
               <p><img class="px-3" src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
               <p><img class="px-3" src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
@@ -169,7 +173,7 @@
           <div data-aos="zoom-in-up" data-aos-duration="700" class="row justify-content-center py-5">
             <img class="conabImg d-block" src="public/images/programmer.svg" width="250px" height="250px">
             <div class="customCards px-5 py-3">
-              <p class="text-center text-muted">Realizace</p>
+              <p class="text-center text-muted" style="color: #292e48 !important; font-weight:700;">Realizace</p>
               <p><img class="px-3" src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
               <p><img class="px-3" src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
               <p><img class="px-3" src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
@@ -180,7 +184,7 @@
           <div data-aos="zoom-in-up" data-aos-duration="700" class="row justify-content-center py-5">
             <img class="conabImg d-block" src="public/images/bugs.svg" width="250px" height="250px">
             <div class="customCards px-5 py-3">
-              <p class="text-center text-muted">Dolaďování projektu</p>
+              <p class="text-center text-muted" style="color: #292e48 !important; font-weight:700;">Dolaďování projektu</p>
               <p><img class="px-3" src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
               <p><img class="px-3" src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
               <p><img class="px-3" src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
