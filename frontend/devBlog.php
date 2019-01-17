@@ -19,7 +19,7 @@
       <div class="mainobal">
 
         <header class="menu">
-          <nav class="navbarDifferent navbar navbar-expand-md navbar-dark fixed-top mx-auto" id="navigator">
+          <nav class="navbar navbar-expand-md navbar-dark fixed-top mx-auto" id="navigator">
             <div class="navObal container">
 
               <a class="navbar-brand" href="index.php"><img src="public/images/DomaSoftware157878.svg" alt="" width="140px" height="40px"></a>

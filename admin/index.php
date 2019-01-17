@@ -24,16 +24,17 @@
     <div class="mainobal" id="mainobal">
       <div class="obal">
         <h1 class="nadpis">Admin system login</h1>
-        <form action="imports/formhandler.php" method="post">
+        <form action="imports/formhandler.php" method="post" class="form-signin py-5">
           <div class="form-group">
-            <label for="username">Your username</label>
-            <input type="text" name="username" value="" placeholder="admin">
+            <label for="username" class="sr-only">Your username</label>
+            <input type="text" name="username" value="" placeholder="Username">
           </div>
           <div class="form-group">
-            <label for="pw">Your password</label>
-            <input type="password" name="pw" value="" placeholder="*********">
+            <label for="pw" class="sr-only">Your password</label>
+            <input type="password" name="pw" value="" placeholder="Password">
           </div>
-          <button type="submit" name="login-submit">Log-in</button>
+          <button type="submit" name="login-submit" class="btn btn-lg btn-primary">Log-in</button>
+          <p class="mt-5 text-muted">&copy; 2018-2019</p>
         </form>
         <?php
         if (isset($_SESSION['userId'])) {
