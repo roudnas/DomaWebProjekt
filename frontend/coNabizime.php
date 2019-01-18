@@ -80,45 +80,36 @@
           </div>
         </section>
 
-      </div>
-      </section>
-
-
-
-      <section class="layout-multicolumn container py-3 mt-3">
-        <div class="row justify-content-center" style="overflow-y:hidden;">
-
-          <section data-aos="zoom-in-up" data-aos-duration="1000" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
-            <div class="card" style="width: 16rem; height:30rem;">
-              <div class="card-body row justify-content-center">
-                <h5 class="text-center" style="overflow-y:hidden;">UI design</h5>
-                <br>
-                <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">Flat design</p>
-                <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">Responzivita</p>
-                <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">Logotvorba</p>
-                <br>
-                <img src="https://img.icons8.com/color/150/000000/web.png">
-              </div>
+        <section data-aos="zoom-in-up" data-aos-duration="1000" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
+          <div class="card" style="width: 16rem; height:30rem;">
+            <div class="card-body row justify-content-center">
+              <h5 class="text-center" style="overflow-y:hidden;">UI design</h5>
+              <br>
+              <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">Flat design</p>
+              <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">Responzivita</p>
+              <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">Logotvorba</p>
+              <br>
+              <img src="https://img.icons8.com/color/150/000000/web.png">
             </div>
-          </section>
-
-          <section data-aos="zoom-in-up" data-aos-duration="1000" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
-            <div class="card" style="width: 16rem; height:30rem;">
-              <div class="card-body row justify-content-center">
-                <h5 class="text-center" style="overflow-y:hidden;">Práce s balíkem Adobe</h5>
-                <br>
-                <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">Adobe Illustrator CC</p>
-                <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">Adobe Photoshop CC</p>
-                <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">Adobe Xd CC</p>
-                <br>
-                <img src="https://img.icons8.com/color/150/000000/adobe-photoshop.png">
-              </div>
-            </div>
-          </section>
-
-        </div>
+          </div>
         </section>
 
+        <section data-aos="zoom-in-up" data-aos-duration="1000" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
+          <div class="card" style="width: 16rem; height:30rem;">
+            <div class="card-body row justify-content-center">
+              <h5 class="text-center" style="overflow-y:hidden;">Práce s balíkem Adobe</h5>
+              <br>
+              <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">Adobe Illustrator CC</p>
+              <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">Adobe Photoshop CC</p>
+              <p class="card-text d-block col-12"><img src="https://img.icons8.com/ios/30/000000/chevron-right.png">Adobe Xd CC</p>
+              <br>
+              <img src="https://img.icons8.com/color/150/000000/adobe-photoshop.png">
+            </div>
+          </div>
+        </section>
+
+      </div>
+      </section>
 
         <section class="pageSekce onasSekce" style="color:#fff;overflow:hidden;">
 
@@ -129,7 +120,7 @@
 
 
           <div data-aos="zoom-in-up" data-aos-duration="700" class="row justify-content-center py-5">
-            <img class="conabImg d-block" src="public/images/convo.svg" width="250px" height="250px">
+            <img class="conabImg d-block" src="public/images/convo.svg" width="300px" height="250px">
             <div class="customCards px-5 py-3">
               <p class="text-center text-muted" style="color: #292e48 !important; font-weight:700;">Konzultace</p>
               <p><img class="px-3" src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
@@ -140,7 +131,7 @@
 
 
           <div data-aos="zoom-in-up" data-aos-duration="700" class="row justify-content-center py-5">
-            <img class="conabImg d-block" src="public/images/design.svg" width="250px" height="250px">
+            <img class="conabImg d-block" src="public/images/design.svg" width="300px" height="250px">
             <div class="customCards px-5 py-3">
               <p class="text-center text-muted" style="color: #292e48 !important; font-weight:700;">Grafický návrh</p>
               <p><img class="px-3" src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
@@ -151,7 +142,7 @@
 
 
           <div data-aos="zoom-in-up" data-aos-duration="700" class="row justify-content-center py-5">
-            <img class="conabImg d-block" src="public/images/code.svg" width="250px" height="250px">
+            <img class="conabImg d-block" src="public/images/code.svg" width="300px" height="250px">
             <div class="customCards px-5 py-3">
               <p class="text-center" style="color: #292e48 !important; font-weight:700;">Rozvržení projektu</p>
               <p><img class="px-3" src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
@@ -162,7 +153,7 @@
 
 
           <div data-aos="zoom-in-up" data-aos-duration="700" class="row justify-content-center py-5">
-            <img class="conabImg d-block" src="public/images/programmer.svg" width="250px" height="250px">
+            <img class="conabImg d-block" src="public/images/programmer.svg" width="300px" height="250px">
             <div class="customCards px-5 py-3">
               <p class="text-center text-muted" style="color: #292e48 !important; font-weight:700;">Realizace</p>
               <p><img class="px-3" src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
@@ -173,7 +164,7 @@
 
 
           <div data-aos="zoom-in-up" data-aos-duration="700" class="row justify-content-center py-5">
-            <img class="conabImg d-block" src="public/images/bugs.svg" width="250px" height="250px">
+            <img class="conabImg d-block" src="public/images/bugs.svg" width="300px" height="250px">
             <div class="customCards px-5 py-3">
               <p class="text-center text-muted" style="color: #292e48 !important; font-weight:700;">Dolaďování projektu</p>
               <p><img class="px-3" src="https://img.icons8.com/ios/15/000000/chevron-right-filled.png">Lorem ipsum dolor sit amet</p>
