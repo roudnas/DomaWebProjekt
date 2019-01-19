@@ -53,7 +53,7 @@
       <div class="row justify-content-center" style="overflow-y:hidden;">
 
         <section data-aos="zoom-in-up" data-aos-duration="700" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
-          <div class="card" style="width: 16rem; height:30rem;">
+          <div class="card" style="width: 16rem; height:30rem; margin:0 auto;">
             <div class="card-body row justify-content-center">
               <h5 class="text-center" style="overflow-y:hidden;">Weby na míru</h5>
 
@@ -67,7 +67,7 @@
         </section>
 
         <section data-aos="zoom-in-up" data-aos-duration="700" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
-          <div class="card" style="width: 16rem; height:30rem;">
+          <div class="card" style="width: 16rem; height:30rem; margin:0 auto;">
             <div class="card-body row justify-content-center">
               <h5 class="text-center" style="overflow-y:hidden;">Content Management</h5>
               <br>
@@ -81,7 +81,7 @@
         </section>
 
         <section data-aos="zoom-in-up" data-aos-duration="1000" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
-          <div class="card" style="width: 16rem; height:30rem;">
+          <div class="card" style="width: 16rem; height:30rem; margin:0 auto;">
             <div class="card-body row justify-content-center">
               <h5 class="text-center" style="overflow-y:hidden;">UI design</h5>
               <br>
@@ -95,7 +95,7 @@
         </section>
 
         <section data-aos="zoom-in-up" data-aos-duration="1000" class="col-10 col-md-6 col-lg-3 col-xl-3 py-2">
-          <div class="card" style="width: 16rem; height:30rem;">
+          <div class="card" style="width: 16rem; height:30rem; margin:0 auto;">
             <div class="card-body row justify-content-center">
               <h5 class="text-center" style="overflow-y:hidden;">Práce s balíkem Adobe</h5>
               <br>
