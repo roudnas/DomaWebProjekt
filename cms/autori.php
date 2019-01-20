@@ -48,7 +48,7 @@ if (!isset($_SESSION['userId'])) {
     <a class="sidenav-link text-sm-center nav-link active" href="autori.php"><img class="my-2 mx-2" src="public/images/us.svg" height="24px" width="24px">Autoři</a>
     <a class="sidenav-link text-sm-center nav-link" href="ucet.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/contacts.png">Účet</a>
     <form action="imports/logout.php" method="post">
-      <button type="submit" class="form-control btn btn-dark my-3" name="logout-submit" style="margin:0 auto;" >Log-out</button>
+      <button type="submit" class="form-control btn btn-primary my-3" name="logout-submit" style="margin:0 auto;" >Log-out</button>
     </form>
 
   </nav>
@@ -56,7 +56,7 @@ if (!isset($_SESSION['userId'])) {
 
 
           <article class="sekce" id="sekce4">
-            <h1 class="heading"><kbd>Autoři</kbd></h1>
+            <h1 class="heading">Autoři</h1>
             <p class="popis my-3 p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </article>
 

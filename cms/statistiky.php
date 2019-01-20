@@ -48,7 +48,7 @@ if (!isset($_SESSION['userId'])) {
     <a class="sidenav-link text-sm-center nav-link" href="autori.php"><img class="my-2 mx-2" src="public/images/us.svg" height="24px" width="24px">Autoři</a>
     <a class="sidenav-link text-sm-center nav-link" href="ucet.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/contacts.png">Účet</a>
     <form action="imports/logout.php" method="post">
-      <button type="submit" class="form-control btn btn-dark my-3" name="logout-submit" style="margin:0 auto;" >Log-out</button>
+      <button type="submit" class="form-control btn btn-primary my-3" name="logout-submit" style="margin:0 auto;" >Log-out</button>
     </form>
 
   </nav>
