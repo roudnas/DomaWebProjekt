@@ -55,8 +55,8 @@ if (!isset($_SESSION['userId'])) {
     </article>
 
     <article class="sekce" id="sekce2">
-      <h1 class="heading"><kbd>Moderátoři</kbd></h1>
-      <p class="popis my-3 border py-3 px-3 rounded">Výpis všech moderátorů vaší stránky. Tito moderátoři se mohou připojit do systému pro správu obsahu.</p>
+      <h1 class="heading">Moderátoři</h1>
+      <p class="popis my-3 p-3">Výpis všech moderátorů vaší stránky. Tito moderátoři se mohou připojit do systému pro správu obsahu.</p>
 
       <div class="">
         <table class="table table-striped table-dark">

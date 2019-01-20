@@ -8,7 +8,7 @@ if (!isset($_SESSION['userId'])) {
 <html lang="cs" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Doma CMS System</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
      crossorigin="anonymous">
      <link rel="stylesheet" href="public/css/style.css">
@@ -46,15 +46,15 @@ if (!isset($_SESSION['userId'])) {
     <a class="sidenav-link text-sm-center nav-link" href="autori.php"><img class="my-2 mx-2" src="public/images/us.svg" height="24px" width="24px">Autoři</a>
     <a class="sidenav-link text-sm-center nav-link" href="ucet.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/contacts.png">Účet</a>
     <form action="imports/logout.php" method="post">
-      <button type="submit" class="form-control btn btn-dark my-3" name="logout-submit" >Log-out</button>
+      <button type="submit" class="form-control btn btn-primary my-3" name="logout-submit" >Log-out</button>
     </form>
 
   </nav>
     </article>
 
       <article class="sekce" id="sekce1">
-        <h1 class="heading"><kbd>Správa obsahu</kbd></h1>
-        <p class="popis my-3 border py-3 px-3 rounded">Zde můžete spravovat články na vaší stránce!</p>
+        <h1 class="heading">Správa obsahu</h1>
+        <p class="popis my-3 py-3 px-3">Zde můžete spravovat články na vaší stránce!</p>
 
         <form action="imports/contentadd.php" method="post">
       <div class="form-group">

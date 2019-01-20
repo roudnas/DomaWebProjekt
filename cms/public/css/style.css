@@ -3,7 +3,7 @@
     display: none;
 }
 body {
-background-color: #d6d8d9;
+background-color: #292e48;
 
 }
 * {
@@ -17,7 +17,7 @@ z-index: 9999;
 }
 .menu {
 z-index: 2;
-background-color: #4F575E;
+background-color: #292e48;
 width: 15vw;
 height: 100vh;
 position: absolute;
@@ -26,7 +26,7 @@ left: 0;
 }
 .sidenav {
 z-index: 2;
-background-color: #4F575E;
+background-color: #343a40;
 width: 15vw;
 height: 100vh;
 position: absolute;
@@ -60,10 +60,8 @@ z-index: 1;
 padding: 2rem;
 margin-left: 15vw;
 height: auto;
-background-color: #a5aaaf;
-border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.allSections {
+background-color: #424765;
+color: #fff;
 }
 .tabulka, tr, td {
 margin: 0 auto;
