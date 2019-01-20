@@ -17,9 +17,10 @@ if ($resultCheck > 0) {
           <a style='text-decoration:none; color:#fff;' href='articles.php?id=$showID'>
           <h1 style='overflow-y:hidden;'>$showNadpis</h1>
           <h5 class='text-muted' style='overflow-y:hidden;'>$showAutor</h5>
-          <div class='p-2 mx-auto my-3' style='width:50%; border:1px solid lightgray;'>
-          <p style='overflow-y:hidden;'>$splitText[0]</p>
+          <div class='p-2 mx-auto my-3' style='width:50%; border:1px solid lightgray; border-radius:15px;'>
+          <p style='overflow-y:hidden;'>$splitText[0] ...</p>
           </div>
+          <button class='btn btn-primary'>číst více..</button>
           </a>
           </div>";
 
