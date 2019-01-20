@@ -70,16 +70,27 @@ if (!isset($_SESSION['userId'])) {
 
       <form class="add-admin" action="imports/zapisadminu.php" method="post">
         <div class="form-group">
-          <label for="inputJmeno">Jméno</label>
-          <input type="text" name="username" class="form-control" value="" placeholder="Jméno">
+          <label for="inputJmeno">Uživatelské jméno</label>
+          <input type="text" name="username" class="form-control" value="" placeholder="Uživatelské jméno">
         </div>
         <div class="form-group">
           <label for="inputHeslo">Heslo</label>
           <input type="text" name="password" class="form-control" value="" placeholder="Heslo">
         </div>
         <div class="form-group">
-          <label for="inputKomentar">Poznámka</label>
-          <textarea name="comment" class="form-control" rows="3" cols="80"  value="" placeholder="Komentář.."></textarea>
+          <label for="inputName">Jméno</label>
+          <input type="text" name="name" class="form-control" value="" placeholder="Jméno">
+        </div>
+        <div class="form-group">
+          <label for="inputName">Příjmení</label>
+          <input type="text" name="surname" class="form-control" value="" placeholder="Příjmení">
+        </div>
+        <div class="form-group">
+          <label for="inputPozition">Pozice</label>
+          <select class="" name="pozition">
+            <option value="Admin">Admin</option>
+            <option value="Editor">Editor</option>
+          </select>
         </div>
         <button class="btn btn-primary" type="submit" name="admin-submit">Přidat moderátora!</button>
       </form>

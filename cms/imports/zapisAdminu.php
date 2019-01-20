@@ -6,13 +6,15 @@
     mysqli_query($conn, $sql);
     $username = $_POST['username'];
     $password = $_POST['password'];
-    $comment = $_POST['comment'];
+    $name = $_POST['name'];
+    $surname = $_POST['surname'];
+    $pozition = $_POST['pozition'];
     $hash = password_hash($password, PASSWORD_BCRYPT);
-    $sql2 = "INSERT INTO users (name, password, comment) VALUES ('$username', '$hash', '$comment');";
+    $sql2 = "INSERT INTO users (username, password, name, surname, pozition) VALUES ('$username', '$hash', '$name', '$surname', '$pozition');";
 
   }
 
-  if (isset($_POST['admin-submit']) && $username != null && $password != null) {
+  if (isset($_POST['admin-submit']) && $username != null && $password != null && $pozition != null && $name !=null && $surname != null) {
     mysqli_query($conn, $sql2);
     header("Location: ../index.php?adminadd=true");
     exit();
