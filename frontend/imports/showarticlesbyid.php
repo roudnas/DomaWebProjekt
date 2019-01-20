@@ -3,7 +3,7 @@
 require 'dbconn.php';
 mysqli_set_charset($conn, "utf8");
 $getID = $_GET['id'];
-if (isset($getID)) {
+if (isset($getID) && is_numeric($getID)) {
 
   $sql = "select id, nadpis, autor, text from articles where id = $getID";
   $result = mysqli_query($conn, $sql);
@@ -30,7 +30,7 @@ if (isset($getID)) {
 
 
 } else {
-  header("Location: ../devBlog.php");
+  header("Location: devBlog.php");
   exit();
 }
 

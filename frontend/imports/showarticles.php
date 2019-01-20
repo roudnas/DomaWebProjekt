@@ -23,12 +23,7 @@ if ($resultCheck > 0) {
           <button class='btn btn-primary'>číst více..</button>
           </a>
           </div>";
-
-
-
   }
 }
-
-
 
 ?>
