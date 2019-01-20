@@ -5,6 +5,9 @@
   font-weight: 400;
 overflow-x: hidden;
 }
+.articles {
+  border: 1px solid black;
+}
 .mainobal {
 width: 1200px;
 margin-bottom: 5px;

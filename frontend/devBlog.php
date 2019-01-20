@@ -40,16 +40,19 @@
           </nav>
         </header>
 
+        <div class="container my-3" style="background-color:#292e48; color:#fff;">
+          <h3 class="text-center py-3">Náš devblog!</h3>
+          <p class="text-center py-1">Navrhneme a zrealizujeme vám kompletní webové stránky, ať už jednodušší jednostránkové prezentační weby, nebo složitější multistránkové weby s naším vlastním článkovacím systémem!</p>
+        </div>
+
         <article class="pageSekce py-3">
-          <header class="text-center container">
-            <div class="row justify-content-center">
-              <div class="col-11 col-sm-10 col-md-8">
-                <h3 style="overflow-y:hidden;">DevBlog</h3>
-                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-            </div>
-          </header>
+          <div class="row justify-content-center">
+        <?php require 'imports/showarticles.php'; ?>            
+          </div>
+
         </article>
+
+
 
         <footer>
           <div class="row justify-content-center py-3">

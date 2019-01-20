@@ -70,6 +70,7 @@ if (!isset($_SESSION['userId'])) {
         <textarea name="textarea" id="textArea" rows="8" cols="80" class="form-control" placeholder="Dnes jsme šli do lesa.."></textarea>
       </div>
       <form action="upload.php" method="post">
+      <!---
       <div class="form-group">
           <label for="fileInput">Obrázky</label>
           <div class="input-group mb-3">
@@ -81,6 +82,7 @@ if (!isset($_SESSION['userId'])) {
         </div>
       </form>
       </div>
+    --->
       <button type="submit" class="btn btn-primary" name="content-submit">Přidat článek</button>
       </form>
       </article>
