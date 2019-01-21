@@ -10,23 +10,28 @@
     $surname = $_POST['surname'];
     $position = $_POST['position'];
     $hash = password_hash($password, PASSWORD_BCRYPT);
-    $sql2 = "INSERT INTO users (username, password, name, surname, position) VALUES ('$username', '$hash', '$name', '$surname', '$position');";
 
-  }
+    if (!empty($username) && !empty($password) && !empty($name) && !empty($surname) && !empty($position)) {
+      $sql2 = "INSERT INTO users (username, password, name, surname, position) VALUES (?,?,?,?,?);";
+      $stmt = mysqli_stmt_init($conn);
 
-  if (isset($_POST['admin-submit']) && $username != null && $password != null && $position != null && $name !=null && $surname != null) {
-    mysqli_query($conn, $sql2);
-    header("Location: ../index.php?adminadd=true");
-    exit();
-  }
+      if (mysqli_stmt_prepare($stmt, $sql2)) {
+        mysqli_stmt_bind_param($stmt, "sssss", $username, $hash, $name, $surname, $position);
+        mysqli_stmt_execute($stmt);
+        header("Location: ../moderatori.php?adminadd=true");
+        exit();
 
-  if (isset($_POST['admin-submit']) && $username == null) {
-    header("Location: ../index.php?error=emptyfields");
-    exit();
-  }
+      }else {
+        header("Location: ../moderatori.php?error=sqlerror");
+        exit();
+      }
+    }else {
+      header("Location: ../moderatori.php?error=emptyfields");
+      exit();
+    }
 
-  if (isset($_POST['admin-submit']) && $password == null) {
-    header("Location: ../index.php?error=emptyfields");
+  }else {
+    header("Location: ../moderatori.php");
     exit();
   }
 

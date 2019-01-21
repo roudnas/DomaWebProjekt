@@ -71,19 +71,19 @@ if (!isset($_SESSION['userId'])) {
       <form class="add-admin" action="imports/zapisadminu.php" method="post">
         <div class="form-group">
           <label for="inputJmeno">Uživatelské jméno</label>
-          <input type="text" name="username" class="form-control" value="" placeholder="Uživatelské jméno">
+          <input type="text" name="username" class="form-control" value="" placeholder="Uživatelské jméno" required>
         </div>
         <div class="form-group">
           <label for="inputHeslo">Heslo</label>
-          <input type="text" name="password" class="form-control" value="" placeholder="Heslo">
+          <input type="password" name="password" class="form-control" value="" placeholder="Heslo" required>
         </div>
         <div class="form-group">
           <label for="inputName">Jméno</label>
-          <input type="text" name="name" class="form-control" value="" placeholder="Jméno">
+          <input type="text" name="name" class="form-control" value="" placeholder="Jméno" required>
         </div>
         <div class="form-group">
           <label for="inputName">Příjmení</label>
-          <input type="text" name="surname" class="form-control" value="" placeholder="Příjmení">
+          <input type="text" name="surname" class="form-control" value="" placeholder="Příjmení" required>
         </div>
         <div class="form-group">
           <label for="inputPozition">Pozice</label>
