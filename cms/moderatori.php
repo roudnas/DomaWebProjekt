@@ -87,7 +87,7 @@ if (!isset($_SESSION['userId'])) {
         </div>
         <div class="form-group">
           <label for="inputPozition">Pozice</label>
-          <select class="" name="pozition">
+          <select class="" name="position">
             <option value="Admin">Admin</option>
             <option value="Editor">Editor</option>
           </select>

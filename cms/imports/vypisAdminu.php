@@ -19,7 +19,7 @@
 
    mysqli_set_charset($conn, "utf8");
 
-   $sql = "SELECT id, username, name, surname, pozition FROM users;";
+   $sql = "SELECT id, username, name, surname, position FROM users;";
    $result = mysqli_query($conn, $sql);
    $resultCheck = mysqli_num_rows($result);
 
@@ -29,7 +29,7 @@
        $showUserName = $row[1];
        $showName = $row[2];
        $showSurname = $row[3];
-       $showPozition = $row[4];
+       $showPosition = $row[4];
 
        echo "<tr>
 
@@ -37,7 +37,7 @@
                <td>$showUserName</td>
                <td>$showName</td>
                <td>$showSurname</td>
-               <td>$showPozition</td>
+               <td>$showPosition</td>
 
              </tr>";
 
