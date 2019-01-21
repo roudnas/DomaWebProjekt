@@ -12,7 +12,7 @@ if (isset($_POST['login-submit'])) {
     exit();
   } else {
 
-    $sql = "select * from users where name=?;";
+    $sql = "select * from users where username=?;";
     $stmt = mysqli_stmt_init($conn);
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
