@@ -4,7 +4,9 @@ if (isset($_POST['content-submit'])) {
   $header = $_POST['nadpis'];
   $autor = $_POST['autor'];
   $obsah = $_POST['textarea'];
-
+  $headerH = htmlspecialchars($header);
+  $autorH = htmlspecialchars($autor);
+  $obsahH = htmlspecialchars($obsah);
   if (!empty($header) && !empty($autor) && !empty($obsah) ) {
 
     $sql = "insert into articles(nadpis, autor, text) values(?,?,?);";
@@ -12,7 +14,7 @@ if (isset($_POST['content-submit'])) {
     mysqli_set_charset($conn, "utf8");
     if (mysqli_stmt_prepare($stmt, $sql)) {
 
-      mysqli_stmt_bind_param($stmt, "sss", $header, $autor, $obsah);
+      mysqli_stmt_bind_param($stmt, "sss", $headerH, $autorH, $obsahH);
       mysqli_stmt_execute($stmt);
       header("Location: ../index.php?contentadd=true");
       exit();
