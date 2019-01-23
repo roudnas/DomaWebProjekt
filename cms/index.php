@@ -56,7 +56,7 @@ if (!isset($_SESSION['userId'])) {
         <h1 class="heading">Správa obsahu</h1>
         <p class="popis my-3 py-3 px-3">Zde můžete spravovat články na vaší stránce!</p>
 
-        <form action="imports/contentadd.php" method="post">
+        <form action="imports/contentadd.php" method="post" id="contentForm" enctype="multipart/form-data">
       <div class="form-group">
         <label for="inputNadpis">Nadpis</label>
         <input name="nadpis" type="text" class="form-control" id="inputNadpis" aria-describedby="Nadpis" placeholder="Nadpis vašeho článku">
@@ -69,22 +69,16 @@ if (!isset($_SESSION['userId'])) {
         <label for="textArea">Text článku</label>
         <textarea name="textarea" id="textArea" rows="8" cols="80" class="form-control" placeholder="Dnes jsme šli do lesa.."></textarea>
       </div>
-      <form action="upload.php" method="post">
-      <!---
-      <div class="form-group">
-          <label for="fileInput">Obrázky</label>
-          <div class="input-group mb-3">
-          <div class="custom-file">
-            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-          </div>
-          <button type="submit" class="btn btn-primary" name="image-submit">Upload</button>
-        </div>
-      </form>
+
+      <div class="custom-file py-4">
+        <input class="custom-file-input" id="inputFile" type="file" name="userfile[]" value="" multiple="">
+        <label class="custom-file-label" for="inputFile">Choose file</label>
       </div>
-    --->
-      <button type="submit" class="btn btn-primary" name="content-submit">Přidat článek</button>
+
+        <button type="submit" class="btn btn-primary" name="content-submit" form="contentForm">Přidat článek</button>
       </form>
+
+
       </article>
 
   </body>
