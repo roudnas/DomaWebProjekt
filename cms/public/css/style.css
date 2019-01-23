@@ -63,6 +63,9 @@ height: auto;
 background-color: #424765;
 color: #fff;
 }
+.custom-file {
+  display: none;
+}
 .tabulka, tr, td {
 margin: 0 auto;
 border: 1px solid black;

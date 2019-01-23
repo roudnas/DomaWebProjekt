@@ -70,16 +70,31 @@ if (!isset($_SESSION['userId'])) {
         <textarea name="textarea" id="textArea" rows="8" cols="80" class="form-control" placeholder="Dnes jsme šli do lesa.."></textarea>
       </div>
 
-      <div class="custom-file py-4">
-        <input class="custom-file-input" id="inputFile" type="file" name="userfile[]" value="" multiple="">
-        <label class="custom-file-label" for="inputFile">Choose file</label>
+      <button type="button" class="btn" id="imupButton" onclick="onc()">Přidat fotky</button>
+
+      <div class="custom-file py-3 my-3" id="fileDiv">
+
       </div>
 
         <button type="submit" class="btn btn-primary" name="content-submit" form="contentForm">Přidat článek</button>
       </form>
 
+  </article>
+  
+      <script>
 
-      </article>
+      function onc() {
+        let div = document.getElementById('fileDiv');
+        let css = window.getComputedStyle(div).getPropertyValue("display");
+        if (css == "none") {
+          div.style.display = "block";
+          div.innerHTML = "<input class='custom-file-input id='inputFile' type='file' name='userfile[]' value='' multiple=''><label class='custom-file-label' for='inputFile'>Choose file</label>";
+        } else {
+          div.style.display = "none";
+          div.innerHTML = "";
+        }
 
+      }
+      </script>
   </body>
 </html>
