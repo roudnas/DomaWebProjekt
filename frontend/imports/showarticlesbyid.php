@@ -29,9 +29,9 @@ if (isset($getID) && is_numeric($getID)) {
              while($row1 = mysqli_fetch_assoc($result1)) {
                $imgName = $row1['name'];
                $imgDir = $row1['dir'];
-      echo "<img src='../cms/public/$imgDir' height=180px; width=180px;></img>";
+      echo "<div class='articleImg card my-2 p-2 col-10 col-md-6 col-lg-3 col-xl-3 mx-auto'><img src='../cms/public/$imgDir'></img></div>";
              }
-      echo "<h5 class='text-muted' style='overflow-y:hidden;'>$showAutor</h5>
+      echo "<h5 class='text-muted my-3' style='overflow-y:hidden;'>$showAutor</h5>
             </div>";
 
     }
