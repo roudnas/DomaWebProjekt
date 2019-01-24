@@ -37,6 +37,7 @@ if (!isset($_SESSION['userId'])) {
 
 			</div>
 		</nav>
+    <script src="public/js/navbarheightfix.js" type="text/javascript"></script>
 
     <article class="menu">
       <nav class="sidenav nav nav-tabs flex-column flex-sm-colum" id="sidenav">
@@ -53,19 +54,19 @@ if (!isset($_SESSION['userId'])) {
     </article>
 
       <article class="sekce" id="sekce1">
-        <h1 class="heading">Správa obsahu</h1>
-        <p class="popis my-3 py-3 px-3">Zde můžete spravovat články na vaší stránce!</p>
+        <h1 class="heading"><img class="my-2 mx-2" src="https://img.icons8.com/material/60/000000/document.png">Správa obsahu</h1>
+        <p class="popis my-3 py-3 px-3">&gt; Zde můžete spravovat články na vaší stránce!</p>
 
         <form action="imports/contentadd.php" method="post" id="contentForm" enctype="multipart/form-data">
-      <div class="form-group">
+      <div class="form-group col-6">
         <label for="inputNadpis">Nadpis</label>
         <input name="nadpis" type="text" class="form-control" id="inputNadpis" aria-describedby="Nadpis" placeholder="Nadpis vašeho článku">
       </div>
-      <div class="form-group">
+      <div class="form-group col-6">
         <label for="inputAutor">Autor</label>
         <input name="autor" type="text" class="form-control" id="inputAutor" placeholder="Autor článku">
       </div>
-      <div class="form-group">
+      <div class="form-group col-10">
         <label for="textArea">Text článku</label>
         <textarea name="textarea" id="textArea" rows="8" cols="80" class="form-control" placeholder="Dnes jsme šli do lesa.."></textarea>
       </div>
@@ -80,7 +81,7 @@ if (!isset($_SESSION['userId'])) {
       </form>
 
   </article>
-  
+
       <script>
 
       function onc() {
@@ -88,7 +89,7 @@ if (!isset($_SESSION['userId'])) {
         let css = window.getComputedStyle(div).getPropertyValue("display");
         if (css == "none") {
           div.style.display = "block";
-          div.innerHTML = "<input class='custom-file-input id='inputFile' type='file' name='userfile[]' value='' multiple=''><label class='custom-file-label' for='inputFile'>Choose file</label>";
+          div.innerHTML = "<input class='custom-file-input col-10' id='inputFile' type='file' name='userfile[]' value='' multiple=''><label class='custom-file-label col-10' for='inputFile'>Choose file</label>";
         } else {
           div.style.display = "none";
           div.innerHTML = "";

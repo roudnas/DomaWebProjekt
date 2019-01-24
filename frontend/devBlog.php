@@ -12,7 +12,7 @@
      crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
      crossorigin="anonymous"></script>
-    <title></title>
+    <title>Doma Software</title>
   </head>
   <body>
     <div class="bodyDiv row justify-content-center">
@@ -58,6 +58,9 @@
         </footer>
       </div>
     </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
   </body>
 </html>
