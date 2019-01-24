@@ -24,11 +24,13 @@
 
       echo "<tr id='zaznam_$showID'>
               <td>$showID</td>
-              <td>$showNadpis <button class='btn btn-dark mx-2' data-toggle='modal' data-target='#artRemoveModal'>Odstranit</button></td>
+              <td>$showNadpis</td>
               <td>$showAutor</td></tr>";
       echo  "</div>";
 
     }
   }
+
+
 
  ?>

@@ -3,8 +3,9 @@
     display: none;
 }
 body {
-background-color: #356e90;
-
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 * {
 margin: 0;
@@ -57,12 +58,13 @@ margin-left: 19vw;
 margin-right: 2vw;
 min-height: 100vh;
 height: auto;
-background-color: #5085a5;
+background-color: #77C9D4;
 color: #000;
 }
 .custom-file {
   display: none;
 }
+
 .tabulka, tr, td {
 margin: 0 auto;
 border: 1px solid black;
@@ -72,7 +74,11 @@ padding: 0.8rem;
   font-size: 18px;
   margin-bottom: 5vh;
 }
-
+.formContent {
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 10px;
+  padding: 1rem;
+}
 @media screen and (max-width: 1824px) {
  .brandimg {
    background-image: url("../images/DomaSoftware.svg");

@@ -56,6 +56,7 @@ if (!isset($_SESSION['userId'])) {
 
     <article class="sekce" id="sekce2">
       <h1 class="heading"><img class="my-2 mx-2" src="https://img.icons8.com/material/60/000000/user-group-man-man.png">Moderátoři</h1>
+      <hr>
       <p class="popis my-3 p-3">&gt; Výpis všech moderátorů vaší stránky. Tito moderátoři se mohou připojit do systému pro správu obsahu.</p>
 
       <div class="">

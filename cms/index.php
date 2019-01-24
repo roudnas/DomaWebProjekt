@@ -22,7 +22,9 @@ if (!isset($_SESSION['userId'])) {
     <script src="public/js/main.js" charset="utf-8"></script>
 
   </head>
+
   <body>
+
     <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="navigator">
 			<div class="container-fluid">
 
@@ -56,6 +58,7 @@ if (!isset($_SESSION['userId'])) {
 
       <article class="sekce" id="sekce1">
         <h1 class="heading"><img class="my-2 mx-2" src="https://img.icons8.com/material/60/000000/document.png">Správa obsahu</h1>
+        <hr>
         <p class="popis my-3 py-3 px-3">&gt; Zde můžete spravovat články na vaší stránce!</p>
 
         <div class="">
@@ -66,6 +69,7 @@ if (!isset($_SESSION['userId'])) {
                ?>
             </tr>
           </table>
+          <button class='btn btn-dark mb-2' data-toggle='modal' data-target='#artRemoveModal'>Odstranit článek</button>
         </div>
 
         <div class="modal fade" id="artRemoveModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -77,21 +81,30 @@ if (!isset($_SESSION['userId'])) {
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
+      <form class="" action="imports/removeart.php" method="post">
       <div class="modal-body">
-        Tato akce již nepůjde vrátit zpět.
+        <div class="form-group">
+          <label for="selecto">Vyberte ID článku, který chcete odstranit.</label>
+          <select class="custom-select" id="selecto" name="idCheck">
+            <?php
+            include 'imports/vypisartsdoselectu.php';
+            ?>
+          </select>
+        </div>
       </div>
       <div class="modal-footer">
-        <form class="" action="imports/removeart.php" method="post">
+
         <button type="submit" name="removeButton" class="btn btn-primary">Odstranit</button>
         </form>
-
       </div>
     </div>
   </div>
 </div>
 
 
-        <form action="imports/contentadd.php" method="post" id="contentForm" enctype="multipart/form-data">
+        <form action="imports/contentadd.php" method="post" id="contentForm" class="formContent" enctype="multipart/form-data">
+          <h3>Nový článek</h3>
+          <hr>
       <div class="form-group col-6">
         <label for="inputNadpis">Nadpis</label>
         <input name="nadpis" type="text" class="form-control" id="inputNadpis" aria-describedby="Nadpis" placeholder="Nadpis vašeho článku">
@@ -105,18 +118,21 @@ if (!isset($_SESSION['userId'])) {
         <textarea name="textarea" id="textArea" rows="8" cols="80" class="form-control" placeholder="Dnes jsme šli do lesa.."></textarea>
       </div>
 
-      <button type="button" class="btn" id="imupButton" onclick="onc()">Přidat fotky</button>
+      <button type="button" class="btn mx-3" onclick='onc()' id="imupButton">Přidat fotky</button>
 
       <div class="custom-file py-3 my-3" id="fileDiv">
-
+        <input class='custom-file-input col-10 mx-3' id='inputFile' type='file' name='userfile[]' value='' multiple=''>
+        <label class='custom-file-label col-10 mx-3' for='inputFile'>Choose file</label>
       </div>
 
-        <button type="submit" class="btn btn-dark" name="content-submit" form="contentForm">Přidat článek</button>
+        <button type="submit" class="btn btn-dark mx-3" name="content-submit" form="contentForm">Přidat článek</button>
       </form>
+
 
   </article>
 
-    
+
+
 
       <script>
       function onc() {
@@ -124,7 +140,7 @@ if (!isset($_SESSION['userId'])) {
         let css = window.getComputedStyle(div).getPropertyValue("display");
         if (css == "none") {
           div.style.display = "block";
-          div.innerHTML = "<input class='custom-file-input col-10' id='inputFile' type='file' name='userfile[]' value='' multiple=''><label class='custom-file-label col-10' for='inputFile'>Choose file</label>";
+          div.innerHTML = "<input class='custom-file-input col-10 mx-3' id='inputFile' type='file' name='userfile[]' value='' multiple=''><label class='custom-file-label col-10 mx-3' for='inputFile'>Choose file</label>";
         } else {
           div.style.display = "none";
           div.innerHTML = "";
@@ -132,5 +148,8 @@ if (!isset($_SESSION['userId'])) {
 
       }
       </script>
+
+    </script>
+
   </body>
 </html>
