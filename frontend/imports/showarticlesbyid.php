@@ -20,9 +20,9 @@ if (isset($getID) && is_numeric($getID)) {
       $showAutor = $row[2];
       $showText = $row[3];
 
-      echo "<div class='articles container text-center my-4 py-3 col-10' style='overflow-y:hidden;'>
+      echo "<div class='articlesbyid container text-center my-4 py-3 col-10' style='overflow-y:hidden;'>
             <h1 style='overflow-y:hidden;'>$showNadpis</h1>
-            <hr style='background-color:gray;'>
+            <hr>
             <div class='p-2 mx-auto my-3' style='width:50%;'>
             <p style='overflow-y:hidden;'>$showText</p>
             </div>";
@@ -31,7 +31,7 @@ if (isset($getID) && is_numeric($getID)) {
                $imgDir = $row1['dir'];
       echo "<div class='articleImg card my-2 p-2 col-10 col-md-6 col-lg-3 col-xl-3 mx-auto'><img src='../cms/public/$imgDir'></img></div>";
              }
-      echo "<h5 class='text-muted my-3' style='overflow-y:hidden;'>$showAutor</h5>
+      echo "<hr><h5 class='text-muted my-3' style='overflow-y:hidden;'>$showAutor</h5>
             </div>";
 
     }
@@ -43,13 +43,13 @@ if (isset($getID) && is_numeric($getID)) {
         $showAutor = $row[2];
         $showText = $row[3];
 
-        echo "<div class='articles container text-center my-4 py-3 col-10' style='overflow-y:hidden;'>
+        echo "<div class='articlesbyid container text-center my-4 py-3 col-10' style='overflow-y:hidden;'>
               <h1 style='overflow-y:hidden;'>$showNadpis</h1>
-              <hr style='background-color:gray;'>
+              <hr>
               <div class='p-2 mx-auto my-3' style='width:50%;'>
               <p style='overflow-y:hidden;'>$showText</p>
               </div>
-              <h5 class='text-muted' style='overflow-y:hidden;'>$showAutor</h5>
+              <hr><h5 class='text-muted' style='overflow-y:hidden;'>$showAutor</h5>
               </div>";
 
       }

@@ -11,8 +11,17 @@ overflow-x: hidden;
   background-color: #292e48;
   color: #fff;
 }
+.articles:hover {
+  opacity: 0.85;
+}
+.articlesbyid {
+  border-radius: 15px;
+  background-color: #ededed;
+  color: #000;
+  font-size: 1.2rem;
+}
 .custom-file {
-display: none; 
+display: none;
 }
 .mainobal {
 width: 1200px;
