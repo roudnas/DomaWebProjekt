@@ -34,7 +34,7 @@ if (isset($_POST['content-submit'])) {
             $img_dir = "../public/images/uploaded/".$file_array[$i]['name'];
             move_uploaded_file($file_array[$i]['tmp_name'], $img_dir);
 
-                  $select = "SELECT COUNT(*) FROM articles;";
+                  $select = "SELECT max(id) FROM articles;";
                   $selectResult = mysqli_query($conn, $select);
                   $artIDArr = mysqli_fetch_array($selectResult);
                   $artID = $artIDArr[0] + 1;

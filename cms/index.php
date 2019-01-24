@@ -121,8 +121,7 @@ if (!isset($_SESSION['userId'])) {
       <button type="button" class="btn mx-3" onclick='onc()' id="imupButton">Přidat fotky</button>
 
       <div class="custom-file py-3 my-3" id="fileDiv">
-        <input class='custom-file-input col-10 mx-3' id='inputFile' type='file' name='userfile[]' value='' multiple=''>
-        <label class='custom-file-label col-10 mx-3' for='inputFile'>Choose file</label>
+        
       </div>
 
         <button type="submit" class="btn btn-dark mx-3" name="content-submit" form="contentForm">Přidat článek</button>
