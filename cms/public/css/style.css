@@ -3,7 +3,7 @@
     display: none;
 }
 body {
-background-color: #205493;
+background-color: #356e90;
 
 }
 * {
@@ -13,7 +13,7 @@ box-sizing: border-box;
 font-family: 'Work Sans', sans-serif;
 }
 .navbar {
-z-index: 9999;
+z-index: 3;
 }
 .menu {
 z-index: 2;
@@ -57,7 +57,7 @@ margin-left: 19vw;
 margin-right: 2vw;
 min-height: 100vh;
 height: auto;
-background-color: #0071BC;
+background-color: #5085a5;
 color: #000;
 }
 .custom-file {

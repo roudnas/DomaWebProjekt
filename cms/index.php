@@ -20,6 +20,7 @@ if (!isset($_SESSION['userId'])) {
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
      crossorigin="anonymous"></script>
     <script src="public/js/main.js" charset="utf-8"></script>
+
   </head>
   <body>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="navigator">
@@ -37,8 +38,8 @@ if (!isset($_SESSION['userId'])) {
 
 			</div>
 		</nav>
-    <script src="public/js/navbarheightfix.js" type="text/javascript"></script>
 
+    <script src="public/js/navbarheightfix.js" type="text/javascript"></script>
     <article class="menu">
       <nav class="sidenav nav nav-tabs flex-column flex-sm-colum" id="sidenav">
     <a class="sidenav-link text-sm-center nav-link active" href="index.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/document.png">Správa obsahu</a>
@@ -56,6 +57,39 @@ if (!isset($_SESSION['userId'])) {
       <article class="sekce" id="sekce1">
         <h1 class="heading"><img class="my-2 mx-2" src="https://img.icons8.com/material/60/000000/document.png">Správa obsahu</h1>
         <p class="popis my-3 py-3 px-3">&gt; Zde můžete spravovat články na vaší stránce!</p>
+
+        <div class="">
+          <table class="table table-striped table-dark">
+            <tr>
+              <?php
+              require 'imports/vypisclanku.php';
+               ?>
+            </tr>
+          </table>
+        </div>
+
+        <div class="modal fade" id="artRemoveModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Opravdu chcete odstranit článek?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Tato akce již nepůjde vrátit zpět.
+      </div>
+      <div class="modal-footer">
+        <form class="" action="imports/removeart.php" method="post">
+        <button type="submit" name="removeButton" class="btn btn-primary">Odstranit</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
 
         <form action="imports/contentadd.php" method="post" id="contentForm" enctype="multipart/form-data">
       <div class="form-group col-6">
@@ -77,13 +111,12 @@ if (!isset($_SESSION['userId'])) {
 
       </div>
 
-        <button type="submit" class="btn btn-primary" name="content-submit" form="contentForm">Přidat článek</button>
+        <button type="submit" class="btn btn-dark" name="content-submit" form="contentForm">Přidat článek</button>
       </form>
 
   </article>
 
       <script>
-
       function onc() {
         let div = document.getElementById('fileDiv');
         let css = window.getComputedStyle(div).getPropertyValue("display");

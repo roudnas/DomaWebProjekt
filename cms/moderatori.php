@@ -92,7 +92,7 @@ if (!isset($_SESSION['userId'])) {
             <option value="Editor">Editor</option>
           </select>
         </div>
-        <button class="btn btn-primary" type="submit" name="admin-submit">Přidat moderátora!</button>
+        <button class="btn btn-dark" type="submit" name="admin-submit">Přidat moderátora!</button>
       </form>
     </article>
 
