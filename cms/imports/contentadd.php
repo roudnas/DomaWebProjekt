@@ -40,14 +40,15 @@ if (isset($_POST['content-submit'])) {
                   $artID = $artIDArr[0] + 1;
 
 
-                  $sql = "INSERT into articles(id, nadpis, autor, text) values(?,?,?,?);";
+                  $sql = "INSERT into articles(id, nadpis, autor, text, datum) values(?,?,?,?,?);";
                   $sql2 = "INSERT into articleimgs (id, name, dir) values($artID, '$name', '$img_dir');";
                   $conn->query($sql2) or die(header("Location: index.php?error=fileuploaderror"));
                   $stmt = mysqli_stmt_init($conn);
                   mysqli_set_charset($conn, "utf8");
                   if (mysqli_stmt_prepare($stmt, $sql)) {
-
-                    mysqli_stmt_bind_param($stmt, "ssss", $artID, $header, $autor, $obsah);
+                    date_default_timezone_set("Europe/Prague");
+                    $datum = date("Y:m:d H:i");
+                    mysqli_stmt_bind_param($stmt, "sssss", $artID, $header, $autor, $obsah, $datum);
                     mysqli_stmt_execute($stmt);
                     header("Location: ../index.php?contentadd=true&fileupload=true");
                     exit();

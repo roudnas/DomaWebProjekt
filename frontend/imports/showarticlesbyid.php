@@ -5,7 +5,7 @@ mysqli_set_charset($conn, "utf8");
 $getID = $_GET['id'];
 if (isset($getID) && is_numeric($getID)) {
 
-  $sql = "select id, nadpis, autor, text from articles where id = $getID;";
+  $sql = "select id, nadpis, autor, text, datum from articles where id = $getID;";
   $result = mysqli_query($conn, $sql);
   $resultCheck = mysqli_num_rows($result);
 
@@ -19,9 +19,13 @@ if (isset($getID) && is_numeric($getID)) {
       $showNadpis = $row[1];
       $showAutor = $row[2];
       $showText = $row[3];
+      $showDate = $row[4];
+      $time = strtotime($showDate);
+      $parsedDate = date("d/m/Y G:i", $time);
 
       echo "<div class='articlesbyid container text-center my-4 py-3 col-10' style='overflow-y:hidden;'>
             <h1 style='overflow-y:hidden;'>$showNadpis</h1>
+            <h6 class='text-muted' style='overflow-y:hidden;'>$parsedDate</h6>
             <hr>
             <div class='p-2 mx-auto my-3' style='width:50%;'>
             <p style='overflow-y:hidden;'>$showText</p>
@@ -32,6 +36,7 @@ if (isset($getID) && is_numeric($getID)) {
       echo "<div class='articleImg card my-2 p-2 col-10 col-md-6 col-lg-3 col-xl-3 mx-auto'><img src='../cms/public/$imgDir'></img></div>";
              }
       echo "<hr><h5 class='text-muted my-3' style='overflow-y:hidden;'>$showAutor</h5>
+
             </div>";
 
     }
@@ -42,14 +47,19 @@ if (isset($getID) && is_numeric($getID)) {
         $showNadpis = $row[1];
         $showAutor = $row[2];
         $showText = $row[3];
+        $showDate = $row[4];
+        $time = strtotime($showDate);
+        $parsedDate = date("d/m/Y G:i", $time);
 
         echo "<div class='articlesbyid container text-center my-4 py-3 col-10' style='overflow-y:hidden;'>
-              <h1 style='overflow-y:hidden;'>$showNadpis</h1>
+              <h6 class='text-muted' style='overflow-y:hidden;'>$parsedDate</h6>
+              <p class='text-muted' style='overflow-y:hidden;'>$showDate</p>
               <hr>
               <div class='p-2 mx-auto my-3' style='width:50%;'>
               <p style='overflow-y:hidden;'>$showText</p>
               </div>
               <hr><h5 class='text-muted' style='overflow-y:hidden;'>$showAutor</h5>
+
               </div>";
 
       }
