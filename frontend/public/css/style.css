@@ -11,6 +11,9 @@ overflow-x: hidden;
   background-color: #292e48;
   color: #fff;
 }
+.custom-file {
+display: none; 
+}
 .mainobal {
 width: 1200px;
 margin-bottom: 5px;
