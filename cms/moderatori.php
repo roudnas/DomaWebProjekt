@@ -38,7 +38,7 @@ if (!isset($_SESSION['userId'])) {
 
       </div>
     </nav>
-
+    <script src="public/js/navbarheightfix.js" type="text/javascript"></script>
     <article class="menu">
       <nav class="sidenav nav nav-tabs flex-column flex-sm-column" id="sidenav">
 
@@ -55,8 +55,8 @@ if (!isset($_SESSION['userId'])) {
     </article>
 
     <article class="sekce" id="sekce2">
-      <h1 class="heading">Moderátoři</h1>
-      <p class="popis my-3 p-3">Výpis všech moderátorů vaší stránky. Tito moderátoři se mohou připojit do systému pro správu obsahu.</p>
+      <h1 class="heading"><img class="my-2 mx-2" src="https://img.icons8.com/material/60/000000/user-group-man-man.png">Moderátoři</h1>
+      <p class="popis my-3 p-3">&gt; Výpis všech moderátorů vaší stránky. Tito moderátoři se mohou připojit do systému pro správu obsahu.</p>
 
       <div class="">
         <table class="table table-striped table-dark">
@@ -68,7 +68,7 @@ if (!isset($_SESSION['userId'])) {
         </table>
       </div>
 
-      <form class="add-admin" action="imports/zapisadminu.php" method="post">
+      <form class="add-admin col-10 mr-auto" action="imports/zapisadminu.php" method="post">
         <div class="form-group">
           <label for="inputJmeno">Uživatelské jméno</label>
           <input type="text" name="username" class="form-control" value="" placeholder="Uživatelské jméno" required>
@@ -87,12 +87,12 @@ if (!isset($_SESSION['userId'])) {
         </div>
         <div class="form-group">
           <label for="inputPozition">Pozice</label>
-          <select class="" name="position">
+          <select class="custom-select" name="position">
             <option value="Admin">Admin</option>
             <option value="Editor">Editor</option>
           </select>
         </div>
-        <button class="btn btn-primary" type="submit" name="admin-submit">Přidat moderátora!</button>
+        <button class="btn btn-dark" type="submit" name="admin-submit">Přidat moderátora!</button>
       </form>
     </article>
 
