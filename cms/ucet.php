@@ -57,9 +57,13 @@ if (!isset($_SESSION['userId'])) {
     <article class="sekce" id="sekce4">
     <h1 class="heading"><img class="my-2 mx-2" src="https://img.icons8.com/material/60/000000/contacts.png">Účet</h1>
     <hr>
-    <?php
-      require 'imports/userprofile.php';
-     ?>
+    <table class="table table-striped table-dark">
+      <tr>
+        <?php
+        require 'imports/userprofile.php';
+         ?>
+      </tr>
+    </table>
     </article>
 
 
