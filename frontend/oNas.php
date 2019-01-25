@@ -101,8 +101,8 @@
       <footer>
         <div class="row justify-content-center py-3">
           <p class="text-center text-muted">&copy; Dominik Roudný and Martin Malíř<br> 2018/19 </p>
-        </div>
 
+        </div>
       </footer>
       </div>
     </div>

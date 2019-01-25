@@ -6,6 +6,7 @@ $id = htmlspecialchars($_POST['idCheck']);
 if (!empty($id)) {
   $sql2 = "DELETE from articleimgs where id = $id";
   $conn->query($sql2);
+  deleteFiles($id);
   $sql = "DELETE from articles where id = ?";
   $stmt = mysqli_stmt_init($conn);
   if (mysqli_stmt_prepare($stmt, $sql)) {
@@ -27,5 +28,11 @@ if (!empty($id)) {
 
 
 
+}
+function deleteFiles($id_img) {
+  $files = glob('../public/images/uploads/*_'.$id_img.'.*');
+  foreach ($files as $i) {
+    unlink($i) or die("Location: index.php?error=filedeletionerr");
+  }
 }
 ?>

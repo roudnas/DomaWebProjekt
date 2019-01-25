@@ -52,8 +52,8 @@ if (isset($getID) && is_numeric($getID)) {
         $parsedDate = date("d/m/Y G:i", $time);
 
         echo "<div class='articlesbyid container text-center my-4 py-3 col-10' style='overflow-y:hidden;'>
+              <h1 style='overflow-y:hidden;'>$showNadpis</h1>
               <h6 class='text-muted' style='overflow-y:hidden;'>$parsedDate</h6>
-              <p class='text-muted' style='overflow-y:hidden;'>$showDate</p>
               <hr>
               <div class='p-2 mx-auto my-3' style='width:50%;'>
               <p style='overflow-y:hidden;'>$showText</p>

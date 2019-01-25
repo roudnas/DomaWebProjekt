@@ -109,10 +109,6 @@ if (!isset($_SESSION['userId'])) {
         <label for="inputNadpis">Nadpis</label>
         <input name="nadpis" type="text" class="form-control" id="inputNadpis" aria-describedby="Nadpis" placeholder="Nadpis vašeho článku">
       </div>
-      <div class="form-group col-6">
-        <label for="inputAutor">Autor</label>
-        <input name="autor" type="text" class="form-control" id="inputAutor" placeholder="Autor článku">
-      </div>
       <div class="form-group col-10">
         <label for="textArea">Text článku</label>
         <textarea name="textarea" id="textArea" rows="8" cols="80" class="form-control" placeholder="Dnes jsme šli do lesa.."></textarea>
@@ -121,7 +117,7 @@ if (!isset($_SESSION['userId'])) {
       <button type="button" class="btn mx-3" onclick='onc()' id="imupButton">Přidat fotky</button>
 
       <div class="custom-file py-3 my-3" id="fileDiv">
-        
+
       </div>
 
         <button type="submit" class="btn btn-dark mx-3" name="content-submit" form="contentForm">Přidat článek</button>
@@ -129,9 +125,6 @@ if (!isset($_SESSION['userId'])) {
 
 
   </article>
-
-
-
 
       <script>
       function onc() {
@@ -147,8 +140,5 @@ if (!isset($_SESSION['userId'])) {
 
       }
       </script>
-
-    </script>
-
   </body>
 </html>

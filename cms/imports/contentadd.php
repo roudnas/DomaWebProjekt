@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $phpFileUploadErrors = array(
 0 => 'There is no error, the file was uploaded succesfully!',
 1 => 'The uploaded file exceeds the upload_max_filesize directive!',
@@ -12,11 +14,14 @@ $phpFileUploadErrors = array(
 
 if (isset($_POST['content-submit'])) {
   require 'dbconn.php';
+
+  $uid = $_SESSION['userUId'];
+  $usur = $_SESSION['userSur'];
   $header = htmlspecialchars($_POST['nadpis']);
-  $autor = htmlspecialchars($_POST['autor']);
+  $autor =  "$uid $usur";
   $obsah = htmlspecialchars($_POST['textarea']);
 
-  if (!empty($header) and !empty($autor) and !empty($obsah) ) {
+  if (!empty($header) and !empty($obsah) ) {
     if (isset($_FILES['userfile']) and !empty($_FILES['userfile']['name'])) {
       $file_array = reArrayFiles($_FILES['userfile']);
       for ($i=0; $i < count($file_array); $i++ ) {
@@ -30,15 +35,12 @@ if (isset($_POST['content-submit'])) {
           if (!in_array($file_ext, $extensions)) {
             header("Location: index.php?error=wrongfileext");
           } else {
-
-            $img_dir = "../public/images/uploaded/".$file_array[$i]['name'];
-            move_uploaded_file($file_array[$i]['tmp_name'], $img_dir);
-
+              $img_dir = "../public/images/uploaded/".$file_array[$i]['name'];
+              move_uploaded_file($file_array[$i]['tmp_name'], $img_dir);
                   $select = "SELECT max(id) FROM articles;";
                   $selectResult = mysqli_query($conn, $select);
                   $artIDArr = mysqli_fetch_array($selectResult);
                   $artID = $artIDArr[0] + 1;
-
 
                   $sql = "INSERT into articles(id, nadpis, autor, text, datum) values(?,?,?,?,?);";
                   $sql2 = "INSERT into articleimgs (id, name, dir) values($artID, '$name', '$img_dir');";
@@ -62,17 +64,18 @@ if (isset($_POST['content-submit'])) {
       }
 
     } else {
-      $select = "SELECT COUNT(*) FROM articles;";
+      $select = "SELECT max(id) FROM articles;";
       $selectResult = mysqli_query($conn, $select) or die(header("Location: index.php?error=counterror"));
       $artIDArr = mysqli_fetch_array($selectResult);
       $artID = $artIDArr[0] + 1;
 
-      $sql = "INSERT into articles(id, nadpis, autor, text) values(?,?,?,?);";
+      $sql = "INSERT into articles(id, nadpis, autor, text, datum) values(?,?,?,?,?);";
       $stmt = mysqli_stmt_init($conn);
       mysqli_set_charset($conn, "utf8");
       if (mysqli_stmt_prepare($stmt, $sql)) {
-
-        mysqli_stmt_bind_param($stmt, "ssss", $artID, $header, $autor, $obsah);
+        date_default_timezone_set("Europe/Prague");
+        $datum = date("Y:m:d H:i");
+        mysqli_stmt_bind_param($stmt, "sssss", $artID, $header, $autor, $obsah, $datum);
         mysqli_stmt_execute($stmt);
         header("Location: ../index.php?contentadd=true&fileupload=false");
         exit();

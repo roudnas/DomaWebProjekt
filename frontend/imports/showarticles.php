@@ -20,7 +20,7 @@ if ($resultCheck > 0) {
     echo "<div data-aos='zoom-in-up' class='articles container text-center my-4 py-3 col-10' style='overflow-y:hidden;'>
           <a style='text-decoration:none; color:#fff;' href='articles.php?id=$showID'>
           <h1 style='overflow-y:hidden;'>$showNadpis</h1>
-          <h5 class='text-muted' style='overflow-y:hidden;'>$showAutor, <h6 class='text-muted' style='overflow-y:hidden;'>$parsedDate</h6></h5>
+          <h5 class='text-muted' style='overflow-y:hidden;'>$showAutor <h6 class='text-muted' style='overflow-y:hidden;'>$parsedDate</h6></h5>
           <hr style='background-color:gray;'>
           <div class='p-2 mx-auto my-3' style='width:50%;'>
           <p style='overflow-y:hidden; text-align:justify;'>$splitText[0] ...</p>

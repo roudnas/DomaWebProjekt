@@ -13,6 +13,7 @@ if (isset($_POST['login-submit'])) {
   } else {
 
     $sql = "select * from users where username=?;";
+    mysqli_set_charset($conn, "utf8");
     $stmt = mysqli_stmt_init($conn);
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
@@ -38,6 +39,7 @@ if (isset($_POST['login-submit'])) {
           session_start();
           $_SESSION['userId'] = $row['id'];
           $_SESSION['userUId'] = $row['name'];
+          $_SESSION['userSur'] = $row['surname'];
           header("Location: ../index.php?login=true");
           exit();
 
