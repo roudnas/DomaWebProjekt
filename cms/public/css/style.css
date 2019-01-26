@@ -74,7 +74,7 @@ padding: 0.8rem;
   font-size: 18px;
   margin-bottom: 5vh;
 }
-.formContent {
+.formContent, .add-admin, .seznamClanku, .seznamModeratoru {
   border: 1px solid rgba(0,0,0,.1);
   border-radius: 10px;
   padding: 1rem;

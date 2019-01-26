@@ -59,7 +59,9 @@ if (!isset($_SESSION['userId'])) {
       <hr>
       <p class="popis my-3 p-3">&gt; Výpis všech moderátorů vaší stránky. Tito moderátoři se mohou připojit do systému pro správu obsahu.</p>
 
-      <div class="">
+      <div class="seznamModeratoru">
+        <h3>Seznam moderátorů</h3>
+        <hr>
         <table class="table table-striped table-dark">
           <tr>
             <?php
@@ -69,32 +71,37 @@ if (!isset($_SESSION['userId'])) {
         </table>
       </div>
 
-      <form class="add-admin col-10 mr-auto" action="imports/zapisadminu.php" method="post">
-        <div class="form-group">
-          <label for="inputJmeno">Uživatelské jméno</label>
-          <input type="text" name="username" class="form-control" value="" placeholder="Uživatelské jméno" required>
-        </div>
-        <div class="form-group">
-          <label for="inputHeslo">Heslo</label>
-          <input type="password" name="password" class="form-control" value="" placeholder="Heslo" required>
-        </div>
-        <div class="form-group">
-          <label for="inputName">Jméno</label>
-          <input type="text" name="name" class="form-control" value="" placeholder="Jméno" required>
-        </div>
-        <div class="form-group">
-          <label for="inputName">Příjmení</label>
-          <input type="text" name="surname" class="form-control" value="" placeholder="Příjmení" required>
-        </div>
-        <div class="form-group">
-          <label for="inputPozition">Pozice</label>
-          <select class="custom-select" name="position">
-            <option value="Admin">Admin</option>
-            <option value="Editor">Editor</option>
-          </select>
-        </div>
-        <button class="btn btn-dark" type="submit" name="admin-submit">Přidat moderátora!</button>
-      </form>
+      <div class="wrapper my-3">
+        <form class="add-admin col-10 mr-auto" action="imports/zapisadminu.php" method="post">
+          <h3>Nový moderátor</h3>
+          <hr>
+          <div class="form-group">
+            <label for="inputJmeno">Uživatelské jméno</label>
+            <input type="text" name="username" class="form-control" value="" placeholder="Uživatelské jméno" required>
+          </div>
+          <div class="form-group">
+            <label for="inputHeslo">Heslo</label>
+            <input type="password" name="password" class="form-control" value="" placeholder="Heslo" required>
+          </div>
+          <div class="form-group">
+            <label for="inputName">Jméno</label>
+            <input type="text" name="name" class="form-control" value="" placeholder="Jméno" required>
+          </div>
+          <div class="form-group">
+            <label for="inputName">Příjmení</label>
+            <input type="text" name="surname" class="form-control" value="" placeholder="Příjmení" required>
+          </div>
+          <div class="form-group">
+            <label for="inputPozition">Pozice</label>
+            <select class="custom-select" name="position">
+              <option value="Admin">Admin</option>
+              <option value="Editor">Editor</option>
+            </select>
+          </div>
+          <button class="btn btn-dark" type="submit" name="admin-submit">Přidat moderátora!</button>
+        </form>
+      </div>
+
     </article>
 
   </body>

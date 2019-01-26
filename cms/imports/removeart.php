@@ -4,7 +4,7 @@ if (isset($_POST['removeButton'])) {
 $id = htmlspecialchars($_POST['idCheck']);
 
 if (!empty($id)) {
-  $sql2 = "DELETE from articleimgs where id = $id";
+  $sql2 = "DELETE from articleimgs where articleid = $id";
   $conn->query($sql2);
   deleteFiles($id);
   $sql = "DELETE from articles where id = ?";

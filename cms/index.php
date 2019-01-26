@@ -61,7 +61,9 @@ if (!isset($_SESSION['userId'])) {
         <hr>
         <p class="popis my-3 py-3 px-3">&gt; Zde můžete spravovat články na vaší stránce!</p>
 
-        <div class="">
+        <div class="seznamClanku">
+          <h3>Seznam článků</h3>
+          <hr>
           <table class="table table-striped table-dark">
             <tr>
               <?php
@@ -101,28 +103,29 @@ if (!isset($_SESSION['userId'])) {
   </div>
 </div>
 
+        <div class="wrapper my-3">
+          <form action="imports/contentadd.php" method="post" id="contentForm" class="formContent" enctype="multipart/form-data">
+            <h3>Nový článek</h3>
+            <hr>
+        <div class="form-group col-6">
+          <label for="inputNadpis">Nadpis</label>
+          <input name="nadpis" type="text" class="form-control" id="inputNadpis" aria-describedby="Nadpis" placeholder="Nadpis vašeho článku">
+        </div>
+        <div class="form-group col-10">
+          <label for="textArea">Text článku</label>
+          <textarea name="textarea" id="textArea" rows="8" cols="80" class="form-control" placeholder="Dnes jsme šli do lesa.."></textarea>
+        </div>
 
-        <form action="imports/contentadd.php" method="post" id="contentForm" class="formContent" enctype="multipart/form-data">
-          <h3>Nový článek</h3>
-          <hr>
-      <div class="form-group col-6">
-        <label for="inputNadpis">Nadpis</label>
-        <input name="nadpis" type="text" class="form-control" id="inputNadpis" aria-describedby="Nadpis" placeholder="Nadpis vašeho článku">
-      </div>
-      <div class="form-group col-10">
-        <label for="textArea">Text článku</label>
-        <textarea name="textarea" id="textArea" rows="8" cols="80" class="form-control" placeholder="Dnes jsme šli do lesa.."></textarea>
-      </div>
+        <button type="button" class="btn mx-3" onclick='onc()' id="imupButton">Přidat fotky</button>
 
-      <button type="button" class="btn mx-3" onclick='onc()' id="imupButton">Přidat fotky</button>
+        <div class="custom-file py-3 my-3" id="fileDiv">
 
-      <div class="custom-file py-3 my-3" id="fileDiv">
+        </div>
 
-      </div>
+          <button type="submit" class="btn btn-dark mx-3" name="content-submit" form="contentForm">Přidat článek</button>
+        </form>
 
-        <button type="submit" class="btn btn-dark mx-3" name="content-submit" form="contentForm">Přidat článek</button>
-      </form>
-
+        </div>
 
   </article>
 
@@ -132,7 +135,7 @@ if (!isset($_SESSION['userId'])) {
         let css = window.getComputedStyle(div).getPropertyValue("display");
         if (css == "none") {
           div.style.display = "block";
-          div.innerHTML = "<input class='custom-file-input col-10 mx-3' id='inputFile' type='file' name='userfile[]' value='' multiple=''><label class='custom-file-label col-10 mx-3' for='inputFile'>Choose file</label>";
+          div.innerHTML = "<input class='custom-file-input col-10 mx-3' id='inputFile' type='file' name='userfile[]' multiple='multiple'><label class='custom-file-label col-10 mx-3' for='inputFile'>Choose file</label>";
         } else {
           div.style.display = "none";
           div.innerHTML = "";

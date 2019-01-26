@@ -9,7 +9,7 @@ if (isset($getID) && is_numeric($getID)) {
   $result = mysqli_query($conn, $sql);
   $resultCheck = mysqli_num_rows($result);
 
-  $sql1 = "select name, dir from articleimgs where id = $getID;";
+  $sql1 = "select name, dir from articleimgs where articleid = $getID;";
   $result1 = mysqli_query($conn, $sql1);
   $resultCheck1 = mysqli_num_rows($result1);
 
@@ -27,15 +27,15 @@ if (isset($getID) && is_numeric($getID)) {
             <h1 style='overflow-y:hidden;'>$showNadpis</h1>
             <h6 class='text-muted' style='overflow-y:hidden;'>$parsedDate</h6>
             <hr>
-            <div class='p-2 mx-auto my-3' style='width:50%;'>
+            <div class='p-2 mx-auto my-3' style='width:80%;'>
             <p style='overflow-y:hidden;'>$showText</p>
-            </div>";
+            </div><section class='row justify-content-center'>";
              while($row1 = mysqli_fetch_assoc($result1)) {
                $imgName = $row1['name'];
                $imgDir = $row1['dir'];
-      echo "<div class='articleImg card my-2 p-2 col-10 col-md-6 col-lg-3 col-xl-3 mx-auto'><img src='../cms/public/$imgDir'></img></div>";
-             }
-      echo "<hr><h5 class='text-muted my-3' style='overflow-y:hidden;'>$showAutor</h5>
+      echo "<div class='articleImg card p-2 my-3 mx-2'><img src='../cms/public/$imgDir'></img></div>";
+            }
+      echo "</section><hr><h5 class='text-muted my-3' style='overflow-y:hidden;'>$showAutor</h5>
 
             </div>";
 
