@@ -58,6 +58,10 @@ if (!isset($_SESSION['userId'])) {
       <h1 class="heading"><img class="my-2 mx-2" src="https://img.icons8.com/material/60/000000/combo-chart.png">Statistiky</h1>
       <hr>
       <p class="popis my-3 p-3">&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <div class="footer mt-5 p-5 text-center" style="border:1px solid rgba(0,0,0,.1);">
+        <p>&copy; Doma Software 2019</p>
+      </div>
     </article>
 
   </body>

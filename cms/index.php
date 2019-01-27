@@ -62,7 +62,7 @@ if (!isset($_SESSION['userId'])) {
         <p class="popis my-3 py-3 px-3">&gt; Zde můžete spravovat články na vaší stránce!</p>
 
         <div class="seznamClanku">
-          <h3>Seznam článků</h3>
+          <h3><img class="mx-3" src="https://img.icons8.com/material-outlined/48/000000/overview-pages-3.png">Seznam článků</h3>
           <hr>
           <table class="table table-striped table-dark">
             <tr>
@@ -105,7 +105,7 @@ if (!isset($_SESSION['userId'])) {
 
         <div class="wrapper my-3">
           <form action="imports/contentadd.php" method="post" id="contentForm" class="formContent" enctype="multipart/form-data">
-            <h3>Nový článek</h3>
+            <h3><img class="mx-3" src="https://img.icons8.com/material-outlined/48/000000/edit-file.png">Nový článek</h3>
             <hr>
         <div class="form-group col-6">
           <label for="inputNadpis">Nadpis</label>
@@ -127,6 +127,10 @@ if (!isset($_SESSION['userId'])) {
 
         </div>
 
+
+        <div class="footer mt-5 p-5 text-center" style="border:1px solid rgba(0,0,0,.1);">
+          <p>&copy; Doma Software 2019</p>
+        </div>
   </article>
 
       <script>

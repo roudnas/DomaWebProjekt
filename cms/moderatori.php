@@ -60,7 +60,7 @@ if (!isset($_SESSION['userId'])) {
       <p class="popis my-3 p-3">&gt; Výpis všech moderátorů vaší stránky. Tito moderátoři se mohou připojit do systému pro správu obsahu.</p>
 
       <div class="seznamModeratoru">
-        <h3>Seznam moderátorů</h3>
+        <h3><img class="mx-3" src="https://img.icons8.com/material/48/000000/user-menu-female.png">Seznam moderátorů</h3>
         <hr>
         <table class="table table-striped table-dark">
           <tr>
@@ -73,7 +73,7 @@ if (!isset($_SESSION['userId'])) {
 
       <div class="wrapper my-3">
         <form class="add-admin col-10 mr-auto" action="imports/zapisadminu.php" method="post">
-          <h3>Nový moderátor</h3>
+          <h3><img class="mx-3" src="https://img.icons8.com/material/48/000000/user-male-circle.png">Nový moderátor</h3>
           <hr>
           <div class="form-group">
             <label for="inputJmeno">Uživatelské jméno</label>
@@ -102,6 +102,9 @@ if (!isset($_SESSION['userId'])) {
         </form>
       </div>
 
+      <div class="footer mt-5 p-5 text-center" style="border:1px solid rgba(0,0,0,.1);">
+        <p>&copy; Doma Software 2019</p>
+      </div>
     </article>
 
   </body>
