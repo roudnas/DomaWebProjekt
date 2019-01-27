@@ -116,7 +116,7 @@ if (!isset($_SESSION['userId'])) {
           <textarea name="textarea" id="textArea" rows="8" cols="80" class="form-control" placeholder="Dnes jsme šli do lesa.."></textarea>
         </div>
 
-        <button type="button" class="btn mx-3" onclick='onc()' id="imupButton">Přidat fotky</button>
+        <button type="button" class="btn mx-3" onclick='onc()' id="imupButton">Přidat fotky (max 2.5 MB)</button>
 
         <div class="custom-file py-3 my-3" id="fileDiv">
 

@@ -45,7 +45,7 @@ if (isset($_POST['content-submit'])) {
             if (!in_array($file_ext, $extensions)) {
               header("Location: ../index.php?error=wrongfileext");
             } else {
-                    $img_dir = "../public/images/uploaded/".$file_array['name'][$i];
+                    $img_dir = "../public/images/uploaded/".$name."_id-$artID.".$file_ext;
                     move_uploaded_file($file_array['tmp_name'][$i], $img_dir);
                     $sql2 = "INSERT into articleimgs (name, dir, articleid) values(?,?,?);";
                     $stmt2 = mysqli_stmt_init($conn);
