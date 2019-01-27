@@ -21,7 +21,7 @@ if (isset($_POST['content-submit'])) {
   $usur = $_SESSION['userSur'];
   $header = htmlspecialchars($_POST['nadpis']);
   $autor =  "$uid $usur";
-  $obsah = htmlspecialchars($_POST['textarea']);
+  $obsah = $_POST['textarea'];
   $datum = date("Y:m:d H:i");
 
   //Get the max article ID and set a new one by incrementing it
