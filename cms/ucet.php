@@ -65,6 +65,13 @@ if (!isset($_SESSION['userId'])) {
       </tr>
     </table>
 
+    <form class="" action="zmenahesla.php" method="post">
+      <input type="text" name="oldPw" value="" placeholder="Staré heslo">
+      <input type="text" name="newPw" value="" placeholder="Nové heslo">
+      <input type="text" name="newPwCheck" value="" placeholder="Heslo znovu">
+      <button type="submit" name="changePw">Změnit</button>
+    </form>
+
     <div class="footer mt-5 p-5 text-center" style="border:1px solid rgba(0,0,0,.1);">
       <p>&copy; Doma Software 2019</p>
     </div>
