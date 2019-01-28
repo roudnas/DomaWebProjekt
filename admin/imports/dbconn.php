@@ -12,9 +12,9 @@ if ($serverIP == "127.0.0.1") {
   }
 } else {
   $dbServername = "free1db.zikum.cz";
-  $dbUser = "roudnas.tk";
-  $dbPw = "17Wx1jcqB7";
-  $dbName = "roudnas_tk";
+  $dbUser = "domasoftware.tk";
+  $dbPw = "Ax3hh(8S5X6fJ.";
+  $dbName = "domasoftware_tk";
 
   $conn = mysqli_connect($dbServername, $dbUser, $dbPw, $dbName);
   if ($conn->connect_error) {
