@@ -2,7 +2,7 @@
 
 require 'dbconn.php';
 mysqli_set_charset($conn, "utf8");
-$sql = "select id, nadpis, autor, text, datum from articles order by id desc";
+$sql = "select id, nadpis, autor, text, datum from articles order by id desc limit 5;";
 $result = mysqli_query($conn, $sql);
 $resultCheck = mysqli_num_rows($result);
 if ($resultCheck > 0) {

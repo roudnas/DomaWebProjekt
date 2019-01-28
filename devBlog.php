@@ -43,9 +43,9 @@
 
         <article class="pageSekce py-3">
           <div class="row justify-content-center">
-        <?php require 'imports/showarticles.php'; ?>
+        <?php require 'imports/showarticles.php';
+        ?>
           </div>
-
         </article>
 
 

@@ -34,7 +34,7 @@ if (!isset($_SESSION['userId'])) {
 
 				<section class="collapse navbar-collapse" id="MyTogglerNav">
 					<div class="navbar-nav ml-auto">
-						<a class="nav-item nav-link" href="#a5">Podpora</a>
+						<a class="nav-item nav-link" href="#a5"><?php $usr = $_SESSION['userUId']; echo "Howdy, $usr"; ?></a>
 					</div>
 				</section>
 
