@@ -33,7 +33,7 @@ if (isset($getID) && is_numeric($getID)) {
              while($row1 = mysqli_fetch_assoc($result1)) {
                $imgName = $row1['name'];
                $imgDir = $row1['dir'];
-      echo "<a href='../cms/public/$imgDir'><div class='articleImg card p-2 my-3 mx-2'><img src='../cms/public/$imgDir'></img></div></a>";
+      echo "<a href='cms/public/$imgDir'><div class='articleImg card p-2 my-3 mx-2'><img src='cms/public/$imgDir'></img></div></a>";
             }
       echo "</section><hr><h5 class='text-muted my-3' style='overflow-y:hidden;'>$showAutor</h5>
 
