@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 $phpFileUploadErrors = array(
 0 => 'There is no error, the file was uploaded succesfully!',
 1 => 'The uploaded file exceeds the upload_max_filesize directive!',
