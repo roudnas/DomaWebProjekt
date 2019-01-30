@@ -1,5 +1,4 @@
 <?php
-
   if (isset($_POST['changePw'])) {
     require 'dbconn.php';
     mysqli_set_charset($conn, "utf8");
@@ -10,22 +9,27 @@
     $hash = password_hash($newPw, PASSWORD_BCRYPT);
 
     if (!empty($oldPw) && !empty($username) && !empty($newPw) && !empty($pwCheck)) {
-      $sql = "SELECT password, username FROM users WHERE id = 2;";
+      $sql = "SELECT username,password FROM users WHERE id = 1;";
       $result = mysqli_query($conn, $sql);
       $resultCheck = mysqli_num_rows($result);
 
       if ($resultCheck > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
-          $oldPwDb = $row ['password'];
+          $oldPwDb = $row['password'];
 
-          $pwCheck = password_verify($oldPw, $row["password"]);
+          $oPwCheck = password_verify($oldPw, $row['password']);
 
-          if ($pwCheck == false) {
+          if ($oPwCheck == false) {
+            var_dump($oldPw);
+            var_dump($oPwCheck);
+            var_dump($row['password']);
+            /*
             header("Location: ../ucet.php?wrongoldpassword");
             exit();
-          }elseif ($pwCheck && !empty($username) && !empty($newPw) && $newPw == $pwCheck) {
-            $sql2 = "UPDATE users SET password = $hash WHERE id = 2";
-            mysqli_query($conn, $sql2);
+            */
+          }elseif ($oPwCheck == true && !empty($username) && !empty($newPw) && $newPw == $pwCheck) {
+            $sql2 = "UPDATE users SET password = '$hash' WHERE id = 1;";
+            mysqli_query($conn, $sql2) or die(header("Location: ../ucet.php?sqlerror"));
             header("Location: ../ucet.php?passwordchanged");
             exit();
           }
@@ -39,5 +43,4 @@
 
 
   }
-
  ?>
