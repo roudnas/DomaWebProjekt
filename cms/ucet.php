@@ -67,6 +67,7 @@ if (!isset($_SESSION['userId'])) {
 
     <form class="" action="zmenahesla.php" method="post">
       <input type="text" name="oldPw" value="" placeholder="Staré heslo">
+      <input type="text" name="username" value="" placeholder="Uživ. jméno">
       <input type="text" name="newPw" value="" placeholder="Nové heslo">
       <input type="text" name="newPwCheck" value="" placeholder="Heslo znovu">
       <button type="submit" name="changePw">Změnit</button>
