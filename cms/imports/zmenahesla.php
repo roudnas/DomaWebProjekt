@@ -36,7 +36,5 @@
       header("Location: ../ucet.php?error=emptyfields");
       exit();
     }
-
-
   }
  ?>
