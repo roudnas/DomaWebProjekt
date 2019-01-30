@@ -5,6 +5,29 @@
   font-weight: 400;
 overflow-x: hidden;
 }
+.menu .nav-item {
+position: relative;
+padding: 0;
+margin-bottom: 2px;
+}
+.menu .nav-item:before {
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+max-width: 150px;
+height: 2px;
+content: "";
+background-color: #ededed;
+visibility: hidden;
+transform: scaleX(0);
+transition: all 0.3s ease-out;
+}
+.menu .nav-item:hover:before {
+visibility: visible;
+left: 0;
+transform: scaleX(1);
+}
 .articles {
   border: 1px solid rgba(0,0,0,.25);
   border-radius: 15px;
@@ -59,6 +82,11 @@ background-repeat: no-repeat;
 .customCards, .conabImg {
 color: black;
 font-size: 16px;
+}
+.layout-multicolumn {
+  background-image: url("../images/comp2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 footer {
 background-color: #292e48;

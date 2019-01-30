@@ -47,18 +47,18 @@
 
       </header>
 
-      <article class="pageSekce py-3 mt-3">
+      <article class="pageSekce onasNum1 py-3 mt-3">
         <section class="py-3 text-center container">
           <div class="row justify-content-center my-5">
-            <div data-aos="zoom-in-up" data-aos-duration="1000" class="onasPerson col-12 col-sm-12 col-md-6 col-lg-6">
+            <div data-aos="zoom-in-up" data-aos-duration="1000" class="onasPerson mt-5 col-12 col-sm-12 col-md-6 col-lg-6">
               <a href="https://roudnas.tk">
                 <img src="public/images/dmnk.svg" alt="" height="250" width="250"></a>
                 <h3 class="py-3">Dominik</h3>
               <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
 
-            <div data-aos="zoom-in-up" data-aos-duration="1000" class="onasPerson col-12 col-md-6 col-sm-12 col-lg-6">
-              <a href="https://roudnas.tk/frontend"><img src="public/images/mrtn.svg" alt="" width="250" height="250"></a>
+            <div data-aos="zoom-in-up" data-aos-duration="1000" class="onasPerson mt-5 col-12 col-md-6 col-sm-12 col-lg-6">
+              <a href="https://domasoftware.tk"><img src="public/images/mrtn.svg" alt="" width="250" height="250"></a>
               <h3 class="py-3">Martin</h3>
               <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
