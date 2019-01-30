@@ -7,15 +7,6 @@ if (!isset($_SESSION['userId'])) {
 <!DOCTYPE html>
 <html lang="cs" dir="ltr">
   <head>
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133561856-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-133561856-1');
-    </script>
 
     <meta charset="utf-8">
     <title>Doma CMS System</title>
