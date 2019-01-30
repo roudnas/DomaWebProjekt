@@ -25,34 +25,32 @@ if (!isset($_SESSION['userId'])) {
 
   <body>
 
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="navigator">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark ml-auto" id="navigator">
 			<div class="container-fluid">
 
-				<a class="navbar-brand" href="index.php"><img src="public/images/DomaSoftware.svg" alt="" width="140px" height="35px"></a>
+
 				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#MyTogglerNav" aria-controls="#MyTogglerNav"
 				 aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
 
 				<section class="collapse navbar-collapse" id="MyTogglerNav">
-					<div class="navbar-nav ml-auto">
-						<a class="nav-item nav-link" href="#a5"><?php $usr = $_SESSION['userUId']; echo "Howdy, $usr"; ?></a>
+					<div class="navbar-nav ml-auto btn-sm btn-dark">
+						<a class="nav-item nav-link" href="#a5"><?php $usr = $_SESSION['userUId']; echo "Howdy, $usr" . "<img class='mx-3' src='https://img.icons8.com/material/30/000000/user-male-circle.png'>"; ?></a>
 					</div>
 				</section>
-
 			</div>
 		</nav>
 
-    <script src="public/js/navbarheightfix.js" type="text/javascript"></script>
     <article class="menu">
       <nav class="sidenav nav nav-tabs flex-column flex-sm-colum" id="sidenav">
-    <div><a class="sidenav-link text-sm-center nav-link active" href="index.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/document.png"></a></div>
-    <a class="sidenav-link text-sm-center nav-link" href="moderatori.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/user-group-man-man.png"></a>
-    <a class="sidenav-link text-sm-center nav-link" href="statistiky.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/combo-chart.png"></a>
-    <a class="sidenav-link text-sm-center nav-link" href="autori.php"><img class="my-2 mx-2" src="public/images/us.svg" height="24px" width="24px"></a>
-    <a class="sidenav-link text-sm-center nav-link" href="ucet.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/contacts.png"></a>
+    	<a class="navbar-brand px-3 mt-3 mb-4" href="index.php"><img src="public/images/DomaSoftware.svg" alt="" width="100%" height="auto"></a>
+    <div data-toggle="tooltip" data-placement="right" title="Správa obsahu"><a class="sidenav-link text-sm-center nav-link active" href="index.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/document.png"></a></div>
+    <div data-toggle="tooltip" data-placement="right" title="Moderátoři"><a class="sidenav-link text-sm-center nav-link" href="moderatori.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/user-group-man-man.png"></a></div>
+    <div data-toggle="tooltip" data-placement="right" title="Statistiky"><a class="sidenav-link text-sm-center nav-link" href="statistiky.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/combo-chart.png"></a></div>
+    <div data-toggle="tooltip" data-placement="right" title="Autoři"><a class="sidenav-link text-sm-center nav-link" href="autori.php"><img class="my-2 mx-2" src="public/images/us.svg" height="24px" width="24px"></a></div>
+    <div data-toggle="tooltip" data-placement="right" title="účet"><a class="sidenav-link text-sm-center nav-link" href="ucet.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/contacts.png"></a></div>
     <form action="imports/logout.php" method="post">
       <button type="submit" class="form-control btn btn-primary my-3" name="logout-submit" >Log-out</button>
     </form>
-
   </nav>
     </article>
 
@@ -132,7 +130,11 @@ if (!isset($_SESSION['userId'])) {
           <p>&copy; Doma Software 2019</p>
         </div>
   </article>
-
+  <script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+  </script>
       <script>
       function onc() {
         let div = document.getElementById('fileDiv');
