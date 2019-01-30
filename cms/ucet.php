@@ -65,7 +65,7 @@ if (!isset($_SESSION['userId'])) {
       </tr>
     </table>
 
-    <form class="" action="zmenahesla.php" method="post">
+    <form class="" action="imports/zmenahesla.php" method="post">
       <input type="text" name="oldPw" value="" placeholder="Staré heslo">
       <input type="text" name="username" value="" placeholder="Uživ. jméno">
       <input type="text" name="newPw" value="" placeholder="Nové heslo">
