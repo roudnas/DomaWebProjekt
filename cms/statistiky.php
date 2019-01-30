@@ -12,6 +12,7 @@ if (!isset($_SESSION['userId'])) {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
      crossorigin="anonymous">
      <link rel="stylesheet" href="public/css/style.css">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="public/images/newLogoJustR.png">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
      crossorigin="anonymous"></script>
@@ -53,7 +54,36 @@ if (!isset($_SESSION['userId'])) {
     <article class="sekce" id="sekce3">
       <h1 class="heading"><img class="my-2 mx-2" src="https://img.icons8.com/material/60/000000/combo-chart.png">Statistiky</h1>
       <hr>
-      <p class="popis my-3 p-3">&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <div class="row justify-content-center">
+        <div class="card m-2" style="width:15rem;" data-aos="zoom-in" data-aos-duration="1000">
+          <h5 class="card-header">Počet článků celkem</h5>
+          <div class="card-body py-5">
+            <h1 class="card-title text-center">
+              <?php
+            include 'imports/dbconn.php';
+            $sql = "SELECT count(*) from articles;";
+            $qr = mysqli_query($conn, $sql) or die();
+            $rsl = mysqli_fetch_array($qr);
+            echo $rsl[0];
+             ?></h1>
+        </div>
+  </div>
+  <div class="card m-2" style="width:15rem;" data-aos="zoom-in" data-aos-duration="500">
+  <h5 class="card-header">Počet adminů a editorů</h5>
+  <div class="card-body py-5">
+  <h1 class="card-title text-center">
+    <?php
+  include 'imports/dbconn.php';
+  $sql = "SELECT count(*) from users;";
+  $qr = mysqli_query($conn, $sql) or die();
+  $rsl = mysqli_fetch_array($qr);
+  echo $rsl[0];
+   ?>
+  </h1>
+  </div>
+  </div>
+      </div>
 
       <div class="footer mt-5 p-5 text-center" style="border:1px solid rgba(0,0,0,.1);">
         <p>&copy; Doma Software 2019</p>
@@ -64,5 +94,9 @@ if (!isset($_SESSION['userId'])) {
         $('[data-toggle="tooltip"]').tooltip();
       })
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+ AOS.init();
+</script>
   </body>
 </html>
