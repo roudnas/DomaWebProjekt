@@ -20,13 +20,9 @@
           $oPwCheck = password_verify($oldPw, $row['password']);
 
           if ($oPwCheck == false) {
-            var_dump($oldPw);
-            var_dump($oPwCheck);
-            var_dump($row['password']);
-            /*
             header("Location: ../ucet.php?wrongoldpassword");
             exit();
-            */
+
           }elseif ($oPwCheck == true && !empty($username) && !empty($newPw) && $newPw == $pwCheck) {
             $sql2 = "UPDATE users SET password = '$hash' WHERE id = 1;";
             mysqli_query($conn, $sql2) or die(header("Location: ../ucet.php?sqlerror"));
