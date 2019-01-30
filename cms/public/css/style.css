@@ -19,7 +19,7 @@ z-index: 3;
 .menu {
 z-index: 2;
 background-color: #323A45;
-width: 17vw;
+width: 13vw;
 position: absolute;
 top: 0;
 left: 0;
@@ -28,7 +28,7 @@ margin-top: 60px;
 .sidenav {
 z-index: 2;
 background-color: #323A45;
-width: 17vw;
+width: 13vw;
 height: 100%;
 position: absolute;
 top: 0;
@@ -58,7 +58,7 @@ margin-left: 22vw;
 margin-right: 5vw;
 min-height: 100vh;
 height: auto;
-background-color: #4ECDC4;
+background-color: #65c6bb;
 color: #000;
 }
 .custom-file {
@@ -86,4 +86,11 @@ padding: 0.8rem;
    height: 10vh;
    width: 100%;
  }
+}
+@media screen and (max-width:768px) {
+  /*
+  .sidenav-link {
+    visibility: hidden;
+  }
+  */
 }
