@@ -14,7 +14,7 @@ if (!isset($_SESSION['userId'])) {
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'GA_TRACKING_ID');
+      gtag('config', 'UA-133561856-1');
     </script>
 
     <meta charset="utf-8">
