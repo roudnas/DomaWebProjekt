@@ -39,7 +39,6 @@ if (!isset($_SESSION['userId'])) {
 				</section>
 			</div>
 		</nav>
-
     <article class="menu">
       <nav class="sidenav nav nav-tabs flex-column flex-sm-colum" id="sidenav">
     	<a class="navbar-brand px-3 mt-3 mb-4" href="index.php"><img src="public/images/DomaSoftware.svg" alt="" width="100%" height="auto"></a>
@@ -113,16 +112,11 @@ if (!isset($_SESSION['userId'])) {
           <label for="textArea">Text článku</label>
           <textarea name="textarea" id="textArea" rows="8" cols="80" class="form-control" placeholder="Dnes jsme šli do lesa.."></textarea>
         </div>
-
         <button type="button" class="btn mx-3" onclick='onc()' id="imupButton">Přidat fotky (max 2.5 MB)</button>
-
         <div class="custom-file py-3 my-3" id="fileDiv">
-
         </div>
-
           <button type="submit" class="btn btn-dark mx-3" name="content-submit" form="contentForm">Přidat článek</button>
         </form>
-
         </div>
 
 
