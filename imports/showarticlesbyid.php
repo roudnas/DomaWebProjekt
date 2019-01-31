@@ -28,7 +28,7 @@ if (isset($getID) && is_numeric($getID)) {
             <h6 class='text-muted' style='overflow-y:hidden;'>$parsedDate</h6>
             <hr>
             <div class='p-2 mx-auto my-3' style='width:80%;'>
-            <p style='overflow-y:hidden;'>$showText</p>
+              $showText
             </div><section class='row justify-content-center'>";
              while($row1 = mysqli_fetch_assoc($result1)) {
                $imgName = $row1['name'];

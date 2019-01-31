@@ -39,7 +39,7 @@ if (!isset($_SESSION['userId'])) {
     </nav>
     <article class="menu">
       <nav class="sidenav nav nav-tabs flex-column flex-sm-colum" id="sidenav">
-    	<a class="navbar-brand px-3 mt-3 mb-4" href="index.php"><img src="public/images/DomaSoftware.svg" alt="" width="100%" height="auto"></a>
+    	<a class="navbar-brand mt-3 mb-4 ml-3" href="index.php"><img src="public/images/DomaSoftware.svg" alt="" width="100%" height="auto"></a>
     <div data-toggle="tooltip" data-placement="right" title="Správa obsahu"><a class="sidenav-link text-sm-center nav-link" href="index.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/document.png"></a></div>
     <div data-toggle="tooltip" data-placement="right" title="Moderátoři"><a class="sidenav-link text-sm-center nav-link" href="moderatori.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/user-group-man-man.png"></a></div>
     <div data-toggle="tooltip" data-placement="right" title="Statistiky"><a class="sidenav-link text-sm-center nav-link" href="statistiky.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/combo-chart.png"></a></div>

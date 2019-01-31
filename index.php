@@ -58,8 +58,6 @@
         <article class="headyIndex">
           <div id="particles-js"></div>
         <script src="public/js/particles.js"></script>
-
         </article>
-
   </body>
 </html>

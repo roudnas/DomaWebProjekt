@@ -15,7 +15,7 @@ if ($resultCheck > 0) {
     $time = strtotime($showDate);
     $parsedDate = date("d/m/Y G:i", $time);
 
-    $splitText = str_split($showText, 200);
+    $splitText = str_split($showText, 100);
 
     echo "<div data-aos='zoom-in-up' class='articles container text-center my-4 py-3 col-10' style='overflow-y:hidden;'>
           <a style='text-decoration:none; color:#fff;' href='articles.php?id=$showID'>

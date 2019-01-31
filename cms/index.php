@@ -20,6 +20,7 @@ if (!isset($_SESSION['userId'])) {
      crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
      crossorigin="anonymous"></script>
+     <script src="https://cdn.ckeditor.com/4.11.2/standard-all/ckeditor.js"></script>
     <script src="public/js/main.js" charset="utf-8"></script>
 
   </head>
@@ -28,8 +29,6 @@ if (!isset($_SESSION['userId'])) {
 
     <nav class="navbar navbar-expand-md bg-dark navbar-dark ml-auto" id="navigator">
 			<div class="container-fluid">
-
-
 				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#MyTogglerNav" aria-controls="#MyTogglerNav"
 				 aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
 
@@ -42,7 +41,7 @@ if (!isset($_SESSION['userId'])) {
 		</nav>
     <article class="menu">
       <nav class="sidenav nav nav-tabs flex-column flex-sm-colum" id="sidenav">
-    	<a class="navbar-brand px-3 mt-3 mb-4" href="index.php"><img src="public/images/DomaSoftware.svg" alt="" width="100%" height="auto"></a>
+    	<a class="navbar-brand mt-3 mb-4 ml-3" href="index.php"><img src="public/images/DomaSoftware.svg" alt="" width="100%" height="auto"></a>
     <div data-toggle="tooltip" data-placement="right" title="Správa obsahu"><a class="sidenav-link text-sm-center nav-link active" href="index.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/document.png"></a></div>
     <div data-toggle="tooltip" data-placement="right" title="Moderátoři"><a class="sidenav-link text-sm-center nav-link" href="moderatori.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/user-group-man-man.png"></a></div>
     <div data-toggle="tooltip" data-placement="right" title="Statistiky"><a class="sidenav-link text-sm-center nav-link" href="statistiky.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/combo-chart.png"></a></div>
@@ -111,7 +110,7 @@ if (!isset($_SESSION['userId'])) {
         </div>
         <div class="form-group col-10">
           <label for="textArea">Text článku</label>
-          <textarea name="textarea" id="textArea" rows="8" cols="80" class="form-control" placeholder="Dnes jsme šli do lesa.."></textarea>
+          <textarea name="textarea" id="textArea" rows="8" cols="80"></textarea>
         </div>
         <button type="button" class="btn mx-3" onclick='onc()' id="imupButton">Přidat fotky (max 2.5 MB)</button>
         <div class="custom-file py-3 my-3" id="fileDiv">
@@ -125,6 +124,92 @@ if (!isset($_SESSION['userId'])) {
           <p>&copy; Doma Software 2019</p>
         </div>
   </article>
+  <!--
+  <script>
+    ClassicEditor
+        .create( document.querySelector( '#textArea' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+-->
+<script>
+	CKEDITOR.replace( 'textarea', {
+		// Define the toolbar: http://docs.ckeditor.com/ckeditor4/docs/#!/guide/dev_toolbar
+		// The standard preset from CDN which we used as a base provides more features than we need.
+		// Also by default it comes with a 2-line toolbar. Here we put all buttons in a single row.
+		toolbar: [
+			{ name: 'clipboard', items: [ 'Undo', 'Redo' ] },
+			{ name: 'styles', items: [ 'Styles', 'Format' ] },
+			{ name: 'basicstyles', items: [ 'Bold', 'Italic', 'Strike', '-', 'RemoveFormat' ] },
+			{ name: 'paragraph', items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote' ] },
+			{ name: 'links', items: [ 'Link', 'Unlink' ] },
+			{ name: 'insert', items: [ 'EmbedSemantic', 'Table' ] },
+			{ name: 'tools', items: [ 'Maximize' ] },
+			{ name: 'editing', items: [ 'Scayt' ] }
+		],
+		// Since we define all configuration options here, let's instruct CKEditor to not load config.js which it does by default.
+		// One HTTP request less will result in a faster startup time.
+		// For more information check http://docs.ckeditor.com/ckeditor4/docs/#!/api/CKEDITOR.config-cfg-customConfig
+		customConfig: '',
+		// Enabling extra plugins, available in the standard-all preset: http://ckeditor.com/presets-all
+		extraPlugins: 'autoembed,embedsemantic,image2,uploadimage,uploadfile',
+
+		removePlugins: 'image',
+		// Make the editing area bigger than default.
+		height: 400,
+		// An array of stylesheets to style the WYSIWYG area.
+		// Note: it is recommended to keep your own styles in a separate file in order to make future updates painless.
+		contentsCss: [ 'https://cdn.ckeditor.com/4.8.0/standard-all/contents.css', 'mystyles.css' ],
+		// This is optional, but will let us define multiple different styles for multiple editors using the same CSS file.
+		bodyClass: 'article-editor',
+		// Reduce the list of block elements listed in the Format dropdown to the most commonly used.
+		format_tags: 'p;h1;h2;h3;pre',
+		// Simplify the Image and Link dialog windows. The "Advanced" tab is not needed in most cases.
+		removeDialogTabs: 'image:advanced;link:advanced',
+
+		stylesSet: [
+			/* Inline Styles */
+			{ name: 'Marker',			element: 'span', attributes: { 'class': 'marker' } },
+			{ name: 'Cited Work',		element: 'cite' },
+			{ name: 'Inline Quotation',	element: 'q' },
+			/* Object Styles */
+			{
+				name: 'Special Container',
+				element: 'div',
+				styles: {
+					padding: '5px 10px',
+					background: '#eee',
+					border: '1px solid #ccc'
+				}
+			},
+			{
+				name: 'Compact table',
+				element: 'table',
+				attributes: {
+					cellpadding: '5',
+					cellspacing: '0',
+					border: '1',
+					bordercolor: '#ccc'
+				},
+				styles: {
+					'border-collapse': 'collapse'
+				}
+			},
+			{ name: 'Borderless Table',		element: 'table',	styles: { 'border-style': 'hidden', 'background-color': '#E6E6FA' } },
+			{ name: 'Square Bulleted List',	element: 'ul',		styles: { 'list-style-type': 'square' } },
+			/* Widget Styles */
+			// We use this one to style the brownie picture.
+			{ name: 'Illustration', type: 'widget', widget: 'image', attributes: { 'class': 'image-illustration' } },
+			// Media embed
+			{ name: '240p', type: 'widget', widget: 'embedSemantic', attributes: { 'class': 'embed-240p' } },
+			{ name: '360p', type: 'widget', widget: 'embedSemantic', attributes: { 'class': 'embed-360p' } },
+			{ name: '480p', type: 'widget', widget: 'embedSemantic', attributes: { 'class': 'embed-480p' } },
+			{ name: '720p', type: 'widget', widget: 'embedSemantic', attributes: { 'class': 'embed-720p' } },
+			{ name: '1080p', type: 'widget', widget: 'embedSemantic', attributes: { 'class': 'embed-1080p' } }
+		]
+	} );
+</script>
   <script type="text/javascript">
     $(function () {
       $('[data-toggle="tooltip"]').tooltip();

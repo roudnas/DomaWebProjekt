@@ -20,8 +20,10 @@ if (isset($_POST['content-submit'])) {
   $usur = $_SESSION['userSur'];
   $header = htmlspecialchars($_POST['nadpis']);
   $autor =  "$uid $usur";
-  $obsahRaw = $_POST['textarea'];
-  $obsah = strip_tags($obsahRaw, "<br><br/><p><strong><i><h1><h2><h3><h4><h5><h6>");
+  $obsah = $_POST['textarea'];
+  /*
+  $obsahX = strip_tags($obsahRaw, "<br><br/><p><strong><i><h1><h2><h3><h4><h5><h6>");
+  */
   $datum = date("Y:m:d H:i");
 
   //Get the max article ID and set a new one by incrementing it
