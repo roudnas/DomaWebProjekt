@@ -73,8 +73,8 @@ if (!isset($_SESSION['userId'])) {
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
-  <form class="" action="imports/zmenahesla.php" method="post">
   <div class="modal-body">
+    <form class="add-admin col-10" action="imports/zmenahesla.php" method="post">
     <div class="form-group">
       <label for="selecto"></label>
         <input type="password" name="oldPw" value="" placeholder="Staré heslo">
@@ -90,8 +90,6 @@ if (!isset($_SESSION['userId'])) {
 </div>
 </div>
 </div>
-
-
 
     <div class="footer mt-5 p-5 text-center" style="border:1px solid rgba(0,0,0,.1);">
       <p>&copy; Doma Software 2019</p>

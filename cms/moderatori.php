@@ -66,6 +66,37 @@ if (!isset($_SESSION['userId'])) {
              ?>
           </tr>
         </table>
+
+        <button class='btn btn-dark mb-2' data-toggle='modal' data-target='#userDeleteModal'>Smazat uživatele</button>
+
+    <div class="modal fade" id="userDeleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Smazat uživatele</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form class="" action="imports/removeuser.php" method="post">
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="selecto">Vyberte ID uživatele, kterého chcete odstranit.</label>
+          <select class="custom-select" id="selecto" name="idCheck">
+            <?php
+            include 'imports/showusersmodal.php';
+            ?>
+          </select>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" type="submit" name="removeUser">Smazat</button>
+      </form>
+      </div>
+    </div>
+    </div>
+    </div>
+
       </div>
 
       <div class="wrapper my-3">
