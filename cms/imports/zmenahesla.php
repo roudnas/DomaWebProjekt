@@ -9,7 +9,7 @@
     $hash = password_hash($newPw, PASSWORD_BCRYPT);
 
     if (!empty($oldPw) && !empty($username) && !empty($newPw) && !empty($pwCheck)) {
-      $sql = "SELECT username,password FROM users WHERE id = 1;";
+      $sql = "SELECT username,password FROM users WHERE username = '$username';";
       $result = mysqli_query($conn, $sql);
       $resultCheck = mysqli_num_rows($result);
 
@@ -24,7 +24,7 @@
             exit();
 
           }elseif ($oPwCheck == true && !empty($username) && !empty($newPw) && $newPw == $pwCheck) {
-            $sql2 = "UPDATE users SET password = '$hash' WHERE id = 1;";
+            $sql2 = "UPDATE users SET password = '$hash' WHERE username = '$username';";
             mysqli_query($conn, $sql2) or die(header("Location: ../ucet.php?sqlerror"));
             header("Location: ../ucet.php?passwordchanged");
             exit();
