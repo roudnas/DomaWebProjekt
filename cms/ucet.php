@@ -62,13 +62,36 @@ if (!isset($_SESSION['userId'])) {
       </tr>
     </table>
 
-    <form class="" action="imports/zmenahesla.php" method="post">
-      <input type="password" name="oldPw" value="" placeholder="Staré heslo">
-      <input type="text" name="username" value="" placeholder="Uživ. jméno">
-      <input type="password" name="newPw" value="" placeholder="Nové heslo">
-      <input type="password" name="newPwCheck" value="" placeholder="Heslo znovu">
-      <button type="submit" name="changePw">Změnit</button>
-    </form>
+    <button class='btn btn-dark mb-2' data-toggle='modal' data-target='#userChangePwModal'>Změnit heslo</button>
+
+    <div class="modal fade" id="userChangePwModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">Změna hesla</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <form class="" action="imports/zmenahesla.php" method="post">
+  <div class="modal-body">
+    <div class="form-group">
+      <label for="selecto"></label>
+        <input type="password" name="oldPw" value="" placeholder="Staré heslo">
+        <input type="text" name="username" value="" placeholder="Uživ. jméno">
+        <input type="password" name="newPw" value="" placeholder="Nové heslo">
+        <input type="password" name="newPwCheck" value="" placeholder="Heslo znovu">
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" type="submit" name="changePw">Změnit</button>
+  </form>
+  </div>
+</div>
+</div>
+</div>
+
+
 
     <div class="footer mt-5 p-5 text-center" style="border:1px solid rgba(0,0,0,.1);">
       <p>&copy; Doma Software 2019</p>
