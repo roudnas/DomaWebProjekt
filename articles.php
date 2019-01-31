@@ -1,3 +1,6 @@
+<?php
+header("Cache-control: no-cache, must-revalidate");
+?>
 <!DOCTYPE html>
 <html lang="cs" dir="ltr">
   <head>
