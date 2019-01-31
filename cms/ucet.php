@@ -73,8 +73,8 @@ if (!isset($_SESSION['userId'])) {
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
-  <form class="" action="imports/zmenahesla.php" method="post">
   <div class="modal-body">
+    <form class="add-admin col-10" action="imports/zmenahesla.php" method="post">
     <div class="form-group">
       <label for="selecto"></label>
         <input type="password" name="oldPw" value="" placeholder="Staré heslo">
