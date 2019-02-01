@@ -10,7 +10,7 @@ if ($resultCheck > 0) {
     $showID = $row[0];
     $showNadpis = $row[1];
     $showAutor = $row[2];
-    $showText = $row[3];
+    $showText = htmlspecialchars(strip_tags($row[3]));
     $showDate = $row[4];
     $time = strtotime($showDate);
     $parsedDate = date("d/m/Y G:i", $time);

@@ -1,5 +1,4 @@
 <?php
-
 require 'dbconn.php';
 mysqli_set_charset($conn, "utf8");
 $getID = $_GET['id'];
@@ -36,9 +35,7 @@ if (isset($getID) && is_numeric($getID)) {
                $imgDir = $row1['dir'];
       echo "<a href='cms/public/$imgDir'><div class='articleImg card p-2 my-3 mx-2'><img src='cms/public/$imgDir'></img></div></a>";
             }
-      echo "</section><hr><h5 class='text-muted my-3' style='overflow-y:hidden;'>$showAutor</h5>
-
-            </div>";
+      echo "</section><hr><h5 class='text-muted my-3' style='overflow-y:hidden;'>$showAutor</h5></div>";
 
     }
   } else {
@@ -59,10 +56,7 @@ if (isset($getID) && is_numeric($getID)) {
               <div class='p-2 mx-auto my-3' style='width:50%;'>
               $showText
               </div>
-              <hr><h5 class='text-muted' style='overflow-y:hidden;'>$showAutor</h5>
-
-              </div>";
-
+              <hr><h5 class='text-muted' style='overflow-y:hidden;'>$showAutor</h5></div>";
       }
     }
   }
