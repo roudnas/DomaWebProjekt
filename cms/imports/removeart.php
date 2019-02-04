@@ -17,7 +17,7 @@ if (!empty($id)) {
   if (mysqli_stmt_prepare($stmt, $sql)) {
     mysqli_stmt_bind_param($stmt, "s", $id);
     mysqli_stmt_execute($stmt);
-    header("Location: ../index.php?deletearticle=true");
+    header("Location: ../index.php?success=deletearticle");
     exit();
   } else {
     header("Location: ../index.php?error=sqlerror");

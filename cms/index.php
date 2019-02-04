@@ -48,6 +48,11 @@ if (!isset($_SESSION['userId'])) {
 				</section>
 			</div>
 		</nav>
+
+    <?php
+    require 'imports/statushandler.php';
+    ?>
+
     <article class="menu">
       <nav class="sidenav nav nav-tabs flex-column flex-sm-colum" id="sidenav">
     	<a class="navbar-brand mt-3 mb-4 ml-3" href="index.php"><img src="public/images/DomaSoftware.svg" alt="" width="100%" height="auto"></a>
@@ -134,6 +139,10 @@ if (!isset($_SESSION['userId'])) {
         </div>
   </article>
 
-
+  <script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+  </script>
   </body>
 </html>

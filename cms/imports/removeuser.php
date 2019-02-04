@@ -8,7 +8,7 @@ $id = htmlspecialchars($_POST['idCheck']);
   if (mysqli_stmt_prepare($stmt, $sql)) {
     mysqli_stmt_bind_param($stmt, "s", $id);
     mysqli_stmt_execute($stmt);
-    header("Location: ../moderatori.php?deleteuser=true");
+    header("Location: ../moderatori.php?success=deleteuser");
     exit();
   } else {
     header("Location: ../moderatori.php?error=sqlerror");

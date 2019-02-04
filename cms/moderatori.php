@@ -37,6 +37,11 @@ if (!isset($_SESSION['userId'])) {
 
       </div>
     </nav>
+
+    <?php
+    require 'imports/statushandler.php';
+    ?>
+
     <article class="menu">
       <nav class="sidenav nav nav-tabs flex-column flex-sm-colum" id="sidenav">
     	<a class="navbar-brand mt-3 mb-4 ml-3" href="index.php"><img src="public/images/DomaSoftware.svg" alt="" width="100%" height="auto"></a>
@@ -100,7 +105,7 @@ if (!isset($_SESSION['userId'])) {
       </div>
 
       <div class="wrapper my-3">
-        <form class="add-admin col-10 mr-auto" action="imports/zapisadminu.php" method="post">
+        <form class="add-admin col-10 mr-auto" action="imports/zapisAdminu.php" method="post">
           <h3><img class="mx-3" src="https://img.icons8.com/material/48/000000/user-male-circle.png">Nový moderátor</h3>
           <hr>
           <div class="form-group">
@@ -129,6 +134,8 @@ if (!isset($_SESSION['userId'])) {
           <button class="btn btn-dark" type="submit" name="admin-submit">Přidat moderátora!</button>
         </form>
       </div>
+
+
 
       <div class="footer mt-5 p-5 text-center" style="border:1px solid rgba(0,0,0,.1);">
         <p>&copy; Doma Software 2019</p>

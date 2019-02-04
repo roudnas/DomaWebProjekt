@@ -37,6 +37,11 @@ if (!isset($_SESSION['userId'])) {
 
       </div>
     </nav>
+
+    <?php
+    require 'imports/statushandler.php';
+    ?>
+
     <article class="menu">
       <nav class="sidenav nav nav-tabs flex-column flex-sm-colum" id="sidenav">
     	<a class="navbar-brand mt-3 mb-4 ml-3" href="index.php"><img src="public/images/DomaSoftware.svg" alt="" width="100%" height="auto"></a>

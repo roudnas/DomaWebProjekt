@@ -51,6 +51,9 @@
         </header>
 
         <section class="pageSekce col-10 py-5" style="margin:0 auto;">
+          <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading..</span>
+          </div>
           <form method="post" action="contactform.php">
             <div class="form-group">
               <label for="emailinput">Váš email</label>

@@ -68,7 +68,7 @@ if (isset($_POST['content-submit'])) {
         if (mysqli_stmt_prepare($stmt, $sql)) {
             mysqli_stmt_bind_param($stmt, "sssss", $artID, $header, $autor, $obsah, $datum);
             mysqli_stmt_execute($stmt);
-            header("Location: ../index.php?contentadd=true&fileupload=true");
+            header("Location: ../index.php?success=contentadd&success=fileupload");
             exit();
         } else {
             header("Location: ../index.php?error=sqlerror");
@@ -81,7 +81,7 @@ if (isset($_POST['content-submit'])) {
       if (mysqli_stmt_prepare($stmt, $sql)) {
         mysqli_stmt_bind_param($stmt, "sssss", $artID, $header, $autor, $obsah, $datum);
         mysqli_stmt_execute($stmt);
-        header("Location: ../index.php?contentadd=true&fileupload=false");
+        header("Location: ../index.php?success=contentadd&error=fileupload");
         exit();
 
       } else {

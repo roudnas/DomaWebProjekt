@@ -17,7 +17,9 @@
       if (mysqli_stmt_prepare($stmt, $sql2)) {
         mysqli_stmt_bind_param($stmt, "sssss", $username, $hash, $name, $surname, $position);
         mysqli_stmt_execute($stmt);
-        header("Location: ../moderatori.php?adminadd=true");
+
+        header("Location: ../moderatori.php?success=adminadd");
+
         exit();
 
       }else {
