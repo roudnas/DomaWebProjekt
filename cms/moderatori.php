@@ -61,7 +61,7 @@ if (!isset($_SESSION['userId'])) {
       <hr>
       <p class="popis my-3 p-3">&gt; Výpis všech moderátorů vaší stránky. Tito moderátoři se mohou připojit do systému pro správu obsahu.</p>
 
-      <div class="seznamModeratoru">
+      <div class="card seznamModeratoru">
         <h3><img class="mx-3" src="https://img.icons8.com/material/48/000000/user-menu-female.png">Seznam moderátorů</h3>
         <hr>
         <table class="table table-striped table-dark">
@@ -105,7 +105,7 @@ if (!isset($_SESSION['userId'])) {
       </div>
 
       <div class="wrapper my-3">
-        <form class="add-admin col-10 mr-auto" action="imports/zapisAdminu.php" method="post">
+        <form class="add-admin col-10 mx-auto card" action="imports/zapisAdminu.php" method="post">
           <h3><img class="mx-3" src="https://img.icons8.com/material/48/000000/user-male-circle.png">Nový moderátor</h3>
           <hr>
           <div class="form-group">

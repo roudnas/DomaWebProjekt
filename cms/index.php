@@ -72,7 +72,7 @@ if (!isset($_SESSION['userId'])) {
         <hr>
         <p class="popis my-3 py-3 px-3">&gt; Zde můžete spravovat články na vaší stránce!</p>
 
-        <div class="seznamClanku">
+        <div class="card seznamClanku">
           <h3><img class="mx-3" src="https://img.icons8.com/material-outlined/48/000000/overview-pages-3.png">Seznam článků</h3>
           <hr>
           <table class="table table-striped table-dark">
@@ -114,7 +114,7 @@ if (!isset($_SESSION['userId'])) {
   </div>
 </div>
 
-        <div class="wrapper my-3">
+        <div class="card wrapper my-3" style="border-radius:10px;">
           <form action="imports/contentadd.php" method="post" id="contentForm" class="formContent" enctype="multipart/form-data">
             <h3><img class="mx-3" src="https://img.icons8.com/material-outlined/48/000000/edit-file.png">Nový článek</h3>
             <hr>
@@ -122,7 +122,7 @@ if (!isset($_SESSION['userId'])) {
           <label for="inputNadpis">Nadpis</label>
           <input name="nadpis" type="text" class="form-control" id="inputNadpis" aria-describedby="Nadpis" placeholder="Nadpis vašeho článku">
         </div>
-        <div class="form-group col-10">
+        <div class="form-group col-9">
           <label for="textArea">Text článku</label>
           <textarea name="textarea" id="textArea" rows="8" cols="80"></textarea>
         </div>
@@ -138,7 +138,19 @@ if (!isset($_SESSION['userId'])) {
           <p>&copy; Doma Software 2019</p>
         </div>
   </article>
-
+  <script>
+  function onc() {
+    let div = document.getElementById('fileDiv');
+    let css = window.getComputedStyle(div).getPropertyValue("display");
+    if (css == "none") {
+      div.style.display = "block";
+      div.innerHTML = "<input class='custom-file-input col-10 mx-3' id='inputFile' type='file' name='userfile[]' multiple='multiple'><label class='custom-file-label col-10 mx-3' for='inputFile'>Choose file</label>";
+    } else {
+      div.style.display = "none";
+      div.innerHTML = "";
+    }
+  }
+  </script>
   <script type="text/javascript">
     $(function () {
       $('[data-toggle="tooltip"]').tooltip();
