@@ -1,15 +1,5 @@
 <?php
 session_start();
-$phpFileUploadErrors = array(
-0 => 'There is no error, the file was uploaded succesfully!',
-1 => 'The uploaded file exceeds the upload_max_filesize directive!',
-2 => 'The uploaded file exceeds the MAX_FILE_SIZE directive!',
-3 => 'The uploaded file was only partially uploaded!',
-4 => 'No file was uploaded!',
-5 => 'Missing a tmp folder!',
-6 => 'Failed to write the file to disk',
-7 => 'A PHP extension stopped the file upload.!'
-);
 
 if (isset($_POST['content-submit'])) {
   require 'dbconn.php';
@@ -21,9 +11,6 @@ if (isset($_POST['content-submit'])) {
   $header = htmlspecialchars($_POST['nadpis']);
   $autor =  "$uid $usur";
   $obsah = $_POST['textarea'];
-  /*
-  $obsahX = strip_tags($obsahRaw, "<br><br/><p><strong><i><h1><h2><h3><h4><h5><h6>");
-  */
   $datum = date("Y:m:d H:i");
 
   //Get the max article ID and set a new one by incrementing it
