@@ -100,6 +100,8 @@ if (!isset($_SESSION['userId'])) {
           <p>&copy; Doma Software 2019</p>
         </div>
   </article>
+  <?php include 'imports/footer.php' ?>
+  <!--
   <nav class="navbar navbar-expand-md bg-dark navbar-dark ml-auto" id="navigator">
     <div class="container-fluid">
       <a class="navbar-brand my-1" href="index.php"><img src="public/images/DomaSoftware.svg" alt="Logo" width="160" height="30"></a>
@@ -122,7 +124,7 @@ if (!isset($_SESSION['userId'])) {
       </section>
     </div>
   </nav>
-
+-->
   <script>
   function openNav() {
     document.getElementById('popNav').style.height = "100%";
