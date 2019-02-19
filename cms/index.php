@@ -106,7 +106,18 @@ if (!isset($_SESSION['userId'])) {
       <button type="button" class="btn btn-dark my-1" name="menuOpener" onclick="openNav()"><img src="https://img.icons8.com/material/30/000000/squared-menu.png"></button>
       <section class="" id="MyTogglerNav">
         <div class="navbar-nav ml-auto btn-sm btn-dark">
-          <a class="nav-item nav-link" href="ucet.php"><?php $usr = $_SESSION['userUId']; echo "Howdy, $usr" . "<img class='mx-3' src='https://img.icons8.com/material/30/000000/user-male-circle.png'>"; ?></a>
+          <div class="dropup">
+          <button type="button" class="btn btn-dark my-1 dropdown-toggle" data-toggle="dropdown" name="accToggle"><?php $usr = $_SESSION['userUId']; echo "Howdy, $usr" . "<img class='mx-3' src='https://img.icons8.com/material/30/000000/user-male-circle.png'>"; ?></a></button>
+          <span class="caret"></span>
+          <ul class="dropdown-menu">
+            <li><a href="ucet.php">Ucet</a></li>
+            <li>
+              <form action="imports/logout.php" method="post">
+                <button type="submit" class="log-out form-control btn btn-primary my-3" name="logout-submit" >Log-out</button>
+              </form>
+            </li>
+          </ul>
+        </div>
         </div>
       </section>
     </div>
