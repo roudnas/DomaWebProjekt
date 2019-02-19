@@ -20,7 +20,6 @@ z-index: 3;
 position: absolute;
 bottom: 0;
 width: 100%;
-overflow-y: hidden;
 }
 .menu {
 z-index: 2;
@@ -138,5 +137,6 @@ padding: 0.8rem;
    width: 100%;
  }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:450px) {
+
 }

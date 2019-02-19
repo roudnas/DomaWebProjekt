@@ -86,7 +86,7 @@ if (!isset($_SESSION['userId'])) {
         </div>
         <div class="form-group col-9">
           <label for="textArea">Text článku</label>
-          <textarea name="textarea" id="textArea" rows="8" cols="80"></textarea>
+          <textarea name="textarea" id="textArea" rows="8"></textarea>
         </div>
         <button type="button" class="btn mx-3" onclick='onc()' id="imupButton">Přidat fotky (max 2.5 MB)</button>
         <div class="custom-file py-3 my-3" id="fileDiv">
