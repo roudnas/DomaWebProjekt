@@ -3,7 +3,6 @@
         <a class="navbar-brand my-1" href="index.php"><img src="public/images/DomaSoftware.svg" alt="Logo" width="160" height="30"></a>
         <button type="button" class="btn btn-dark my-1" name="menuOpener" onclick="openNav()"><img src="https://img.icons8.com/material/30/000000/squared-menu.png"></button>
         <section class="" id="MyTogglerNav">
-          <div class="navbar-nav ml-auto btn-sm btn-dark">
             <div class="dropup">
             <button type="button" class="btn btn-dark my-1 dropdown-toggle" data-toggle="dropdown" name="accToggle"><?php $usr = $_SESSION['userUId']; echo "Howdy, $usr" . "<img class='mx-3' src='https://img.icons8.com/material/30/000000/user-male-circle.png'>"; ?></a></button>
             <span class="caret"></span>
@@ -16,7 +15,7 @@
               </li>
             </ul>
           </div>
-          </div>
+
         </section>
       </div>
     </nav>
