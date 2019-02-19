@@ -7,9 +7,9 @@ if (!isset($_SESSION['userId'])) {
 <!DOCTYPE html>
 <html lang="cs" dir="ltr">
   <head>
-
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
     <title>Doma CMS System</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
      crossorigin="anonymous">
@@ -57,13 +57,13 @@ if (!isset($_SESSION['userId'])) {
     <article class="menu">
       <nav class="sidenav nav nav-tabs flex-column flex-sm-colum" id="sidenav">
     	<a class="navbar-brand mt-3 mb-4 ml-3" href="index.php"><img src="public/images/DomaSoftware.svg" alt="" width="100%" height="auto"></a>
-    <div data-toggle="tooltip" data-placement="right" title="Správa obsahu"><a class="sidenav-link text-sm-center nav-link active" href="index.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/document.png"></a></div>
-    <div data-toggle="tooltip" data-placement="right" title="Zprávy"><a class="sidenav-link text-sm-center nav-link" href="zpravy.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/chat.png"></a></div>
-    <div data-toggle="tooltip" data-placement="right" title="Moderátoři"><a class="sidenav-link text-sm-center nav-link" href="moderatori.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/user-group-man-man.png"></a></div>
-    <div data-toggle="tooltip" data-placement="right" title="Statistiky"><a class="sidenav-link text-sm-center nav-link" href="statistiky.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/combo-chart.png"></a></div>
-    <div data-toggle="tooltip" data-placement="right" title="Autoři"><a class="sidenav-link text-sm-center nav-link" href="autori.php"><img class="my-2 mx-2" src="public/images/us.svg" height="24px" width="24px"></a></div>
+    <div class="sideMenuDiv" data-toggle="tooltip" data-placement="right" title="Správa obsahu"><a class="sidenav-link text-sm-center nav-link active" href="index.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/document.png"></a></div>
+    <div class="sideMenuDiv" data-toggle="tooltip" data-placement="right" title="Zprávy"><a class="sidenav-link text-sm-center nav-link" href="zpravy.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/chat.png"></a></div>
+    <div class="sideMenuDiv" data-toggle="tooltip" data-placement="right" title="Moderátoři"><a class="sidenav-link text-sm-center nav-link" href="moderatori.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/user-group-man-man.png"></a></div>
+    <div class="sideMenuDiv" data-toggle="tooltip" data-placement="right" title="Statistiky"><a class="sidenav-link text-sm-center nav-link" href="statistiky.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/combo-chart.png"></a></div>
+    <div class="sideMenuDiv" data-toggle="tooltip" data-placement="right" title="Autoři"><a class="sidenav-link text-sm-center nav-link" href="autori.php"><img class="my-2 mx-2" src="public/images/us.svg" height="24px" width="24px"></a></div>
     <form action="imports/logout.php" method="post">
-      <button type="submit" class="form-control btn btn-primary my-3" name="logout-submit" >Log-out</button>
+      <button type="submit" class="log-out form-control btn btn-primary my-3" name="logout-submit" >Log-out</button>
     </form>
   </nav>
     </article>
