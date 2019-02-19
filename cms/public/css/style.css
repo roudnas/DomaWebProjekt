@@ -85,6 +85,47 @@ padding: 0.8rem;
   border-radius: 10px;
   padding: 1rem;
 }
+.popupNav {
+  background-color: rgba(255,255,255,0.7);
+  width: 100%;
+  height: 0%;
+  position: fixed;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+.popupNav a {
+  text-decoration: none;
+  color: black;
+  font-size: 3rem;
+  display: block;
+}
+.popNavLink {
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 5vw;
+  height: 100px;
+  width: 100px;
+}
+.popupNav a:hover, .popupNav:focus {
+  color: #f1f1f1;
+  background-color: gray;
+}
+.popNavContent {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+}
+
+.popupNav .closeBtn {
+  position: absolute;
+  top: 25px;
+  right: 45px;
+  font-size: 30px;
+}
 @media screen and (max-width: 1824px) {
  .brandimg {
    background-image: url("../images/DomaSoftware.svg");
