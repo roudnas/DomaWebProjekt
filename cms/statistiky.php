@@ -55,6 +55,8 @@ if (!isset($_SESSION['userId'])) {
     <a class="popNavLink m-5" href="statistiky.php"><img class="my-4" src="https://img.icons8.com/material/50/000000/combo-chart.png"></a>
     <a class="popNavLink m-5" href="autori.php"><img class="my-4" src="public/images/us.svg" height="50px" width="50px"></a>
   </div>
+</div>
+</div>
 
     <article class="sekce mt-3" id="sekce3">
       <h1 class="heading"><img class="my-2 mx-2" src="https://img.icons8.com/material/60/000000/combo-chart.png">Statistiky</h1>

@@ -7,7 +7,6 @@ if (!isset($_SESSION['userId'])) {
 <!DOCTYPE html>
 <html lang="cs" dir="ltr">
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
@@ -27,7 +26,7 @@ if (!isset($_SESSION['userId'])) {
     <?php
     require 'imports/statushandler.php';
     ?>
-    <!--
+    <!---
     <article class="menu">
       <nav class="sidenav nav nav-tabs flex-column flex-sm-colum" id="sidenav">
     	<a class="navbar-brand mt-3 mb-4 ml-3" href="index.php"><img src="public/images/DomaSoftware.svg" alt="" width="100%" height="auto"></a>
@@ -41,7 +40,7 @@ if (!isset($_SESSION['userId'])) {
     </form>
   </nav>
     </article>
-  -->
+  --->
   <div class="popupNav" id="popNav">
   <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
 
@@ -54,6 +53,8 @@ if (!isset($_SESSION['userId'])) {
     <a class="popNavLink m-5" href="moderatori.php"><img class="my-4" src="https://img.icons8.com/material/50/000000/user-group-man-man.png"></a>
     <a class="popNavLink m-5" href="statistiky.php"><img class="my-4" src="https://img.icons8.com/material/50/000000/combo-chart.png"></a>
     <a class="popNavLink m-5" href="autori.php"><img class="my-4" src="public/images/us.svg" height="50px" width="50px"></a>
+  </div>
+  </div>
   </div>
 
           <article class="sekce mt-3" id="sekce4">

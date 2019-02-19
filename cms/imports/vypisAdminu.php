@@ -1,6 +1,3 @@
- <!DOCTYPE html>
- <html lang="cs" dir="ltr">
-   <body>
      <div class="adminTable">
        <tr>
          <th>ID</th>
@@ -10,9 +7,6 @@
          <th>Pozice</th>
        </tr>
      </div>
-   </body>
- </html>
-
  <?php
 //
    require 'dbconn.php';
