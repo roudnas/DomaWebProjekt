@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark ml-auto" id="navigator">
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark ml-auto" id="navigator">
       <div class="container-fluid">
         <a class="navbar-brand my-1" href="index.php"><img src="public/images/DomaSoftware.svg" alt="Logo" width="160" height="30"></a>
         <button type="button" class="btn btn-dark my-1" name="menuOpener" onclick="openNav()"><img src="https://img.icons8.com/material/30/000000/squared-menu.png"></button>
@@ -27,5 +20,3 @@
         </section>
       </div>
     </nav>
-  </body>
-</html>

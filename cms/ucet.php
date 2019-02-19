@@ -19,9 +19,6 @@ if (!isset($_SESSION['userId'])) {
       <button type="submit" class="log-out form-control btn btn-primary my-3" name="logout-submit" >Log-out</button>
     </form>
     -->
-  <div class="popupNav" id="popNav">
-  <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
-
   <?php require 'imports/commonmenu.php'; ?>
 
     <article class="sekce mt-3" id="sekce4">
