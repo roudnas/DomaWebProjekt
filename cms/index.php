@@ -36,39 +36,25 @@ if (!isset($_SESSION['userId'])) {
         });
     });
 </script>
-
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark ml-auto" id="navigator">
-			<div class="container-fluid">
-				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#MyTogglerNav" aria-controls="#MyTogglerNav"
-				 aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
-
-				<section class="collapse navbar-collapse" id="MyTogglerNav">
-					<div class="navbar-nav ml-auto btn-sm btn-dark">
-						<a class="nav-item nav-link" href="ucet.php"><?php $usr = $_SESSION['userUId']; echo "Howdy, $usr" . "<img class='mx-3' src='https://img.icons8.com/material/30/000000/user-male-circle.png'>"; ?></a>
-					</div>
-				</section>
-			</div>
-		</nav>
-
     <?php
     require 'imports/statushandler.php';
     ?>
-
-    <article class="menu">
-      <nav class="sidenav nav nav-tabs flex-column flex-sm-colum" id="sidenav">
-    	<a class="navbar-brand mt-3 mb-4 ml-3" href="index.php"><img src="public/images/DomaSoftware.svg" alt="" width="100%" height="auto"></a>
-    <div class="sideMenuDiv" data-toggle="tooltip" data-placement="right" title="Správa obsahu"><a class="sidenav-link text-sm-center nav-link active" href="index.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/document.png"></a></div>
-    <div class="sideMenuDiv" data-toggle="tooltip" data-placement="right" title="Zprávy"><a class="sidenav-link text-sm-center nav-link" href="zpravy.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/chat.png"></a></div>
-    <div class="sideMenuDiv" data-toggle="tooltip" data-placement="right" title="Moderátoři"><a class="sidenav-link text-sm-center nav-link" href="moderatori.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/user-group-man-man.png"></a></div>
-    <div class="sideMenuDiv" data-toggle="tooltip" data-placement="right" title="Statistiky"><a class="sidenav-link text-sm-center nav-link" href="statistiky.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/combo-chart.png"></a></div>
-    <div class="sideMenuDiv" data-toggle="tooltip" data-placement="right" title="Autoři"><a class="sidenav-link text-sm-center nav-link" href="autori.php"><img class="my-2 mx-2" src="public/images/us.svg" height="24px" width="24px"></a></div>
-    <form action="imports/logout.php" method="post">
-      <button type="submit" class="log-out form-control btn btn-primary my-3" name="logout-submit" >Log-out</button>
-    </form>
+    <!--
+    <section class="menu">
+  <nav class="sidenav nav nav-tabs flex-column flex-sm-colum" id="sidenav">
+  <div class="sideMenuDiv" data-toggle="tooltip" data-placement="right" title="Správa obsahu"><a class="sidenav-link text-sm-center nav-link active" href="index.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/document.png"></a></div>
+  <div class="sideMenuDiv" data-toggle="tooltip" data-placement="right" title="Zprávy"><a class="sidenav-link text-sm-center nav-link" href="zpravy.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/chat.png"></a></div>
+  <div class="sideMenuDiv" data-toggle="tooltip" data-placement="right" title="Moderátoři"><a class="sidenav-link text-sm-center nav-link" href="moderatori.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/user-group-man-man.png"></a></div>
+  <div class="sideMenuDiv" data-toggle="tooltip" data-placement="right" title="Statistiky"><a class="sidenav-link text-sm-center nav-link" href="statistiky.php"><img class="my-2 mx-2" src="https://img.icons8.com/material/24/000000/combo-chart.png"></a></div>
+  <div class="sideMenuDiv" data-toggle="tooltip" data-placement="right" title="Autoři"><a class="sidenav-link text-sm-center nav-link" href="autori.php"><img class="my-2 mx-2" src="public/images/us.svg" height="24px" width="24px"></a></div>
+  <form action="imports/logout.php" method="post">
+  <button type="submit" class="log-out form-control btn btn-primary my-3" name="logout-submit" >Log-out</button>
+  </form>
   </nav>
-    </article>
+  </section>
+-->
 
-      <article class="sekce" id="sekce1">
+      <article class="sekce mt-3" id="sekce1">
         <h1 class="heading"><img class="my-2 mx-2" src="https://img.icons8.com/material/60/000000/document.png">Správa obsahu</h1>
         <hr>
         <p class="popis my-3 py-3 px-3">&gt; Zde můžete spravovat články na vaší stránce!</p>
@@ -139,6 +125,18 @@ if (!isset($_SESSION['userId'])) {
           <p>&copy; Doma Software 2019</p>
         </div>
   </article>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark ml-auto" id="navigator">
+    <div class="container-fluid">
+      <a class="navbar-brand my-1" href="index.php"><img src="public/images/DomaSoftware.svg" alt="Logo" width="160" height="30"></a>
+      <button type="button" class="btn btn-dark my-1" name="menuOpener" onclick="openNav()"><img src="https://img.icons8.com/material/30/000000/squared-menu.png"></button>
+      <section class="" id="MyTogglerNav">
+        <div class="navbar-nav ml-auto btn-sm btn-dark">
+          <a class="nav-item nav-link" href="ucet.php"><?php $usr = $_SESSION['userUId']; echo "Howdy, $usr" . "<img class='mx-3' src='https://img.icons8.com/material/30/000000/user-male-circle.png'>"; ?></a>
+        </div>
+      </section>
+    </div>
+  </nav>
+
   <script>
   function onc() {
     let div = document.getElementById('fileDiv');

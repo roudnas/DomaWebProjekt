@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
-::-webkit-scrollbar {
-    display: none;
-}
+
+
+
 body {
   background: #485563;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
@@ -17,7 +17,9 @@ font-size:13px;
 }
 .navbar {
 z-index: 3;
-width: 90vw;
+position: absolute;
+bottom: 0;
+width: 100%;
 }
 .menu {
 z-index: 2;
@@ -58,11 +60,11 @@ border: 1px solid rgba(255,255,255,0.1);
 .sekce {
 z-index: 1;
 padding: 2rem;
-margin-left: 12vw;
+margin-left: 2vw;
 margin-right: 2vw;
-height: 89vh;
+height: 85vh;
 overflow: auto;
-border-radius: 15px;
+border-radius: 10px;
 background-color: #65c6bb;
 color: #000;
 }

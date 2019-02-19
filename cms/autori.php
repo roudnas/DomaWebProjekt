@@ -24,25 +24,10 @@ if (!isset($_SESSION['userId'])) {
     <script src="public/js/main.js" charset="utf-8"></script>
   </head>
   <body>
-
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark ml-auto" id="navigator">
-      <div class="container-fluid">
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#MyTogglerNav" aria-controls="#MyTogglerNav"
-         aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
-
-        <section class="collapse navbar-collapse" id="MyTogglerNav">
-          <div class="navbar-nav ml-auto btn-sm btn-dark">
-            <a class="nav-item nav-link" href="ucet.php"><?php $usr = $_SESSION['userUId']; echo "Howdy, $usr" . "<img class='mx-3' src='https://img.icons8.com/material/30/000000/user-male-circle.png'>"; ?></a>
-          </div>
-        </section>
-
-      </div>
-    </nav>
-
     <?php
     require 'imports/statushandler.php';
     ?>
-
+    <!--
     <article class="menu">
       <nav class="sidenav nav nav-tabs flex-column flex-sm-colum" id="sidenav">
     	<a class="navbar-brand mt-3 mb-4 ml-3" href="index.php"><img src="public/images/DomaSoftware.svg" alt="" width="100%" height="auto"></a>
@@ -56,9 +41,8 @@ if (!isset($_SESSION['userId'])) {
     </form>
   </nav>
     </article>
-
-
-          <article class="sekce" id="sekce4">
+  -->
+          <article class="sekce mt-3" id="sekce4">
             <h1 class="heading"><img class="my-2 mx-2" src="public/images/us.svg" height="50px" width="50px">Autoři</h1>
             <hr>
             <p class="popis my-3 p-3">&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -68,6 +52,17 @@ if (!isset($_SESSION['userId'])) {
             </div>
           </article>
 
+          <nav class="navbar navbar-expand-md bg-dark navbar-dark ml-auto" id="navigator">
+            <div class="container-fluid">
+              <a class="navbar-brand my-1" href="index.php"><img src="public/images/DomaSoftware.svg" alt="Logo" width="160" height="30"></a>
+              <button type="button" class="btn btn-dark my-1" name="menuOpener" onclick="openNav()"><img src="https://img.icons8.com/material/30/000000/squared-menu.png"></button>
+              <section class="" id="MyTogglerNav">
+                <div class="navbar-nav ml-auto btn-sm btn-dark">
+                  <a class="nav-item nav-link" href="ucet.php"><?php $usr = $_SESSION['userUId']; echo "Howdy, $usr" . "<img class='mx-3' src='https://img.icons8.com/material/30/000000/user-male-circle.png'>"; ?></a>
+                </div>
+              </section>
+            </div>
+          </nav>
           <script type="text/javascript">
             $(function () {
               $('[data-toggle="tooltip"]').tooltip();
