@@ -66,19 +66,7 @@ if (!isset($_SESSION['userId'])) {
     </div>
     </article>
     <?php include 'imports/footer.php' ?>
-    <!--
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark ml-auto" id="navigator">
-      <div class="container-fluid">
-        <a class="navbar-brand my-1" href="index.php"><img src="public/images/DomaSoftware.svg" alt="Logo" width="160" height="30"></a>
-        <button type="button" class="btn btn-dark my-1" name="menuOpener" onclick="openNav()"><img src="https://img.icons8.com/material/30/000000/squared-menu.png"></button>
-        <section class="" id="MyTogglerNav">
-          <div class="navbar-nav ml-auto btn-sm btn-dark">
-            <a class="nav-item nav-link" href="ucet.php"><?php $usr = $_SESSION['userUId']; echo "Howdy, $usr" . "<img class='mx-3' src='https://img.icons8.com/material/30/000000/user-male-circle.png'>"; ?></a>
-          </div>
-        </section>
-      </div>
-    </nav>
-  -->
+
     <script>
     function openNav() {
       document.getElementById('popNav').style.height = "100%";
