@@ -1,4 +1,4 @@
-<div class="popupNav" id="popNav">
+<div class="popupNav" style="overflow:hidden;" id="popNav">
 <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
 
 <div class="popNavContent">
