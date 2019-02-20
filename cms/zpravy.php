@@ -31,7 +31,7 @@ if (!isset($_SESSION['userId'])) {
         <p>&copy; Doma Software 2019</p>
       </div>
     </article>
-    <?php include 'imports/footer.php' ?>
+    <?php require 'imports/footer.php' ?>
 
     <script>
     function openNav() {
