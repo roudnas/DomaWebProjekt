@@ -41,7 +41,7 @@
                    <a class="nav-item nav-link" href="index.php">Domů</a>
                    <a class="nav-item nav-link" href="oNas.php">O nás</a>
                    <a class="nav-item nav-link" href="coNabizime.php">Co nabízíme</a>
-                   <a class="nav-item nav-link" href="devBlog.php">DevBlog</a>
+                   <a class="nav-item nav-link" href="devBlog.php?page=1">DevBlog</a>
                    <a class="nav-item nav-link active" href="kontakt.php">Kontakt</a>
                  </div>
                </section>

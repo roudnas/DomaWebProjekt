@@ -2,7 +2,9 @@
 
 require 'dbconn.php';
 mysqli_set_charset($conn, "utf8");
-$sql = "select id, nadpis, autor, text, datum from articles order by id desc limit 5;";
+$parMax = $_GET['page'] * 5;
+$parMin = $parMax - 5;
+$sql = "select id, nadpis, autor, text, datum from articles order by id desc limit $parMin, $parMax;";
 $result = mysqli_query($conn, $sql);
 $resultCheck = mysqli_num_rows($result);
 if ($resultCheck > 0) {
@@ -28,6 +30,7 @@ if ($resultCheck > 0) {
           <button class='btn btn-primary'>číst více..</button>
           </a>
           </div>";
+
   }
 }
 
