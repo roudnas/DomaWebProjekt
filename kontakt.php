@@ -49,35 +49,48 @@
             </div>
           </nav>
         </header>
+        <div class="container my-3" style="background-color:#292e48; color:#fff;">
+          <h3 class="text-center py-3">Zkontaktujte nás a zeptejte se na cokoli!</h3>
+        </div>
+        <div class="row justify-content-center p-3">
+          <section class="col-6 py-5" style="background-color:#292e48; color:#fff;">
+              <p>Email: user@example.com</p>
+              <p>Email: user@example.com</p>
+              <p>Email: user@example.com</p>
+              <p>Email: user@example.com</p>
+          </section>
 
-        <section class="pageSekce col-10 py-5" style="margin:0 auto;">
-          <div class="spinner-border text-primary" role="status">
-            <span class="sr-only">Loading..</span>
-          </div>
-          <form method="post" action="contactform.php">
-            <div class="form-group">
-              <label for="emailinput">Váš email</label>
-              <input name="mail" type="email" class="form-control" id="mail" placeholder="user@example.com" required>
+
+          <section class="col-5 py-5">
+            <div class="spinner-border text-primary" role="status">
+              <span class="sr-only">Loading..</span>
             </div>
-            <div class="form-group">
-              <label for="emailinput">Předmět</label>
-              <input name="subject" type="text" class="form-control" id="subject" placeholder="Dotaz" required>
-            </div>
-            <div class="form-group">
-              <label for="emailinput">Jméno</label>
-              <input name="name" type="text" class="form-control" id="name" placeholder="Name" required>
-            </div>
-            <div class="form-group">
-              <label for="emailinput">Přijmení</label>
-              <input name="surname" type="text" class="form-control" id="surname" placeholder="Surname" required>
-            </div>
-            <div class="form-group">
-              <label for="textarea">Text</label>
-              <textarea name="zprava" id="zprava" class="form-control" id="textarea" rows="10" placeholder="Dobrý den, zaujala mě vaše nabídka, chci vědět více..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </section>
+            <form method="post" action="contactform.php">
+              <div class="form-group">
+                <label for="emailinput">Váš email</label>
+                <input name="mail" type="email" class="form-control" id="mail" placeholder="user@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="emailinput">Předmět</label>
+                <input name="subject" type="text" class="form-control" id="subject" placeholder="Dotaz" required>
+              </div>
+              <div class="form-group">
+                <label for="emailinput">Jméno</label>
+                <input name="name" type="text" class="form-control" id="name" placeholder="Name" required>
+              </div>
+              <div class="form-group">
+                <label for="emailinput">Přijmení</label>
+                <input name="surname" type="text" class="form-control" id="surname" placeholder="Surname" required>
+              </div>
+              <div class="form-group">
+                <label for="textarea">Text</label>
+                <textarea name="zprava" id="zprava" class="form-control" id="textarea" rows="10" placeholder="Dobrý den, zaujala mě vaše nabídka, chci vědět více..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </section>
+        </div>
+
 
 
         <footer>

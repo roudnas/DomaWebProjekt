@@ -65,7 +65,7 @@ header("Cache-control: no-cache, must-revalidate");
         require 'imports/showarticlesbyid.php';
         ?>
         <div class="row justify-content-center">
-          <a href="devBlog.php"><button class='btn btn-primary'>Zpět na články.</button></a>
+          <a href="devBlog.php?page=1"><button class='btn btn-primary'>Zpět na články.</button></a>
         </div>
 
       </article>
