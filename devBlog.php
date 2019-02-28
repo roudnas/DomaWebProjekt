@@ -84,10 +84,11 @@
           <div class="row justify-content-center py-3">
             <p class="text-center text-muted">&copy; Dominik Roudný and Martin Malíř<br> 2018/19 </p>
           </div>
-
         </footer>
+
       </div>
     </div>
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
     AOS.init();
