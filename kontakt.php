@@ -54,10 +54,7 @@
         </div>
         <div class="row justify-content-center p-3">
           <section class="col-6 py-5" style="background-color:#292e48; color:#fff;">
-              <p>Email: user@example.com</p>
-              <p>Email: user@example.com</p>
-              <p>Email: user@example.com</p>
-              <p>Email: user@example.com</p>
+              <img src="public/images/contact.svg" alt="" class="mt-5">
           </section>
 
 
