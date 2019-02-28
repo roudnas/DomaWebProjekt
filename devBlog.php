@@ -56,15 +56,29 @@
         <?php require 'imports/showarticles.php';
         ?>
           </div>
-          <div class="row justify-content-between">
-          <a href="devBlog.php?page=<?php if ($_GET['page'] != 1) {
-            echo $_GET['page'] - 1;} else { echo $_GET['page'];}?>"><button class="btn btn-primary mx-5" type="button" name="button">Prev</button></a>
-          <a href="devBlog.php?page=<?php echo $_GET['page'] + 1?>"><button class="btn btn-primary mx-5" type="button" name="button">Next</button></a>
+          <hr>
+          <div class="row justify-content-center">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="devBlog.php?page=<?php if ($_GET['page'] != 1) {
+                  echo $_GET['page'] - 1;} else { echo $_GET['page'];}?>" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <?php require 'imports/paginationgenerator.php'; ?>
+
+              <li class="page-item">
+                <a class="page-link" href="devBlog.php?page=<?php echo $_GET['page'] + 1?>" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
           </div>
-
         </article>
-
-
 
         <footer>
           <div class="row justify-content-center py-3">
