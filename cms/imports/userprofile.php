@@ -1,14 +1,7 @@
-<!DOCTYPE html>
 <html lang="cs" dir="ltr">
   <body>
     <div class="adminTable">
-      <tr>
-        <th>ID</th>
-        <th>Uživ. jméno</th>
-        <th>Jméno</th>
-        <th>Příjmení</th>
-        <th>Pozice</th>
-      </tr>
+
     </div>
   </body>
 </html>
@@ -32,15 +25,25 @@
       $showSurname = $row[3];
       $showPosition = $row[4];
 
-      echo "<tr>
+      echo "
 
-              <td>$showID</td>
-              <td>$showUserName</td>
-              <td>$showName</td>
-              <td>$showSurname</td>
-              <td>$showPosition</td>
+      <tr>
+        <th>Vaše id: </th><td>$showID</td>
+      </tr>
+      <tr>
+        <th>Uživatelské jméno: </th><td>$showUserName</td>
+      </tr>
+      <tr>
+        <th>Jméno: </th><td>$showName</td>
+      </tr>
+      <tr>
+        <th>Příjmení: </th><td>$showSurname</td>
+      </tr>
+      <tr>
+        <th>Pozice: </th><td>$showPosition</td>
+      </tr>
 
-            </tr>";
+            ";
 
           }
         }

@@ -41,7 +41,7 @@
                    <a class="nav-item nav-link" href="index.php">Domů</a>
                    <a class="nav-item nav-link" href="oNas.php">O nás</a>
                    <a class="nav-item nav-link" href="coNabizime.php">Co nabízíme</a>
-                   <a class="nav-item nav-link active" href="devBlog.php">DevBlog</a>
+                   <a class="nav-item nav-link active" href="devBlog.php?page=1">DevBlog</a>
                    <a class="nav-item nav-link" href="kontakt.php">Kontakt</a>
                  </div>
                </section>
@@ -56,6 +56,12 @@
         <?php require 'imports/showarticles.php';
         ?>
           </div>
+          <div class="row justify-content-between">
+          <a href="devBlog.php?page=<?php if ($_GET['page'] != 1) {
+            echo $_GET['page'] - 1;} else { echo $_GET['page'];}?>"><button class="btn btn-primary mx-5" type="button" name="button">Prev</button></a>
+          <a href="devBlog.php?page=<?php echo $_GET['page'] + 1?>"><button class="btn btn-primary mx-5" type="button" name="button">Next</button></a>
+          </div>
+
         </article>
 
 
