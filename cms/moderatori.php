@@ -66,7 +66,6 @@ if (!isset($_SESSION['userId'])) {
     </div>
     </div>
     </div>
-
       </div>
 
       <div class="wrapper my-3">
