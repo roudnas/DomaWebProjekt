@@ -6,125 +6,57 @@ if (!isset($_SESSION['userId'])) {
 ?>
 <!DOCTYPE html>
 <html lang="cs" dir="ltr">
-  <head>
-    <?php require 'imports/commonheader.php';  ?>
-  </head>
+<head>
+  <?php require 'imports/commonheader.php';  ?>
+  <link rel="stylesheet" href="public/css/bubbles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
 
   <body>
-    <script type="text/javascript">
-    jQuery(function ($) {
-        $("#textArea").shieldEditor({
-            height: 260
-        });
-    });
-</script>
     <?php
     require 'imports/statushandler.php';
     ?>
 
-    <!--
-  <form action="imports/logout.php" method="post">
-  <button type="submit" class="log-out form-control btn btn-primary my-3" name="logout-submit" >Log-out</button>
-  </form>
-  -->
+        <?php require 'imports/commonmenu.php'; ?>
 
-      <?php require 'imports/commonmenu.php'; ?>
+          <article class="sekce mt-3" id="sekce4" style="opacity: 0.9;background: #485563 !important;background: -webkit-linear-gradient(to right, #29323c, #485563);background: linear-gradient(to right, #29323c, #485563) !important;">
 
-      <article class="sekce mt-3" id="sekce1">
-        <h1 class="heading"><img class="my-2 mx-2" src="https://img.icons8.com/material/60/000000/document.png">Správa obsahu</h1>
-        <hr>
-        <p class="popis my-3 py-3 px-3">&gt; Zde můžete spravovat články na vaší stránce!</p>
+            <div class="row justify-content-center">
+              <img class="my-3" src="public/images/DomaSoftware.svg" alt="Logo" width="200" height="60">
+              <p class="text-center" style="font-size:1.5rem;">&copy;</p>
+            </div>
+            <hr style="background-color:#fff;">
 
-        <div class="card seznamClanku">
-          <h3><img class="mx-3" src="https://img.icons8.com/material-outlined/48/000000/overview-pages-3.png">Seznam článků</h3>
-          <hr>
-          <table class="table table-striped table-dark">
-            <tr>
-              <?php
-              require 'imports/vypisclanku.php';
-               ?>
-            </tr>
-          </table>
-          <button class='btn btn-dark mb-2' data-toggle='modal' data-target='#artRemoveModal'>Odstranit článek</button>
-        </div>
+            <div class="Bubbles">
+              <div class="row justify-content-center">
+                <a data-aos="zoom-in-up" data-aos-duration="700" class="BubblesLink m-5" href="obsah.php"><img class="my-4" src="https://img.icons8.com/material/50/000000/document.png"></a>
+                <a data-aos="zoom-in-up" data-aos-duration="1000" class="BubblesLink m-5" href="zpravy.php"><img class="my-4" src="https://img.icons8.com/material/50/000000/chat.png"></a>
+              </div>
+            <div class="row justify-content-center">
+              <a data-aos="zoom-in-up" data-aos-duration="900" class="BubblesLink m-5" href="moderatori.php"><img class="my-4" src="https://img.icons8.com/material/50/000000/user-group-man-man.png"></a>
+              <a data-aos="zoom-in-up" data-aos-duration="500" class="BubblesLink m-5" href="statistiky.php"><img class="my-4" src="https://img.icons8.com/material/50/000000/combo-chart.png"></a>
+              <a data-aos="zoom-in-up" data-aos-duration="600" class="BubblesLink m-5" href="autori.php"><img class="my-4" src="public/images/us.svg" height="50px" width="50px"></a>
+            </div>
+            </div>
 
-        <div class="modal fade" id="artRemoveModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Opravdu chcete odstranit článek?</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <form class="" action="imports/removeart.php" method="post">
-      <div class="modal-body">
-        <div class="form-group">
-          <label for="selecto">Vyberte ID článku, který chcete odstranit.</label>
-          <select class="custom-select" id="selecto" name="idCheck">
-            <?php
-            include 'imports/vypisartsdoselectu.php';
-            ?>
-          </select>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="submit" name="removeButton" class="btn btn-primary">Odstranit</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
+          </article>
+          <?php require 'imports/footer.php' ?>
 
-        <div class="card wrapper my-3" style="border-radius:10px;">
-          <form action="imports/contentadd.php" method="post" id="contentForm" class="formContent" enctype="multipart/form-data">
-            <h3><img class="mx-3" src="https://img.icons8.com/material-outlined/48/000000/edit-file.png">Nový článek</h3>
-            <hr>
-        <div class="form-group col-6">
-          <label for="inputNadpis">Nadpis</label>
-          <input name="nadpis" type="text" class="form-control" id="inputNadpis" aria-describedby="Nadpis" placeholder="Nadpis vašeho článku">
-        </div>
-        <div class="form-group col-9">
-          <label for="textArea">Text článku</label>
-          <textarea name="textarea" id="textArea" rows="8"></textarea>
-        </div>
-        <button type="button" class="btn mx-3" onclick='onc()' id="imupButton">Přidat fotky (max 2.5 MB)</button>
-        <div class="custom-file py-3 my-3" id="fileDiv">
-        </div>
-          <button type="submit" class="btn btn-dark mx-3" name="content-submit" form="contentForm">Přidat článek</button>
-        </form>
-        </div>
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script>
+          AOS.init();
 
-
-        <div class="footer mt-5 p-5 text-center" style="border:1px solid rgba(0,0,0,.1);">
-          <p>&copy; Doma Software 2019</p>
-        </div>
-  </article>
-  <?php require 'imports/footer.php' ?>
-
-  <script>
-  function openNav() {
-    document.getElementById('popNav').style.height = "100%";
-  }
-  function closeNav() {
-    document.getElementById('popNav').style.height = "0%";
-  }
-  function onc() {
-    let div = document.getElementById('fileDiv');
-    let css = window.getComputedStyle(div).getPropertyValue("display");
-    if (css == "none") {
-      div.style.display = "block";
-      div.innerHTML = "<input class='custom-file-input col-10 mx-3' id='inputFile' type='file' name='userfile[]' multiple='multiple'><label class='custom-file-label col-10 mx-3' for='inputFile'>Choose file</label>";
-    } else {
-      div.style.display = "none";
-      div.innerHTML = "";
-    }
-  }
-  </script>
-  <script type="text/javascript">
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip();
-    })
-  </script>
+          function openNav() {
+            document.getElementById('popNav').style.height = "100%";
+          }
+          function closeNav() {
+            document.getElementById('popNav').style.height = "0%";
+          }
+          </script>
+          <script type="text/javascript">
+            $(function () {
+              $('[data-toggle="tooltip"]').tooltip();
+            })
+          </script>
   </body>
 </html>

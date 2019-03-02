@@ -1,0 +1,16 @@
+.BubblesLink {
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 5vw;
+  height: 100px;
+  width: 100px;
+}
+.BubblesLink:hover, .BubblesLink:focus {
+  color: #f1f1f1;
+  background-color: gray;
+
+}
+.Bubbles {
+  width: 100%;
+  text-align: center;
+}

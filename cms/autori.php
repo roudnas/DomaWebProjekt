@@ -14,11 +14,6 @@ if (!isset($_SESSION['userId'])) {
     <?php
     require 'imports/statushandler.php';
     ?>
-    <!---
-    <form action="imports/logout.php" method="post">
-      <button type="submit" class="log-out form-control btn btn-primary my-3" name="logout-submit" >Log-out</button>
-    </form>
-  --->
 
         <?php require 'imports/commonmenu.php'; ?>
 

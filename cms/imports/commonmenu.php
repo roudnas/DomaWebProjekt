@@ -3,7 +3,7 @@
 
 <div class="popNavContent">
   <div class="row justify-content-center">
-    <a class="popNavLink m-5" href="index.php"><img class="my-4" src="https://img.icons8.com/material/50/000000/document.png"></a>
+    <a class="popNavLink m-5" href="obsah.php"><img class="my-4" src="https://img.icons8.com/material/50/000000/document.png"></a>
     <a class="popNavLink m-5" href="zpravy.php"><img class="my-4" src="https://img.icons8.com/material/50/000000/chat.png"></a>
   </div>
 <div class="row justify-content-center">
