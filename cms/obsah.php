@@ -74,11 +74,11 @@ if (!isset($_SESSION['userId'])) {
           <form action="imports/contentadd.php" method="post" id="contentForm" class="formContent" enctype="multipart/form-data">
             <h3><img class="mx-3" src="https://img.icons8.com/material-outlined/48/000000/edit-file.png">Nový článek</h3>
             <hr>
-        <div class="form-group col-6">
+        <div class="form-group col-8">
           <label for="inputNadpis">Nadpis</label>
           <input name="nadpis" type="text" class="form-control" id="inputNadpis" aria-describedby="Nadpis" placeholder="Nadpis vašeho článku">
         </div>
-        <div class="form-group col-9">
+        <div class="form-group col-12">
           <label for="textArea">Text článku</label>
           <textarea name="textarea" id="textArea" rows="8"></textarea>
         </div>
