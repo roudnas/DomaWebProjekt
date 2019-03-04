@@ -23,8 +23,8 @@
 
     <div class="mainobal" id="mainobal">
       <div class="obal">
-        <img src="public/images/DomaSoftware.svg" alt="Logo" height="70">
-        <h1 class="nadpis text-center">Admin system login</h1>
+
+        <h1 class="nadpis text-center"><img src="public/images/DomaSoftware.svg" alt="Logo" height="70"></h1>
         <form action="imports/formhandler.php" method="post" class="form-signin py-5">
           <div class="form-group">
             <label for="username" class="sr-only">Your username</label>
