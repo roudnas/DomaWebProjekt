@@ -7,9 +7,13 @@ font-family: 'Source Sans Pro', sans-serif;
 
 }
 body {
-background-color: #343639 !important;
+  background-color: #969696 !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='46' height='46' fill-opacity='0.6' fill='%23404040'/%3E%3C/svg%3E");
 }
 .obal {
+  width: 40vw;
+  height: 60vh;
+  margin: 0 auto;
 padding: 1rem;
 border: 1px solid rgba(0,0,0,0.6);
 background: #343a40;
@@ -21,6 +25,7 @@ color: rgba(255,255,255,0.75);
 font-size: 25px;
 padding: 5px;
 max-height: 100vh;
+margin-top: 20vh;
 }
 .buttons {
 margin: 10px;

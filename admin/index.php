@@ -23,15 +23,16 @@
 
     <div class="mainobal" id="mainobal">
       <div class="obal">
-        <h1 class="nadpis">Admin system login</h1>
+        <img src="public/images/DomaSoftware.svg" alt="Logo" height="70">
+        <h1 class="nadpis text-center">Admin system login</h1>
         <form action="imports/formhandler.php" method="post" class="form-signin py-5">
           <div class="form-group">
             <label for="username" class="sr-only">Your username</label>
-            <input type="text" name="username" value="" placeholder="Username">
+            <input class="form-control col-6 mx-auto" id="username" type="text" name="username" placeholder="Username">
           </div>
           <div class="form-group">
             <label for="pw" class="sr-only">Your password</label>
-            <input type="password" name="pw" value="" placeholder="Password">
+            <input class="form-control col-6 mx-auto"type="password" id="pw" name="pw" placeholder="Password">
           </div>
           <button type="submit" name="login-submit" class="btn btn-lg btn-primary">Log-in</button>
           <p class="mt-5 text-muted">&copy; 2018-2019</p>
@@ -39,8 +40,6 @@
         <?php
         if (isset($_SESSION['userId'])) {
           header("Location: ../cms/index.php");
-        } else {
-          echo '<p class="status">Neprihlaseno..</p>';
         }
         ?>
       </div>
