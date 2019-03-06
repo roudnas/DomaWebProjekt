@@ -14,7 +14,7 @@ if (!isset($_SESSION['userId'])) {
     <script type="text/javascript">
     jQuery(function ($) {
         $("#textArea").shieldEditor({
-            height: 260
+            height: 460
         });
     });
 </script>

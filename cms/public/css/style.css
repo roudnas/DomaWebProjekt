@@ -130,6 +130,7 @@ padding: 0.8rem;
 .dropdown-menu a {
 color: #fff;
 }
+
 @media screen and (max-width: 1824px) {
  .brandimg {
    background-image: url("../images/DomaSoftware.svg");
@@ -139,5 +140,7 @@ color: #fff;
  }
 }
 @media screen and (max-width:450px) {
-
+.usrFoot {
+  display: none;
+}
 }
