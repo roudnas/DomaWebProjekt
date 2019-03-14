@@ -36,4 +36,18 @@
     exit();
   }
 
+  $sql3 = "SELECT * FROM users WHERE username = '$username' AND name = '$name';";
+  $result = mysqli_query($conn, $sql3);
+  if (mysqli_num_rows($result) > 0) {
+    while (row_fetch_assoc($result)) {
+      $userid = $row['id'];
+      $sql = "INSERT INTO profileimg (userid, status) VALUES ($userid, 1);";
+      mysqli_query($conn, $sql);
+    }
+  }else {
+    header("Location: ../moderatori.php?nejdeto");
+    exit();
+  }
+
+
  ?>
