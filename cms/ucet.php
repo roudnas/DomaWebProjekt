@@ -32,6 +32,19 @@ if (!isset($_SESSION['userId'])) {
 
 <br> <button class='btn btn-dark mb-2 py-2' style="margin:auto;display:block;width:50%;" data-toggle='modal' data-target='#userChangePwModal'>Změnit heslo</button>
 
+<!--
+  <div class="" style="border:2px solid red;">
+    <?php require 'imports/profilepicture.php' ?>
+  </div>
+
+-->
+
+<div class="">
+  <form class="" action="imports/profilepictureupload.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="imgUploadFile" value="">
+    <button type="submit" name="imgUploadSubmitBtn">Nahrát fotku</button>
+  </form>
+</div>
 
     <div class="modal fade" id="userChangePwModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog" role="document">
@@ -59,7 +72,6 @@ if (!isset($_SESSION['userId'])) {
 </div>
 </div>
 </div>
-
     <div class="footer mt-5 p-5 text-center" style="border:1px solid rgba(0,0,0,.1);">
       <p>&copy; Doma Software 2019</p>
     </div>
