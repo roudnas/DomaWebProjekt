@@ -103,6 +103,14 @@ if (!isset($_SESSION['userId'])) {
   function closeNav() {
     document.getElementById('popNav').style.height = "0%";
   }
+
+  function openAutor() {
+    document.getElementById('sideAutor').style.width = "250px";
+  }
+  function closeAutor() {
+    document.getElementById('sideAutor').style.width = "0px";
+  }
+  
   function onc() {
     let div = document.getElementById('fileDiv');
     let css = window.getComputedStyle(div).getPropertyValue("display");
