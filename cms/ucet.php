@@ -2,6 +2,8 @@
 session_start();
 if (!isset($_SESSION['userId'])) {
   header("Location: ../admin/index.php");
+
+
 }
 ?>
 <!DOCTYPE html>
@@ -13,13 +15,8 @@ if (!isset($_SESSION['userId'])) {
   <body>
     <?php
     require 'imports/statushandler.php';
+    require 'imports/commonmenu.php';
     ?>
-    <!--
-    <form action="imports/logout.php" method="post">
-      <button type="submit" class="log-out form-control btn btn-primary my-3" name="logout-submit" >Log-out</button>
-    </form>
-    -->
-  <?php require 'imports/commonmenu.php'; ?>
 
     <article class="sekce mt-3" id="sekce4">
     <h1 class="heading"><img class="my-2 mx-2" src="https://img.icons8.com/material/60/000000/contacts.png">Účet</h1>

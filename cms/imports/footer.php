@@ -1,6 +1,6 @@
   <div class="sideAutorNav bg-dark" id="sideAutor">
     <a href="javascript:void(0)" class="closebtny" onclick="closeAutor()">&times;</a>
-    <a href="ucet.php">Účet</a>
+      <a href="ucet.php">Účet</a>
     <hr style="background-color:gray;">
       <button style="width:100%;" class="btn btn-secondary btn-sm log-out my-1" name="logout-submit"><a class="logA" href="imports/logout.php">Log-out</a></button>
   </div>
