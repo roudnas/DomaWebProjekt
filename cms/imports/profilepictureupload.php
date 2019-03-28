@@ -1,7 +1,7 @@
 <?php
 
   if (isset($_POST['imgUploadSubmitBtn'])) {
-
+    define('MB', 1048576);
     $fileName = $_FILES['imgUploadFile']['name'];
     $fileTmpName = $_FILES['imgUploadFile']['tmp_name'];
     $fileSize = $_FILES['imgUploadFile']['size'];
@@ -14,7 +14,7 @@
 
     if (in_array($fileActualExt, $allowedTypes)) {
       if ($fileError === 0) {
-        if ($fileSize < 50000) {
+        if ($fileSize < 10*MB) {
           $fileNameNew = uniqid("", true).".".$fileActualExt;
           $fileDestination = '../public/images/profileImg/'."$fileNameNew";
           move_uploaded_file($fileTmpName, $fileDestination);
@@ -32,7 +32,5 @@
       header("Location: ../ucet.php?error=incompatibleImgType");
       exit();
     }
-
   }
-
- ?>
+?>
