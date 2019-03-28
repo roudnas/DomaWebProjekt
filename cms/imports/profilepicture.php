@@ -12,10 +12,10 @@ if (mysqli_num_rows($result) > 0) {
     while ($rowImg = mysqli_fetch_assoc($resultImg)) {
         if ($rowImg['status'] == 0) {
           echo "<img src='public/images/profileImg/profile.$id.jpg'>";
-          exit();
+
         }else {
           echo "<img style=height:20px; src='public/images/defaultProfileImg.jpg'>";
-          exit();
+
         }
     }
   }

@@ -18,14 +18,14 @@
           $fileNameNew = uniqid("", true).".".$fileActualExt;
           $fileDestination = '../public/images/profileImg/'."$fileNameNew";
           move_uploaded_file($fileTmpName, $fileDestination);
-          header("Location ../ucet.php?success=uploadedSucessfuly");
+          header("Location: ../ucet.php?success=uploadedSucessfuly");
           exit();
         }else {
-          header("Location ../ucet.php?error=fileIsTooBig");
+          header("Location: ../ucet.php?error=fileIsTooBig");
           exit();
         }
       }else {
-        header("Location ../ucet.php?error=WhileFileUpload");
+        header("Location: ../ucet.php?error=WhileFileUpload");
         exit();
       }
     }else {

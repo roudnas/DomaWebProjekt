@@ -29,11 +29,11 @@ if (!isset($_SESSION['userId'])) {
 
 <br> <button class='btn btn-dark mb-2 py-2' style="margin:auto;display:block;width:50%;" data-toggle='modal' data-target='#userChangePwModal'>Změnit heslo</button>
 
-<!--
+
   <div class="" style="border:2px solid red;">
-    <?php// require 'imports/profilepicture.php' ?>
+    <?php require 'imports/profilepicture.php' ?>
   </div>
--->
+
 
 <div class="">
   <form class="" action="imports/profilepictureupload.php" method="post" enctype="multipart/form-data">
