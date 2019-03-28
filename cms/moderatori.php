@@ -31,8 +31,8 @@ if (!isset($_SESSION['userId'])) {
           </tr>
         </table>
 
-        <button class='btn btn-dark mb-2' data-toggle='modal' data-target='#userDeleteModal'>Smazat uživatele</button>
-        <button class='btn btn-dark mb-2' data-toggle='modal' data-target='#userAddModal'>Přidat uživatele</button>
+        
+        <?php require 'imports/moderatoricheck.php'; ?>
 
     <div class="modal fade" id="userDeleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">

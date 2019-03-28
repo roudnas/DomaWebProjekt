@@ -1,15 +1,14 @@
 <?php
 
   if (isset($_POST['imgUploadSubmitBtn'])) {
-    $file = $_FILE['imgUploadFile'];
-    $fileName = $_FILE['name'];
-    $fileTmpName = $_FILE['tmp_name'];
-    $fileSize = $_FILE['size'];
-    $fileError = $_FILE['error'];
-    $fileType = $_FILE['type'];
+
+    $fileName = $_FILES['imgUploadFile']['name'];
+    $fileTmpName = $_FILES['imgUploadFile']['tmp_name'];
+    $fileSize = $_FILES['imgUploadFile']['size'];
+    $fileError = $_FILES['imgUploadFile']['error'];
 
     $fileExt = explode('.', $fileName);
-    $fileActualExt = strtolower(end($fileExt));
+    $fileActualExt = end($fileExt);
 
     $allowedTypes = array('jpg', 'jpeg', 'png');
 
@@ -17,16 +16,16 @@
       if ($fileError === 0) {
         if ($fileSize < 50000) {
           $fileNameNew = uniqid("", true).".".$fileActualExt;
-          $fileDestination = 'public/images/profileImg/'.$fileNameNew;
+          $fileDestination = '../public/images/profileImg/'."$fileNameNew";
           move_uploaded_file($fileTmpName, $fileDestination);
-          header('Location ../ucet.php?uploadedSucessfuly');
+          header("Location ../ucet.php?success=uploadedSucessfuly");
           exit();
         }else {
-          header('Location ../ucet.php?error=fileIsTooBig');
+          header("Location ../ucet.php?error=fileIsTooBig");
           exit();
         }
       }else {
-        header('Location ../ucet.php?error=WhileFileUpload');
+        header("Location ../ucet.php?error=WhileFileUpload");
         exit();
       }
     }else {

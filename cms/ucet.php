@@ -37,11 +37,12 @@ if (!isset($_SESSION['userId'])) {
 -->
 
 <div class="">
-  <form class="" action="imports/profilepictureupload.php" method="post" enctype="multipart/form-data">
+  <form action="imports/profilepictureupload.php" method="post" id="ppUP" enctype="multipart/form-data">
     <input type="file" name="imgUploadFile" value="">
     <button type="submit" name="imgUploadSubmitBtn">Nahrát fotku</button>
   </form>
 </div>
+
 
     <div class="modal fade" id="userChangePwModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog" role="document">

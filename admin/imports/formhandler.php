@@ -40,6 +40,7 @@ if (isset($_POST['login-submit'])) {
           $_SESSION['userId'] = $row['id'];
           $_SESSION['userUId'] = $row['name'];
           $_SESSION['userSur'] = $row['surname'];
+          $_SESSION['userRole'] = $row['position'];
           header("Location: ../index.php?login=true");
           exit();
 
