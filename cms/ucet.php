@@ -34,7 +34,7 @@ if (!isset($_SESSION['userId'])) {
 
 <!--
   <div class="" style="border:2px solid red;">
-    <?php require 'imports/profilepicture.php' ?>
+    <?php// require 'imports/profilepicture.php' ?>
   </div>
 
 -->
