@@ -14,11 +14,6 @@ if (!isset($_SESSION['userId'])) {
     <?php
     require 'imports/statushandler.php';
     ?>
-    <!--
-    <form action="imports/logout.php" method="post">
-      <button type="submit" class="log-out form-control btn btn-primary my-3" name="logout-submit" >Log-out</button>
-    </form>
-    -->
   <?php require 'imports/commonmenu.php'; ?>
 
     <article class="sekce mt-3" id="sekce4">
@@ -40,7 +35,7 @@ if (!isset($_SESSION['userId'])) {
 -->
 
 <div class="">
-  <form class="" action="imports/profilepictureupload.php" method="post" enctype="multipart/form-data">
+  <form class="" action="imports/profilepictureupload.php" method="post">
     <input type="file" name="imgUploadFile" value="">
     <button type="submit" name="imgUploadSubmitBtn">Nahrát fotku</button>
   </form>
