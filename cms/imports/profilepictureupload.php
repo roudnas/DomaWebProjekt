@@ -22,15 +22,15 @@
           header('Location ../ucet.php?uploadedSucessfuly');
           exit();
         }else {
-          header('Location ../ucet.php?fileIsTooBig');
+          header('Location ../ucet.php?error=fileIsTooBig');
           exit();
         }
       }else {
-        header('Location ../ucet.php?errorWhileFileUpload');
+        header('Location ../ucet.php?error=WhileFileUpload');
         exit();
       }
     }else {
-      header("Location: ../ucet.php?incompatibleImgType");
+      header("Location: ../ucet.php?error=incompatibleImgType");
       exit();
     }
 
