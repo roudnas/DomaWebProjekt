@@ -25,21 +25,8 @@ if (!isset($_SESSION['userId'])) {
       <?php require 'imports/commonmenu.php'; ?>
 
       <article class="sekce mt-3" id="sekce1">
-        <h1 class="heading"><img class="my-2 mx-2" src="https://img.icons8.com/material/60/000000/document.png">Správa obsahu | Zde můžete spravovat články na vaší stránce!</h1>
+        <h1 class="heading"><img class="my-2 mx-2" src="https://img.icons8.com/material/60/000000/document.png">Nový článek | Vyjádřete se!</h1>
         <hr style="background:#fff;">
-        <div class="card seznamClanku">
-          <h3><img class="mx-3" src="https://img.icons8.com/material-outlined/48/000000/overview-pages-3.png">Seznam článků</h3>
-          <hr>
-          <table class="table table-striped table-dark">
-            <tr>
-              <?php
-              require 'imports/vypisclanku.php';
-               ?>
-            </tr>
-          </table>
-          <button class='btn btn-dark mb-2' data-toggle='modal' data-target='#artRemoveModal'>Odstranit článek</button>
-          <a href="newarticle.php"><button class='btn btn-dark btn-block mb-2' data-toggle='modal' data-target='#userDeleteModal'>Přidat článek</button></a>
-        </div>
 
         <div class="modal fade" id="artRemoveModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -69,6 +56,24 @@ if (!isset($_SESSION['userId'])) {
   </div>
 </div>
 
+        <div class="card wrapper my-3" style="border-radius:10px;">
+          <form action="imports/contentadd.php" method="post" id="contentForm" class="formContent" enctype="multipart/form-data">
+            <h3><img class="mx-3" src="https://img.icons8.com/material-outlined/48/000000/edit-file.png">Nový článek</h3>
+            <hr>
+        <div class="form-group col-8">
+          <label for="inputNadpis">Nadpis</label>
+          <input name="nadpis" type="text" class="form-control" style="background:#fff !important;" id="inputNadpis" aria-describedby="Nadpis" placeholder="Nadpis vašeho článku">
+        </div>
+        <div class="form-group col-12">
+          <label for="textArea">Text článku</label>
+          <textarea name="textarea" id="textArea"></textarea>
+        </div>
+        <button type="button" class="btn mx-3" onclick='onc()' id="imupButton">Přidat fotky (max 2.5 MB)</button>
+        <div class="custom-file py-3 my-3" id="fileDiv">
+        </div>
+          <button type="submit" class="btn btn-dark mx-3" name="content-submit" form="contentForm">Přidat článek</button>
+        </form>
+        </div>
 
 
         <div class="footer mt-5 p-5 text-center" style="border:1px solid #A7ACB5;">
@@ -90,6 +95,18 @@ if (!isset($_SESSION['userId'])) {
   }
   function closeAutor() {
     document.getElementById('sideAutor').style.width = "0px";
+  }
+
+  function onc() {
+    let div = document.getElementById('fileDiv');
+    let css = window.getComputedStyle(div).getPropertyValue("display");
+    if (css == "none") {
+      div.style.display = "block";
+      div.innerHTML = "<input class='custom-file-input col-10 mx-3' style='transition:all 0.3s;' id='inputFile' type='file' name='userfile[]' multiple='multiple'><label class='custom-file-label col-10 mx-3' for='inputFile'>Choose file</label>";
+    } else {
+      div.style.display = "none";
+      div.innerHTML = "";
+    }
   }
   </script>
   <script type="text/javascript">

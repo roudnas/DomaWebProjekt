@@ -68,7 +68,7 @@ if (!isset($_SESSION['userId'])) {
 </div>
 </div>
 </div>
-    <div class="footer mt-5 p-5 text-center" style="border:1px solid rgba(0,0,0,.1);">
+    <div class="footer mt-5 p-5 text-center" style="border:1px solid #A7ACB5;">
       <p>&copy; Doma Software 2019</p>
     </div>
     </article>

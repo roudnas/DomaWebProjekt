@@ -20,7 +20,7 @@ if (!isset($_SESSION['userId'])) {
       <hr>
       <p class="popis my-3 p-3">&gt; Výpis všech moderátorů vaší stránky. Tito moderátoři se mohou připojit do systému pro správu obsahu.</p>
 
-      <div class="card seznamModeratoru">
+      <div class="card seznamModeratoru" style="background: #25273E;">
         <h3><img class="mx-3" src="https://img.icons8.com/material/48/000000/user-menu-female.png">Seznam moderátorů</h3>
         <hr>
         <table class="table table-striped table-dark">
@@ -31,7 +31,7 @@ if (!isset($_SESSION['userId'])) {
           </tr>
         </table>
 
-        
+
         <?php require 'imports/moderatoricheck.php'; ?>
 
     <div class="modal fade" id="userDeleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -109,7 +109,7 @@ if (!isset($_SESSION['userId'])) {
       </div>
       </div>
 
-      <div class="footer mt-5 p-5 text-center" style="border:1px solid rgba(0,0,0,.1);">
+      <div class="footer mt-5 p-5 text-center" style="border:1px solid #A7ACB5;">
         <p>&copy; Doma Software 2019</p>
       </div>
     </article>
