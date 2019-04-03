@@ -9,7 +9,6 @@ $result = mysqli_query($conn, $sql);
 $resultCheck = mysqli_num_rows($result);
 if ($resultCheck > 0) {
   while ($row = mysqli_fetch_array($result)) {
-    #try
     $showID = $row[0];
     $showNadpis = $row[1];
     $showAutor = $row[2];
