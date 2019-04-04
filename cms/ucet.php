@@ -17,10 +17,6 @@ if (!isset($_SESSION['userId'])) {
     require 'imports/statushandler.php';
     require 'imports/commonmenu.php';
     ?>
-<<<<<<< HEAD
-  <?php require 'imports/commonmenu.php'; ?>
-=======
->>>>>>> 250380ac01cde57c10e4553d03d11bf75bf30087
 
     <article class="sekce mt-3" id="sekce4">
     <h1 class="heading"><img class="my-2 mx-2" src="https://img.icons8.com/material/60/000000/contacts.png">Účet</h1>
@@ -40,8 +36,8 @@ if (!isset($_SESSION['userId'])) {
 
 
 <div class="">
-  <form class="" action="imports/profilepictureupload.php" method="post">
-    <input type="file" name="imgUploadFile" value="">
+  <form class="" action="imports/profilepictureupload.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="imgUploadFile">
     <button type="submit" name="imgUploadSubmitBtn">Nahrát fotku</button>
   </form>
 </div>
