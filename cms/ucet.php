@@ -2,6 +2,8 @@
 session_start();
 if (!isset($_SESSION['userId'])) {
   header("Location: ../admin/index.php");
+
+
 }
 ?>
 <!DOCTYPE html>
@@ -13,8 +15,12 @@ if (!isset($_SESSION['userId'])) {
   <body>
     <?php
     require 'imports/statushandler.php';
+    require 'imports/commonmenu.php';
     ?>
+<<<<<<< HEAD
   <?php require 'imports/commonmenu.php'; ?>
+=======
+>>>>>>> 250380ac01cde57c10e4553d03d11bf75bf30087
 
     <article class="sekce mt-3" id="sekce4">
     <h1 class="heading"><img class="my-2 mx-2" src="https://img.icons8.com/material/60/000000/contacts.png">Účet</h1>
@@ -27,12 +33,11 @@ if (!isset($_SESSION['userId'])) {
 
 <br> <button class='btn btn-dark mb-2 py-2' style="margin:auto;display:block;width:50%;" data-toggle='modal' data-target='#userChangePwModal'>Změnit heslo</button>
 
-<!--
+
   <div class="" style="border:2px solid red;">
     <?php require 'imports/profilepicture.php' ?>
   </div>
 
--->
 
 <div class="">
   <form class="" action="imports/profilepictureupload.php" method="post">
@@ -67,7 +72,7 @@ if (!isset($_SESSION['userId'])) {
 </div>
 </div>
 </div>
-    <div class="footer mt-5 p-5 text-center" style="border:1px solid rgba(0,0,0,.1);">
+    <div class="footer mt-5 p-5 text-center" style="border:1px solid #A7ACB5;">
       <p>&copy; Doma Software 2019</p>
     </div>
     </article>

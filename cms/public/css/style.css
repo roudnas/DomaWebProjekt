@@ -55,6 +55,9 @@ border: 1px solid rgba(255,255,255,0.1);
   height: 10vh;
   width: 100%;
 }
+.card, .card input, .card textarea {
+  background-color: #25273E !important;
+}
 .sekce {
 z-index: 1;
 padding: 2rem;
@@ -63,8 +66,8 @@ margin-right: 2vw;
 height: 87vh;
 overflow: auto;
 border-radius: 10px;
-background-color: #65c6bb;
-color: #000;
+background: #242538;
+color: #A7ACB5;
 }
 .custom-file {
   display: none;
